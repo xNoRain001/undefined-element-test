@@ -3,6 +3,7 @@
     <NuxtLink to="/u-input">UInput</NuxtLink>
     <NuxtLink to="/u-tabs">UTabs</NuxtLink>
     <NuxtLink to="/u-dialog">UDislog</NuxtLink>
+    <NuxtLink to="/u-slider">USlider</NuxtLink>
   </nav>
 </template>
 
