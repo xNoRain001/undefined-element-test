@@ -4,6 +4,7 @@
     <NuxtLink to="/u-tabs">UTabs</NuxtLink>
     <NuxtLink to="/u-dialog">UDislog</NuxtLink>
     <NuxtLink to="/u-slider">USlider</NuxtLink>
+    <NuxtLink to="/u-expansion">UExpansion</NuxtLink>
   </nav>
 </template>
 
