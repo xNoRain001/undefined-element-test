@@ -18,15 +18,18 @@
 
   <UTabPannels>
     <template #default>
-      <div class="border-[1px] border-solid border-gray-500 pt-[100px]">
+      <div class="
+        border-[1px] border-solid border-gray-500 h-32 flex justify-center 
+        items-center
+      ">
         <UTabPannel data-key="1">
           <template #default>
-            <div>Tab1 pannel</div>
+            <div>Tab1 panel</div>
           </template>
         </UTabPannel>
         <UTabPannel data-key="2">
           <template #default>
-            <div>Tab2 pannel</div>
+            <div>Tab2 panel</div>
           </template>
         </UTabPannel>
       </div>

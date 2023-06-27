@@ -1,6 +1,8 @@
 <template>
   <div>
     <Header></Header>
-    <slot></slot>
+    <div class="mt-10">
+      <slot></slot>
+    </div>
   </div>
 </template>
