@@ -3,7 +3,10 @@ const USplitter = `
     <u-splitter v-model="value" :min="min" :max="max" class="h-[200px]">
       <template #before>
         <div class="h-full overflow-y-scroll">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum eos, distinctio iusto eum mollitia! Tempora, impedit exercitationem quos repellendus dolores sequi, quod repellat amet accusantium libero, molestiae atque porro?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum eos, 
+          distinctio iusto eum mollitia! Tempora, impedit exercitationem quos 
+          repellendus dolores sequi, quod repellat amet accusantium libero, 
+          molestiae atque porro?
         </div>
       </template>
       <template #splitter>
@@ -11,10 +14,15 @@ const USplitter = `
       </template>
       <template #after>
         <div class="h-full overflow-y-scroll">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iste tempore ex nemo, tempora fuga, quisquam recusandae, ipsam fugit cum dolores soluta alias illum rerum asperiores quas. Deserunt, sint veniam!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum eos, 
+          distinctio iusto eum mollitia! Tempora, impedit exercitationem quos 
+          repellendus dolores sequi, quod repellat amet accusantium libero, 
+          molestiae atque porro?
         </div>
       </template>
     </u-splitter>
+
+    <div>value: {{ value }}</div>
   </template>
 
   <script lang="ts" setup>

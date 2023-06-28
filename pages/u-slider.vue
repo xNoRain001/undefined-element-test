@@ -9,12 +9,10 @@
       </template>
     </USliderTrack>
   </USlider>
+
+  <div>value: {{ value }}</div>
 </template>
 
 <script lang="ts" setup>
 const value = ref(50)
-
-watch(value, (v) => {
-  // console.log(v)
-})
 </script>

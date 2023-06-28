@@ -20,6 +20,8 @@
       </div>
     </template>
   </u-splitter>
+
+  <div>value: {{ value }}</div>
 </template>
 
 <script lang="ts" setup>

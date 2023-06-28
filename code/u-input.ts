@@ -9,6 +9,8 @@ const UInput = `
         <div>suffix</div>
       </template>
     </UInput>
+
+    <div>value: {{ value }}</div>
   </template>
 
   <script lang="ts" setup>
