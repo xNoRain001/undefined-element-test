@@ -8,7 +8,7 @@
       <codemirror
         v-model="code"
         placeholder="Code goes here..."
-        :style="{ height: '66.67%' }"
+        :style="{ height: '66.67%', fontSize: '16px' }"
         :extensions="extensions"
       />
     </div>
