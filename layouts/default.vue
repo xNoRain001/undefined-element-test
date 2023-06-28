@@ -9,7 +9,6 @@
         v-model="code"
         placeholder="Code goes here..."
         :style="{ height: '66.67%', fontSize: '16px' }"
-        :extensions="extensions"
       />
     </div>
   </div>
@@ -18,12 +17,10 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { Codemirror } from 'vue-codemirror'
-import { javascript } from '@codemirror/lang-javascript'
 
 import codeMap from '@/code'
 
 const code = ref('')
-const extensions = [javascript()]
 
 watch(() => useRoute().fullPath, (v) => {
   code.value = codeMap[v]
