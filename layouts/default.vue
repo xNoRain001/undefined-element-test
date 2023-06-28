@@ -2,7 +2,7 @@
   <div class="flex">
     <Header></Header>
     <div class="w-full max-w-[83.33%] p-5">
-      <div class="h-1/3 ">
+      <div class="h-1/3 p-5">
         <slot></slot>
       </div>
       <codemirror
