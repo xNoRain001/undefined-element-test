@@ -1,5 +1,5 @@
 <template>
-  <div @click="updateVisible">click me</div>
+  <button @click="updateVisible">click me</button>
   
   <!-- mask -->
   <div 
