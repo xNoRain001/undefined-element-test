@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex w-full h-full">
     <Header></Header>
     <div class="w-full max-w-[83.33%] p-5">
       <div class="h-1/3 p-5">

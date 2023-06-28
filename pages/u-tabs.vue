@@ -2,10 +2,10 @@
   <UTabs>
     <div class="flex justify-center">
       <UTab data-key="1" data-active="true">
-        <span style="width: 20px;">Tab1</span>
+        <button class="btn">Tab1</button>
       </UTab> 
       <UTab data-key="2" class="ml-[10px]">
-        <span style="width: 20px;">Tab2</span>
+        <button class="btn">Tab2</button>
       </UTab> 
     </div>
   </UTabs>

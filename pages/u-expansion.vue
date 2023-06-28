@@ -1,7 +1,9 @@
 <template>
   <u-expansion>
     <template #default>
-      click me
+      <button class="btn">
+        click me
+      </button>
     </template>
     <template #panel>
       <div class="bg-green-500">

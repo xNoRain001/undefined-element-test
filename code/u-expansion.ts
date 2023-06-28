@@ -1,19 +1,21 @@
 const UExpansion = `
-  <template>
-    <u-expansion>
-      <template #default>
+<template>
+  <u-expansion>
+    <template #default>
+      <button class="btn">
         click me
-      </template>
-      <template #panel>
-        <div class="bg-green-500">
-          <div>
-            panel
-          </div>
-          123
+      </button>
+    </template>
+    <template #panel>
+      <div class="bg-green-500">
+        <div>
+          panel
         </div>
-      </template>
-    </u-expansion>
-  </template>
+        123
+      </div>
+    </template>
+  </u-expansion>
+</template>
 `
 
 export default UExpansion

@@ -3,6 +3,7 @@ import UInput from "./u-input"
 import USlider from "./u-slider"
 import UDialog from "./u-dialog"
 import URating from "./u-rating"
+import UTooltip from "./u-tooltip"
 import USplitter from "./u-splitter"
 import UExpansion from "./u-expansion"
 
@@ -12,6 +13,7 @@ const codeMap = {
   '/u-slider': USlider,
   '/u-dialog': UDialog,
   '/u-rating': URating,
+  '/u-tooltip': UTooltip,
   '/u-splitter': USplitter,
   '/u-expansion': UExpansion
 }

@@ -7,6 +7,7 @@
     <NuxtLink noPrefetch to="/u-expansion">UExpansion</NuxtLink>
     <NuxtLink noPrefetch to="/u-splitter">USplitter</NuxtLink>
     <NuxtLink noPrefetch to="/u-rating">URating</NuxtLink>
+    <NuxtLink noPrefetch to="/u-tooltip">UTooltip</NuxtLink>
   </nav>
 </template>
 
