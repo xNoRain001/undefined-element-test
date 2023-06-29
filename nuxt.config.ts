@@ -20,5 +20,9 @@ export default defineNuxtConfig({
     ]
   },
 
-  css: ['virtual:svg-icons-register', 'assets/css/main.css']
+  css: [
+    'virtual:svg-icons-register', 
+    'assets/css/main.css', 
+    'undefined-element/src/assets/css/index.css'
+  ]
 })
