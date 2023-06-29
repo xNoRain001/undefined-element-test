@@ -5,10 +5,10 @@
     placeholder="input your content..."
   >
     <template #prefix>
-      <div class="prefix">prefix</div>
+      <SvgIcon name="location" width="24" height="24" class="prefix"></SvgIcon>
     </template>
     <template #suffix>
-      <div>suffix</div>
+      <SvgIcon name="search" width="24" height="24"></SvgIcon>
     </template>
   </UInput>
 
@@ -19,10 +19,10 @@
     placeholder="input your content..."
   >
     <template #prefix>
-      <div class="prefix">prefix</div>
+      <button class="btn prefix whitespace-nowrap">undefined element</button>
     </template>
     <template #suffix>
-      <div>suffix</div>
+      <SvgIcon name="search" width="24" height="24"></SvgIcon>
     </template>
   </UInput>
 
@@ -33,10 +33,10 @@
     placeholder="input your content..."
   >
     <template #prefix>
-      <div class="prefix">prefix</div>
+      <SvgIcon name="location" width="24" height="24" class="prefix"></SvgIcon>
     </template>
     <template #suffix>
-      <div>suffix</div>
+      <SvgIcon name="search" width="24" height="24"></SvgIcon>
     </template>
   </UInput>
 
@@ -47,10 +47,10 @@
     placeholder="input your content..."
   >
     <template #prefix>
-      <div class="prefix">prefix</div>
+      <SvgIcon name="location" width="24" height="24" class="prefix"></SvgIcon>
     </template>
     <template #suffix>
-      <div>suffix</div>
+      <SvgIcon name="search" width="24" height="24"></SvgIcon>
     </template>
   </UInput>
 
@@ -60,10 +60,10 @@
     placeholder="input your content..."
   >
     <template #prefix>
-      <div class="prefix">prefix</div>
+      <SvgIcon name="location" width="24" height="24" class="prefix"></SvgIcon>
     </template>
     <template #suffix>
-      <div data-clearable class="cursor-pointer">×</div>
+      <SvgIcon name="search" width="24" height="24"></SvgIcon>
     </template>
   </UInput>
 
@@ -91,6 +91,6 @@ const value5 = ref('clearable content...')
 }
 
 .prefix {
-  @apply mr-2 text-green-500
+  @apply mr-2
 }
 </style>
