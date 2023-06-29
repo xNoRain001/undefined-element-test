@@ -4,6 +4,7 @@
     class="input-container"
     v-model="value1"
     placeholder="input your content..."
+    focusedBorderColor="#3b82f6"
     @focus="focusHandler"
     @blur="blurHandler"
   >
@@ -16,15 +17,16 @@
   </UInput>
 
   <UInput 
-    class="input-container"
+    class="input-container rounded-full"
     v-model="value2"
     debounce="300"
     placeholder="input your content..."
+    focusedBorderColor="#3b82f6"
     @focus="focusHandler"
     @blur="blurHandler"
   >
     <template #prefix>
-      <button class="btn prefix whitespace-nowrap">undefined element</button>
+      <SvgIcon name="location" width="24" height="24" class="prefix"></SvgIcon>
     </template>
     <template #suffix>
       <SvgIcon name="search" width="24" height="24"></SvgIcon>
@@ -32,10 +34,11 @@
   </UInput>
 
   <UInput 
-    class="input-container"
+    class="input-container rounded-md"
     v-model="value3"
     readonly
     placeholder="input your content..."
+    focusedBorderColor="#3b82f6"
   >
     <template #prefix>
       <SvgIcon name="location" width="24" height="24" class="prefix"></SvgIcon>
@@ -50,6 +53,7 @@
     v-model="value4"
     disabled
     placeholder="input your content..."
+    focusedBorderColor="#3b82f6"
   >
     <template #prefix>
       <SvgIcon name="location" width="24" height="24" class="prefix"></SvgIcon>
@@ -63,6 +67,7 @@
     class="input-container"
     v-model="value5"
     placeholder="input your content..."
+    focusedBorderColor="#3b82f6"
     @focus="focusHandler"
     @blur="blurHandler"
     @clear="clearHandler"
@@ -79,6 +84,7 @@
     class="input-container"
     v-model="value6"
     placeholder="input your content..."
+    focusedBorderColor="#3b82f6"
     autofocus
     @focus="focusHandler"
     @blur="blurHandler"
@@ -115,8 +121,8 @@ const focusHandler = (e: Event) => {
 }
 
 const blurHandler = (e: Event) => {
-  // const container = (e.target as HTMLElement).parentNode as HTMLElement
-  // container.style.borderColor = 'rgba(0,0,0,.3)'
+  // const target = e.target as HTMLElement
+  // const container = target.parentNode as HTMLElement
 }
 
 const clearHandler = (oldValue: string) => {
@@ -126,12 +132,11 @@ const clearHandler = (oldValue: string) => {
 
 <style type="text/tailwindcss" scoped>
 .input-container {
-  @apply px-2 border-[2px] border-solid border-[rgba(0,0,0,.3)] h-14
-  rounded-md mt-4
+  @apply px-2 border-[2px] border-solid border-[rgba(0,0,0,.3)] h-14 mt-4
 }
 
 .input-container:hover {
-  @apply border-[rgba(0,0,0,.6)]
+  @apply border-black
 }
 
 .input-container 
