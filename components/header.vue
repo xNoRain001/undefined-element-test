@@ -1,5 +1,8 @@
 <template>
-  <nav class="routing-container flex flex-col items-center h-screen border-[1px] border-y-0 border-l-0 border-gray-500 w-1/6">
+  <nav class="
+    routing-container flex flex-col items-center h-screen w-1/6
+    overflow-y-scroll fixed left-0 top-0
+  ">
     <NuxtLink noPrefetch to="/u-input">UInput</NuxtLink>
     <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink>
     <NuxtLink noPrefetch to="/u-dialog">UDislog</NuxtLink>
@@ -13,6 +16,7 @@
 
 <style type="text/tailwindcss" scoped>
 .routing-container > a {
-  @apply text-pink-500 hover:underline mt-4
+  @apply w-full h-10 rounded-md flex justify-center items-center text-[12px]
+  text-left text-black hover:bg-blue-500 hover:text-white
 }
 </style>

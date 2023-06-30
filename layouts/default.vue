@@ -1,10 +1,8 @@
 <template>
-  <div class="flex w-full h-full">
+  <div class="flex w-full h-full relative">
     <Header></Header>
-    <div class="w-full max-w-[83.33%] p-5">
-      <div class="p-5">
-        <slot></slot>
-      </div>
+    <div class="w-5/6 p-5 absolute right-0 top-0">
+      <slot></slot>
       <codemirror
         v-model="code"
         placeholder="Code goes here..."
