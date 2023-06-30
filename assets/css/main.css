@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0003;
+  border-radius: 10px;
+}
+
 .btn {
   @apply cursor-pointer bg-blue-500 text-white px-4 py-2
 }
