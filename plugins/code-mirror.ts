@@ -7,9 +7,9 @@ import { javascript } from '@codemirror/lang-javascript'
 export default defineNuxtPlugin(nuxtApp => {
   nuxtApp.vueApp.use(VueCodemirror, {
     // optional default global options
-    autofocus: true,
+    autofocus: false,
     disabled: true,
-    indentWithTab: true,
+    indentWithTab: false,
     tabSize: 2,
     placeholder: 'Code goes here...',
     extensions: [basicSetup, html(), css(), javascript()],

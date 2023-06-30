@@ -1,138 +1,137 @@
 const UInput = `
   <template>
-    <div class="flex flex-col items-center">
+    <div class="w-full grid gap-y-[24px]">
+      <p>Element Plus</p>
+
       <UInput 
-        ref="inputContainer"
-        class="input-container"
+        :inputStyle="{
+          common: {
+            height: '30px',
+            borderRadius: '4px',
+            padding: '1px 11px',
+            color: 'rbg(48, 49, 51)',
+            fontSize: '14px',
+            fontWeight: '400px',
+            placeholderColor: '#a8abb2'
+          },
+          source: {
+            border: '1px solid #dcdfe6'
+          },
+          focused: {
+            border: '1px solid #409eff'
+          },
+          hovered: {
+            border: '1px solid #c0c4cc'
+          }
+        }"
         v-model="value1"
-        placeholder="input your content..."
+        placeholder="Please input"
         @focus="focusHandler"
         @blur="blurHandler"
       >
       </UInput>
 
       <UInput 
-        class="input-container"
         v-model="value2"
-        debounce="300"
-        placeholder="input your content..."
+        placeholder="Please input"
         @focus="focusHandler"
         @blur="blurHandler"
-      >
-        <template #prepend>
-          <SvgIcon name="location" width="24" height="24" class="prepend"></SvgIcon>
-        </template>
-        <template #append>
-          <SvgIcon name="search" width="24" height="24" class="append"></SvgIcon>
-        </template>
-      </UInput>
-
-      <UInput 
-        class="input-container"
-        v-model="value3"
-        readonly
-        placeholder="input your content..."
+        :inputStyle="{
+          common: {
+            height: '30px',
+            borderTopRightRadius: '4px',
+            borderBottomRightRadius: '4px',
+            placeholderColor: '#a8abb2',
+            padding: '1px 11px',
+            color: 'rbg(48, 49, 51)',
+            fontSize: '14px',
+            fontWeight: '400px'
+          },
+          source: {
+            border: '1px solid #dcdfe6'
+          },
+          focused: {
+            border: '1px solid #409eff'
+          },
+          hovered: {
+            border: '1px solid #c0c4cc'
+          }
+        }"
       >
         <template #before>
-          <span class="mr-2">Readonly</span>
-        </template>
-        <template #prepend>
-          <SvgIcon name="location" width="24" height="24" class="prepend"></SvgIcon>
-        </template>
-        <template #append>
-          <SvgIcon name="search" width="24" height="24" class="append"></SvgIcon>
+          <div class="h-full px-[20px] border-[1px] border-r-0 rounded-tl-[4px] rounded-bl-[4px] border-solid border-[#dcdfe6] bg-[rgb(245,247,250)] text-[rgb(144,147,153)] text-[14px] flex items-center">
+            https://
+          </div>
         </template>
       </UInput>
 
-      <UInput 
-        class="input-container"
-        v-model="value4"
-        disabled
-        placeholder="input your content..."
-      >
-        <template #prepend>
-          <SvgIcon name="location" width="24" height="24" class="prepend"></SvgIcon>
-        </template>
-        <template #append>
-          <SvgIcon name="search" width="24" height="24" class="append"></SvgIcon>
-        </template>
-        <template #after>
-          <span class="ml-2">Disabled</span>
-        </template>
-      </UInput>
+      <p>Quasar Framework</p>
 
       <UInput 
-        class="input-container"
-        v-model="value5"
-        placeholder="input your content..."
+        v-model="value3"
         :inputStyle="{
-          common: { borderRadius: '9999px' }
+          common: {
+            height: '56px',
+            borderRadius: '4px',
+            padding: '0 12px',
+            color: 'rgba(0, 0, 0, .87)',
+            fontSize: '14px',
+            fontWeight: '400px'
+          },
+          source: {
+            border: '1px solid rgba(0, 0, 0, .23)'
+          },
+          focused: {
+            border: '2px solid rgb(25, 118, 210)'
+          },
+          hovered: {
+            border: '1px solid rgba(0, 0, 0, .87)'
+          }
         }"
         @focus="focusHandler"
         @blur="blurHandler"
-        @clear="clearHandler"
       >
-        <template #prepend>
-          <SvgIcon name="location" width="24" height="24" class="prepend"></SvgIcon>
-        </template>
-        <template #append>
-          <span data-clearable class="cursor-pointer append">×</span>
-        </template>
       </UInput>
+
+      <p>The style is up to you</p>
 
       <UInput 
-        class="input-container"
-        v-model="value6"
-        placeholder="input your content..."
-        autofocus
-        @focus="focusHandler"
-        @blur="blurHandler"
+        v-model="value4"
+        placeholder="Please input"
+        :inputStyle="{
+          common: {
+            height: '46px',
+            borderRadius: '4px',
+            padding: '0 12px',
+            color: 'black',
+            fontSize: '14px',
+            fontWeight: '400px',
+            placeholderColor: '#a8abb2'
+          },
+          source: {
+            border: '1px solid #dcdfe6'
+          },
+          focused: {
+            border: '1px solid #3b82f6'
+          },
+          hovered: {
+            border: '1px solid black'
+          }
+        }"
       >
-        <template #prepend>
-          <SvgIcon name="location" width="24" height="24" class="prepend"></SvgIcon>
-        </template>
-        <template #append>
-          <SvgIcon name="search" width="24" height="24" class="append"></SvgIcon>
-        </template>
       </UInput>
-
-      <UInput 
-        class="input-container"
-        v-model="value6"
-        placeholder="input your content..."
-        :inputStyle="inputStyle"
-        @focus="focusHandler"
-        @blur="blurHandler"
-      >
-        <template #before>
-          <span class="before whitespace-nowrap">custom input style:</span>
-        </template>
-        <template #prepend>
-          <SvgIcon name="location" width="24" height="24" class="prepend"></SvgIcon>
-        </template>
-        <template #append>
-          <SvgIcon name="search" width="24" height="24" class="append"></SvgIcon>
-        </template>
-      </UInput>
-
-      <div class="mt-4">
-        <!-- <span>value1: {{ value1 }}</span><br>
-        <span>value2: {{ value2 }}</span><br>
-        <span>value3: {{ value3 }}</span><br>
-        <span>value4: {{ value4 }}</span><br>
-        <span>value5: {{ value5 }}</span><br>
-        <span>value6: {{ value6 }}</span><br> -->
-      </div>
     </div>
   </template>
 
   <script lang="ts" setup>
   const value1 = ref('')
-  const value2 = ref('debounced...')
-  const value3 = ref('readonly...')
-  const value4 = ref('disabled...')
+  const value2 = ref('')
+  const value3 = ref('')
+  const value4 = ref('')
   const value5 = ref('clearable...')
   const value6 = ref('autofocus...')
+  const value7 = ref('custom input style...')
+  const value8 = ref('custom input style...')
   const inputStyle = {
     common: { padding: '0 8px' },
     source: { border: '1px solid rgba(0, 0, 0, .4)' },
@@ -149,7 +148,7 @@ const UInput = `
 
   <style type="text/tailwindcss" scoped>
   .input-container {
-    @apply w-1/3 h-14 mt-4
+    @apply h-14
   }
 
   .input-container 
@@ -157,23 +156,28 @@ const UInput = `
     @apply mr-2
   }
 
-  .perpend,
-  .before {
+  .perpend {
     @apply mr-2
   }
 
-  .append,
-  .after {
+  .append {
     @apply ml-2
   }
 
-  /* .input-container :deep(.u-input) {
-    @apply font-normal
+  .before,
+  .after {
+    @apply h-full border-[2px] border-solid border-[rgba(0,0,0,.4)] 
+    flex justify-center items-center px-5 text-[#909399] text-[14px]
+    bg-[#eee]
   }
 
-  .input-container :deep(.u-input)::placeholder {
-    @apply text-[rgba(0,0,0,.3)]
-  } */
+  .before {
+    @apply border-r-0
+  }
+
+  .after {
+    @apply border-l-0
+  }
   </style>
 `
 

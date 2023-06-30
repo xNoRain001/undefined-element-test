@@ -7,7 +7,7 @@ import UTooltip from "./u-tooltip"
 import USplitter from "./u-splitter"
 import UExpansion from "./u-expansion"
 
-const codeMap = {
+const codeMap: { [propName: string]: any } = {
   '/u-tabs': UTabs,
   '/u-input': UInput,
   '/u-slider': USlider,
