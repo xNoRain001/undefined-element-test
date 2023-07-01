@@ -1,20 +1,18 @@
-const UInput = `
-  <template>
+<template>
+  <Example id="basic">
     <div class="w-full grid gap-y-[24px]">
       <p>Element Plus</p>
 
       <UInput 
         :inputStyle="{
-          common: {
+          style: {
             height: '30px',
             borderRadius: '4px',
             padding: '1px 11px',
             color: 'rbg(48, 49, 51)',
             fontSize: '14px',
             fontWeight: '400px',
-            placeholderColor: '#a8abb2'
-          },
-          source: {
+            placeholderColor: '#a8abb2',
             border: '1px solid #dcdfe6'
           },
           focused: {
@@ -37,7 +35,7 @@ const UInput = `
         @focus="focusHandler"
         @blur="blurHandler"
         :inputStyle="{
-          common: {
+          style: {
             height: '30px',
             borderTopRightRadius: '4px',
             borderBottomRightRadius: '4px',
@@ -45,9 +43,7 @@ const UInput = `
             padding: '1px 11px',
             color: 'rbg(48, 49, 51)',
             fontSize: '14px',
-            fontWeight: '400px'
-          },
-          source: {
+            fontWeight: '400px',
             border: '1px solid #dcdfe6'
           },
           focused: {
@@ -70,15 +66,13 @@ const UInput = `
       <UInput 
         v-model="value3"
         :inputStyle="{
-          common: {
+          style: {
             height: '56px',
             borderRadius: '4px',
             padding: '0 12px',
             color: 'rgba(0, 0, 0, .87)',
             fontSize: '14px',
-            fontWeight: '400px'
-          },
-          source: {
+            fontWeight: '400px',
             border: '1px solid rgba(0, 0, 0, .23)'
           },
           focused: {
@@ -93,22 +87,45 @@ const UInput = `
       >
       </UInput>
 
+      <UInput 
+        v-model="value4"
+        :inputStyle="{
+          style: {
+            height: '56px',
+            borderRadius: '4px',
+            padding: '0 12px',
+            fontSize: '14px',
+            fontWeight: '400px',
+            backgroundColor: 'rgba(0, 0, 0, .05)',
+            color: 'black',
+          },
+          focused: {
+            backgroundColor: 'black',
+            color: 'white'
+          },
+          hovered: {
+            backgroundColor: 'rgba(0, 0, 0, .07)'
+          }
+        }"
+        @focus="focusHandler"
+        @blur="blurHandler"
+      >
+      </UInput>
+
       <p>The style is up to you</p>
 
       <UInput 
-        v-model="value4"
+        v-model="value6"
         placeholder="Please input"
         :inputStyle="{
-          common: {
+          style: {
             height: '46px',
             borderRadius: '4px',
             padding: '0 12px',
             color: 'black',
             fontSize: '14px',
             fontWeight: '400px',
-            placeholderColor: '#a8abb2'
-          },
-          source: {
+            placeholderColor: '#a8abb2',
             border: '1px solid #dcdfe6'
           },
           focused: {
@@ -121,64 +138,62 @@ const UInput = `
       >
       </UInput>
     </div>
-  </template>
+  </Example>
+</template>
 
-  <script lang="ts" setup>
-  const value1 = ref('')
-  const value2 = ref('')
-  const value3 = ref('')
-  const value4 = ref('')
-  const value5 = ref('clearable...')
-  const value6 = ref('autofocus...')
-  const value7 = ref('custom input style...')
-  const value8 = ref('custom input style...')
-  const inputStyle = {
-    common: { padding: '0 8px' },
-    source: { border: '1px solid rgba(0, 0, 0, .4)' },
-    focused: { border: '1px solid #22c55e' },
-    hovered: { border: '1px solid black' }
-  }
+<script lang="ts" setup>
+const value1 = ref('')
+const value2 = ref('')
+const value3 = ref('')
+const value4 = ref('')
+const value5 = ref('')
+const value6 = ref('')
+const value7 = ref('')
+const value8 = ref('')
+const inputStyle = {
+  common: { padding: '0 8px' },
+  source: { border: '1px solid rgba(0, 0, 0, .4)' },
+  focused: { border: '1px solid #22c55e' },
+  hovered: { border: '1px solid black' }
+}
 
-  const focusHandler = (e: Event) => {}
+const focusHandler = (e: Event) => {}
 
-  const blurHandler = (e: Event) => {}
+const blurHandler = (e: Event) => {}
 
-  const clearHandler = (oldValue: string) => {}
-  </script>
+const clearHandler = (oldValue: string) => {}
+</script>
 
-  <style type="text/tailwindcss" scoped>
-  .input-container {
-    @apply h-14
-  }
+<style type="text/tailwindcss" scoped>
+.input-container {
+  @apply h-14
+}
 
-  .input-container 
-  {
-    @apply mr-2
-  }
+.input-container 
+ {
+  @apply mr-2
+}
 
-  .perpend {
-    @apply mr-2
-  }
+.perpend {
+  @apply mr-2
+}
 
-  .append {
-    @apply ml-2
-  }
+.append {
+  @apply ml-2
+}
 
-  .before,
-  .after {
-    @apply h-full border-[2px] border-solid border-[rgba(0,0,0,.4)] 
-    flex justify-center items-center px-5 text-[#909399] text-[14px]
-    bg-[#eee]
-  }
+.before,
+.after {
+  @apply h-full border-[2px] border-solid border-[rgba(0,0,0,.4)] 
+  flex justify-center items-center px-5 text-[#909399] text-[14px]
+  bg-[#eee]
+}
 
-  .before {
-    @apply border-r-0
-  }
+.before {
+  @apply border-r-0
+}
 
-  .after {
-    @apply border-l-0
-  }
-  </style>
-`
-
-export default UInput
+.after {
+  @apply border-l-0
+}
+</style>
