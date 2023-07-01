@@ -1,17 +1,19 @@
 <template>
-  <u-expansion>
-    <template #default>
-      <button class="btn">
-        click me
-      </button>
-    </template>
-    <template #panel>
-      <div class="bg-green-500">
-        <div>
-          panel
+  <div class="w-full">
+    <u-expansion v-model="expanded">
+      <template #default>
+        <button class="btn">
+          click me
+        </button>
+      </template>
+      <template #panel>
+        <div class="bg-green-500 h-[100px]">
         </div>
-        123
-      </div>
-    </template>
-  </u-expansion>
+      </template>
+    </u-expansion>
+  </div>
 </template>
+
+<script lang="ts" setup>
+const expanded = ref(false)
+</script>

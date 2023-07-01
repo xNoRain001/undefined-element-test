@@ -8,6 +8,10 @@
   border-radius: 10px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .btn {
   @apply cursor-pointer bg-blue-500 text-white px-4 py-2
 }

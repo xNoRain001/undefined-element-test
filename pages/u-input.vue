@@ -4,16 +4,14 @@
 
     <UInput 
       :inputStyle="{
-        common: {
+        style: {
           height: '30px',
           borderRadius: '4px',
           padding: '1px 11px',
           color: 'rbg(48, 49, 51)',
           fontSize: '14px',
           fontWeight: '400px',
-          placeholderColor: '#a8abb2'
-        },
-        source: {
+          placeholderColor: '#a8abb2',
           border: '1px solid #dcdfe6'
         },
         focused: {
@@ -36,7 +34,7 @@
       @focus="focusHandler"
       @blur="blurHandler"
       :inputStyle="{
-        common: {
+        style: {
           height: '30px',
           borderTopRightRadius: '4px',
           borderBottomRightRadius: '4px',
@@ -44,9 +42,7 @@
           padding: '1px 11px',
           color: 'rbg(48, 49, 51)',
           fontSize: '14px',
-          fontWeight: '400px'
-        },
-        source: {
+          fontWeight: '400px',
           border: '1px solid #dcdfe6'
         },
         focused: {
@@ -69,15 +65,13 @@
     <UInput 
       v-model="value3"
       :inputStyle="{
-        common: {
+        style: {
           height: '56px',
           borderRadius: '4px',
           padding: '0 12px',
           color: 'rgba(0, 0, 0, .87)',
           fontSize: '14px',
-          fontWeight: '400px'
-        },
-        source: {
+          fontWeight: '400px',
           border: '1px solid rgba(0, 0, 0, .23)'
         },
         focused: {
@@ -92,22 +86,45 @@
     >
     </UInput>
 
+    <UInput 
+      v-model="value4"
+      :inputStyle="{
+        style: {
+          height: '56px',
+          borderRadius: '4px',
+          padding: '0 12px',
+          fontSize: '14px',
+          fontWeight: '400px',
+          backgroundColor: 'rgba(0, 0, 0, .05)',
+          color: 'black',
+        },
+        focused: {
+          backgroundColor: 'black',
+          color: 'white'
+        },
+        hovered: {
+          backgroundColor: 'rgba(0, 0, 0, .07)'
+        }
+      }"
+      @focus="focusHandler"
+      @blur="blurHandler"
+    >
+    </UInput>
+
     <p>The style is up to you</p>
 
     <UInput 
-      v-model="value4"
+      v-model="value6"
       placeholder="Please input"
       :inputStyle="{
-        common: {
+        style: {
           height: '46px',
           borderRadius: '4px',
           padding: '0 12px',
           color: 'black',
           fontSize: '14px',
           fontWeight: '400px',
-          placeholderColor: '#a8abb2'
-        },
-        source: {
+          placeholderColor: '#a8abb2',
           border: '1px solid #dcdfe6'
         },
         focused: {
@@ -127,10 +144,10 @@ const value1 = ref('')
 const value2 = ref('')
 const value3 = ref('')
 const value4 = ref('')
-const value5 = ref('clearable...')
-const value6 = ref('autofocus...')
-const value7 = ref('custom input style...')
-const value8 = ref('custom input style...')
+const value5 = ref('')
+const value6 = ref('')
+const value7 = ref('')
+const value8 = ref('')
 const inputStyle = {
   common: { padding: '0 8px' },
   source: { border: '1px solid rgba(0, 0, 0, .4)' },

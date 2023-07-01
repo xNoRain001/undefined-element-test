@@ -5,13 +5,13 @@
     border-[rgba(0,0,0,.12)] pt-[100px] z-10
   ">
     <NuxtLink noPrefetch to="/u-input">UInput</NuxtLink>
-    <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink>
+    <!-- <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink>
     <NuxtLink noPrefetch to="/u-dialog">UDislog</NuxtLink>
     <NuxtLink noPrefetch to="/u-slider">USlider</NuxtLink>
     <NuxtLink noPrefetch to="/u-expansion">UExpansion</NuxtLink>
     <NuxtLink noPrefetch to="/u-splitter">USplitter</NuxtLink>
     <NuxtLink noPrefetch to="/u-rating">URating</NuxtLink>
-    <NuxtLink noPrefetch to="/u-tooltip">UTooltip</NuxtLink>
+    <NuxtLink noPrefetch to="/u-tooltip">UTooltip</NuxtLink> -->
   </nav>
 </template>
 
