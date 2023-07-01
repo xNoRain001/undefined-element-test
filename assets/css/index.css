@@ -6,6 +6,11 @@
 ::-webkit-scrollbar-thumb {
   background-color: #0003;
   border-radius: 10px;
+  background-color: rgba(144, 147, 153, .3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144, 147, 153, .5);
 }
 
 body {
