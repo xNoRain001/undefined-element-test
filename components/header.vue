@@ -8,35 +8,14 @@
         @click="clickHandler"
       >
         <NuxtLink noPrefetch to="/u-input" data-active="true">UInput</NuxtLink>
-        <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink>
+        <!-- <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink> -->
         <NuxtLink noPrefetch to="/u-dialog">UDislog</NuxtLink>
-        <NuxtLink noPrefetch to="/u-slider">USlider</NuxtLink>
+        <!-- <NuxtLink noPrefetch to="/u-slider">USlider</NuxtLink> -->
         <NuxtLink noPrefetch to="/u-expansion">UExpansion</NuxtLink>
-        <NuxtLink noPrefetch to="/u-splitter">USplitter</NuxtLink>
-        <NuxtLink noPrefetch to="/u-rating">URating</NuxtLink>
+        <!-- <NuxtLink noPrefetch to="/u-splitter">USplitter</NuxtLink> -->
+        <!-- <NuxtLink noPrefetch to="/u-rating">URating</NuxtLink> -->
         <NuxtLink noPrefetch to="/u-tooltip">UTooltip</NuxtLink>
         <NuxtLink noPrefetch to="/u-scroll-area">UScrollArea</NuxtLink>
-
-
-
-        <NuxtLink noPrefetch to="/u-input">UInput</NuxtLink>
-        <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink>
-        <NuxtLink noPrefetch to="/u-dialog">UDislog</NuxtLink>
-        <NuxtLink noPrefetch to="/u-slider">USlider</NuxtLink>
-        <NuxtLink noPrefetch to="/u-expansion">UExpansion</NuxtLink>
-        <NuxtLink noPrefetch to="/u-splitter">USplitter</NuxtLink>
-        <NuxtLink noPrefetch to="/u-rating">URating</NuxtLink>
-        <NuxtLink noPrefetch to="/u-tooltip">UTooltip</NuxtLink>
-        <NuxtLink noPrefetch to="/u-input">UInput</NuxtLink>
-        <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink>
-        <NuxtLink noPrefetch to="/u-dialog">UDislog</NuxtLink>
-        <NuxtLink noPrefetch to="/u-splitter">USplitter</NuxtLink>
-        <NuxtLink noPrefetch to="/u-rating">URating</NuxtLink>
-        <NuxtLink noPrefetch to="/u-expansion">UExpansion</NuxtLink>
-        <NuxtLink noPrefetch to="/u-splitter">USplitter</NuxtLink>
-        <NuxtLink noPrefetch to="/u-rating">URating</NuxtLink>
-        <NuxtLink noPrefetch to="/u-tooltip">UTooltip</NuxtLink>
-        <NuxtLink noPrefetch to="/u-tooltip">UTooltip</NuxtLink>
       </nav>
     </u-scroll-area>
   </div>

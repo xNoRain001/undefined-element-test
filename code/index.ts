@@ -6,6 +6,7 @@ import URating from "./u-rating"
 import UTooltip from "./u-tooltip"
 import USplitter from "./u-splitter"
 import UExpansion from "./u-expansion"
+import UScrollArea from "./u-scroll-area"
 
 const codeMap: { [propName: string]: any } = {
   '/u-tabs': UTabs,
@@ -15,7 +16,8 @@ const codeMap: { [propName: string]: any } = {
   '/u-rating': URating,
   '/u-tooltip': UTooltip,
   '/u-splitter': USplitter,
-  '/u-expansion': UExpansion
+  '/u-expansion': UExpansion,
+  '/u-scroll-area': UScrollArea
 }
 
 export default codeMap
