@@ -36,7 +36,7 @@
 <script lang="ts" setup>
 import codeMap from '@/code'
 
-const props = defineProps<{ id: 'string' }>()
+const props = defineProps<{ id: string }>()
 const expanded = ref(false)
 const fullPath = useRoute().fullPath
 const code = codeMap[fullPath][props.id]

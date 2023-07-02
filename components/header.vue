@@ -8,7 +8,7 @@
         @click="clickHandler"
       >
         <NuxtLink noPrefetch to="/u-input" data-active="true">UInput</NuxtLink>
-        <!-- <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink> -->
+        <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink>
         <!-- <NuxtLink noPrefetch to="/u-dialog">UDislog</NuxtLink> -->
         <!-- <NuxtLink noPrefetch to="/u-slider">USlider</NuxtLink> -->
         <!-- <NuxtLink noPrefetch to="/u-expansion">UExpansion</NuxtLink> -->
