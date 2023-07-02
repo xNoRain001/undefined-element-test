@@ -1,66 +1,39 @@
 <template>
   <div class="fixed left-0 top-0 bottom-0 z-10  w-[321px] pl-[87px] pr-[32px] pt-[48px] py-[96px]">
     <u-scroll-area :height="760">
-      <nav 
-        class="
-          routing-container 
-        "
-        @click="clickHandler"
-      >
-        <NuxtLink noPrefetch to="/u-input" data-active="true">UInput</NuxtLink>
-        <NuxtLink noPrefetch to="/u-tabs">UTabs</NuxtLink>
-        <!-- <NuxtLink noPrefetch to="/u-dialog">UDislog</NuxtLink> -->
-        <!-- <NuxtLink noPrefetch to="/u-slider">USlider</NuxtLink> -->
-        <!-- <NuxtLink noPrefetch to="/u-expansion">UExpansion</NuxtLink> -->
-        <!-- <NuxtLink noPrefetch to="/u-splitter">USplitter</NuxtLink> -->
-        <!-- <NuxtLink noPrefetch to="/u-rating">URating</NuxtLink> -->
-        <!-- <NuxtLink noPrefetch to="/u-tooltip">UTooltip</NuxtLink> -->
-        <!-- <NuxtLink noPrefetch to="/u-scroll-area">UScrollArea</NuxtLink> -->
+      <nav class="routing-container">
+        <NuxtLink 
+          v-for="{ to, label} in links" 
+          noPrefetch 
+          :key="to"
+          :to="to"
+          :data-active="fullPath === to"
+        >{{  label }}</NuxtLink>
       </nav>
     </u-scroll-area>
   </div>
 </template>
 
 <script lang="ts" setup>
-const prevActiveElm = ref<HTMLElement | null>(null)
+const links = [
+  { to: '/u-input', label: 'UInput' },
+  { to: '/u-tabs', label: 'UTabs' },
+  // { to: '/u-dialog', label: 'UDialog' },
+  // { to: '/u-slider', label: 'USlider'},
+  // { to: '/u-expansion', label: 'UExpansion' },
+  // { to: '/u-splitter', label: 'USplitter' },
+  // { to: '/u-rating', label: 'UTooltip' },
+  // { to: '/u-rating', label: 'UTooltip' },
+  // { to: '/u-scroll-area', label: 'UScrollArea' }
+]
 
-const initPrevActiveElm = () => {
-  const activeElm = document.querySelector('.routing-container > a[data-active="true"]') as HTMLElement
-  prevActiveElm.value = activeElm
-}
-
-const clickHandler = (e: Event) => {
-  const target = e.target as HTMLElement
-
-  if (target === prevActiveElm.value) {
-    return
-  }
-
-  if (target.tagName === 'A') {
-    target.setAttribute('data-active', 'true')
-    prevActiveElm.value!.setAttribute('data-active', 'false')
-    prevActiveElm.value = target
-  }
-}
-
-onMounted(() => {
-  initPrevActiveElm()
-})
+const fullPath = computed(() => useRoute().fullPath)
 </script>
 
 <style type="text/tailwindcss" scoped>
-/* .routing-container::-webkit-scrollbar {
-  display: none;
-}
-
-.routing-container:hover::-webkit-scrollbar {
-  display: block;
-} */
-
 .routing-container > a {
   @apply w-full py-[10px] px-[16px] text-[13px] text-[#606266] text-[13px] 
-  font-medium block
-  hover:text-[#409eff] 
+  font-medium block hover:text-[#409eff] 
 }
 
 .routing-container > a[data-active="true"] {
