@@ -1,4 +1,4 @@
-import UTabs from "./u-tabs"
+import UTabs from './u-tabs'
 import UInput from "./u-input"
 import USlider from "./u-slider"
 import UDialog from "./u-dialog"
