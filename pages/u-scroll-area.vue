@@ -1,7 +1,9 @@
 <template>
-  <u-scroll-area :height="400">
-    <div v-for="i in 20" :key="i">
-      Lorem ipsum dolor sit amet.
-    </div>
-  </u-scroll-area>
+  <Example id="basic">
+    <Basic></Basic>
+  </Example>
 </template>
+
+<script lang="ts" setup>
+import Basic from '@/components/u-scroll-area/basic.vue'
+</script>

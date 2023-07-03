@@ -47,5 +47,5 @@
 </template>
 
 <script lang="ts" setup>
-const expanded = reactive([])
+const expanded = reactive(['1'])
 </script>

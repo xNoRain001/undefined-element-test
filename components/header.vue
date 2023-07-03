@@ -1,6 +1,6 @@
 <template>
   <div class="fixed left-0 top-0 bottom-0 z-10 w-[321px] pl-[87px] pr-[32px] pt-[48px] py-[96px]">
-    <u-scroll-area :height="760">
+    <u-scroll-area height="760px">
       <nav class="routing-container">
         <NuxtLink 
           v-for="{ to, label} in links" 
@@ -23,8 +23,8 @@ const links = [
   { to: '/u-expansion', label: 'UExpansion' },
   // { to: '/u-splitter', label: 'USplitter' },
   // { to: '/u-rating', label: 'UTooltip' },
-  // { to: '/u-rating', label: 'UTooltip' },
-  // { to: '/u-scroll-area', label: 'UScrollArea' }
+  // { to: '/u-tooltip', label: 'UTooltip' },
+  { to: '/u-scroll-area', label: 'UScrollArea' }
 ]
 
 const fullPath = computed(() => useRoute().fullPath)
