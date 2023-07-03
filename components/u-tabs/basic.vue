@@ -3,7 +3,7 @@
     <div class="w-full">
       <u-tabs 
         v-model="tab"
-        :tabsStyle="{
+        :style="{
           height: '40px',
           display: 'flex'
         }"

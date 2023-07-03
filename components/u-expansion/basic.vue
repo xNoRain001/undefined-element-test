@@ -3,10 +3,11 @@
     <div class="w-full">
       <u-expansion 
         v-model="expanded"
-        :headerClass="`
+        headerClass="
           flex items-center justify-between border-x-0 border-solid 
-          border-[1px] h-[47px] ${ expanded.includes(name1) ? 'border-b-transparent' : '' }
-        `"
+          border-[1px] h-[47px]
+        "
+        activeHeaderClass="!border-b-transparent"
         contentClass="text-[14px] text-[#303133] font-medium"
       >
         <u-expansion-item name="1">
