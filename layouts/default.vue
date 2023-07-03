@@ -10,3 +10,18 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+watch(() => useRoute().fullPath, v => {
+  let title = ''
+  const segments = v.slice(1).split('-')
+
+  for (let i = 0, l = segments.length; i < l; i++) {
+    const segment = segments[i]
+
+    title += `${ segment[0].toUpperCase() }${ segment.slice(1) }`
+  }
+
+  useHead({ title })
+}, { immediate: true })
+</script>
