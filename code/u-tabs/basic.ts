@@ -2,9 +2,9 @@ const basic = `
   <template>
     <Example id="basic">
       <div class="w-full">
-        <UTabs 
+        <u-tabs 
           v-model="tab"
-          :tabsStyle="{
+          :style="{
             height: '40px',
             display: 'flex'
           }"
@@ -27,7 +27,7 @@ const basic = `
           <UTab name="4">
             <div>Task</div>
           </UTab> 
-        </UTabs>
+        </u-tabs>
 
         <UTabPanels 
           v-model="tab" 

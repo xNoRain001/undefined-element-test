@@ -1,13 +1,15 @@
 <template>
   <Example id="basic">
     <div class="w-full">
+      <!-- class="border-[1px] border-solid border-[#dcdfe6] border-x-0 border-b-0" -->
+
       <u-expansion 
         v-model="expanded"
-        headerClass="
-          flex items-center justify-between border-x-0 border-solid 
-          border-[1px] h-[47px]
+        itemClass="
+          border-[1px] border-x-0 border-solid border-[#dcdfe6] border-t-0
+          first-of-type:border-t-[1px]
         "
-        activeHeaderClass="!border-b-transparent"
+        headerClass="flex items-center justify-between h-[47px]"
         contentClass="text-[14px] text-[#303133] font-medium"
       >
         <u-expansion-item name="1">
