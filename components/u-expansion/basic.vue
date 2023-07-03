@@ -12,8 +12,23 @@
       >
         <u-expansion-item name="1">
           <template #header>
+            <div class="text-[14px] text-[#303133] font-medium">Home</div>
+            <SvgIcon :name="expanded.includes('1') ? 'arrow-up' : 'arrow-down'" width="24" height="24"></SvgIcon>
+          </template>
+          <template #content>
+            <div class="pb-[24px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, 
+              voluptatum laborum illo voluptatibus cumque nesciunt provident 
+              alias nam id possimus! Voluptatibus, at reprehenderit aperiam 
+              accusantium laborum nulla aspernatur? Aut, tempore!
+            </div>
+          </template>
+        </u-expansion-item>
+
+        <u-expansion-item name="2">
+          <template #header>
             <div class="text-[14px] text-[#303133] font-medium">About us</div>
-            <SvgIcon :name="expanded.includes(name1) ? 'arrow-up' : 'arrow-down'" width="24" height="24"></SvgIcon>
+            <SvgIcon :name="expanded.includes('2') ? 'arrow-up' : 'arrow-down'" width="24" height="24"></SvgIcon>
           </template>
           <template #content>
             <div class="pb-[24px]">
@@ -30,6 +45,5 @@
 </template>
 
 <script lang="ts" setup>
-const name1 = '1'
 const expanded = reactive([])
 </script>
