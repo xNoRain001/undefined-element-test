@@ -1,7 +1,7 @@
 <template>
   <Example id="basic">
     <div class="w-full">
-      <UTabs 
+      <u-tabs 
         v-model="tab"
         :tabsStyle="{
           height: '40px',
@@ -26,7 +26,7 @@
         <UTab name="4">
           <div>Task</div>
         </UTab> 
-      </UTabs>
+      </u-tabs>
 
       <UTabPanels 
         v-model="tab" 

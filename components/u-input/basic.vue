@@ -3,7 +3,7 @@
     <div class="w-full grid gap-y-[24px]">
       <p>Element Plus</p>
 
-      <UInput 
+      <u-input 
         :inputStyle="{
           style: {
             height: '30px',
@@ -27,9 +27,9 @@
         @focus="focusHandler"
         @blur="blurHandler"
       >
-      </UInput>
+      </u-input>
 
-      <UInput 
+      <u-input 
         v-model="value2"
         placeholder="Please input"
         @focus="focusHandler"
@@ -59,11 +59,11 @@
             https://
           </div>
         </template>
-      </UInput>
+      </u-input>
 
       <p>Quasar Framework</p>
 
-      <UInput 
+      <u-input 
         v-model="value3"
         :inputStyle="{
           style: {
@@ -85,9 +85,9 @@
         @focus="focusHandler"
         @blur="blurHandler"
       >
-      </UInput>
+      </u-input>
 
-      <UInput 
+      <u-input 
         v-model="value4"
         :inputStyle="{
           style: {
@@ -110,11 +110,11 @@
         @focus="focusHandler"
         @blur="blurHandler"
       >
-      </UInput>
+      </u-input>
 
       <p>The style is up to you</p>
 
-      <UInput 
+      <u-input 
         v-model="value6"
         placeholder="Please input"
         :inputStyle="{
@@ -136,7 +136,7 @@
           }
         }"
       >
-      </UInput>
+      </u-input>
     </div>
   </Example>
 </template>
