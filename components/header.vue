@@ -23,7 +23,7 @@ const links = [
   { to: '/u-expansion', label: 'UExpansion' },
   // { to: '/u-splitter', label: 'USplitter' },
   // { to: '/u-rating', label: 'UTooltip' },
-  // { to: '/u-tooltip', label: 'UTooltip' },
+  { to: '/u-tooltip', label: 'UTooltip' },
   { to: '/u-scroll-area', label: 'UScrollArea' }
 ]
 
