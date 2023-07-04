@@ -1,31 +1,36 @@
 <template>
   <Example id="persistent" class="mt-[24px]">
-    <div class="w-full">
-      <div class="btns w-full flex items-center">
-        <button @click="updateVisible6">
-          <SvgIcon name="control-camera" fill="#fff"></SvgIcon>
-          <span>PERSISTENT</span>
-        </button>
-      </div>
-
-      <u-dialog v-model="visible" position="center" persistent>
-        <div class="dialog-content-container">
-          <div class="header-container flex justify-between">
-            <div>header</div>
-            <div class="icon" @click="updateVisible">×</div>
-          </div>
-          <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum voluptate saepe neque iure! Similique sed repudiandae sapiente maxime sequi consectetur vel, impedit exercitationem harum sunt esse, quo minima fugit.</div>
-          <button @click="updateVisible" class="btn">close</button>
-        </div>
-      </u-dialog>
+    <div class="btns w-full flex items-center">
+      <button @click="updateVisible1">
+        <SvgIcon name="control-camera" fill="#fff"></SvgIcon>
+        <span>Persistent</span>
+      </button>
     </div>
-  </Example>
+
+    <u-dialog v-model="visible" position="center" persistent>
+      <div class="dialog">
+        <div class="header">
+          <div>Persistent</div>
+          <SvgIcon 
+            name="close" 
+            @click="updateVisible1"
+          ></SvgIcon>
+        </div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 
+          quisquam repellendus vitae quam. Officiis, soluta. Perferendis 
+          minima accusamus aliquid nam nostrum dolorem, ad numquam assumenda 
+          magni modi harum incidunt repellat.
+        </div>
+      </div>
+    </u-dialog>
+  </Example> 
 </template>
 
 <script lang="ts" setup>
 const visible = ref(false)
 
-const updateVisible = () => visible.value = !visible.value
+const updateVisible1 = () => visible.value = !visible.value
 </script>
 
 <style type="text/tailwindcss" scoped>
@@ -42,16 +47,23 @@ const updateVisible = () => visible.value = !visible.value
   @apply ml-[8px]
 }
 
-.dialog-content-container {
-  @apply w-80 bg-white p-4
+.dialog {
+  @apply w-[560px] bg-white p-[24px]
 }
 
-.dialog-content-container > .header-container > .icon {
+.dialog > .header {
+  @apply flex justify-between
+}
+
+.dialog> .header > div {
+  @apply text-[20px] font-semibold 
+}
+
+.dialog > .header > svg {
   @apply cursor-pointer
 }
 
-.dialog-content-container > .content,
-.dialog-content-container > .btn {
-  @apply mt-4
+.dialog > .content {
+  @apply mt-[24px] text-[14px]
 }
 </style>
