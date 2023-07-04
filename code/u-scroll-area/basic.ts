@@ -1,4 +1,4 @@
-const basic = `
+const code = `
 <template>
   <div class="w-full grid gap-y-[24px]">
     <u-scroll-area height="200px" width="400px">
@@ -21,5 +21,9 @@ const basic = `
   </div>
 </template>
 `
+
+const basic = {}
+
+splitCode(code, basic)
 
 export default basic

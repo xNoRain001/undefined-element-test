@@ -1,4 +1,4 @@
-const basic = `
+const code = `
 <template>
   <Example id="basic">
     <div class="w-full">
@@ -51,5 +51,9 @@ const basic = `
 const expanded = reactive(['1'])
 </script>
 `
+
+const basic = {}
+
+splitCode(code, basic)
 
 export default basic

@@ -1,4 +1,4 @@
-const basic = `
+const code = `
 <template>
   <Example id="basic">
     <div class="btns w-full flex items-center">
@@ -161,5 +161,9 @@ const updateVisible5 = () => visible5.value = !visible5.value
 }
 </style>
 `
+
+const basic = {}
+
+splitCode(code, basic)
 
 export default basic

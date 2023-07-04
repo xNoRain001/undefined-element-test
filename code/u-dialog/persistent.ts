@@ -1,6 +1,6 @@
-const persistent = `
+const code = `
 <template>
-  <Example id="basic">
+  <Example id="persistent" class="mt-[24px]">
     <div class="btns w-full flex items-center">
       <button @click="updateVisible1">
         <SvgIcon name="control-camera" fill="#fff"></SvgIcon>
@@ -69,5 +69,9 @@ const updateVisible1 = () => visible.value = !visible.value
 }
 </style>
 `
+
+const persistent = {}
+
+splitCode(code, persistent)
 
 export default persistent

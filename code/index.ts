@@ -8,7 +8,15 @@ import USplitter from "./u-splitter"
 import UExpansion from "./u-expansion"
 import UScrollArea from "./u-scroll-area"
 
-const codeMap: { [propName: string]: any } = {
+const codeMap: { 
+  [propName: string]: { 
+    [propName: string]: { 
+      template?: string, 
+      script?: string, 
+      style?: string 
+    } 
+  } 
+} = {
   '/u-tabs': UTabs,
   '/u-input': UInput,
   '/u-slider': USlider,
