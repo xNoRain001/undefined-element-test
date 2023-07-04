@@ -1,11 +1,11 @@
 <template>
   <svg 
     aria-hidden="true" 
-    :fill="_fill" 
-    :stroke="_stroke" 
+    :fill="fill" 
+    :stroke="stroke" 
     :width="width" 
     :height="height"
-    :stroke-width="_strokeWidth"
+    :stroke-width="strokeWidth"
   >
     <use :xlink:href="symbolId" />
   </svg>
@@ -14,14 +14,20 @@
 <script lang="ts" setup>
 import { toRefs, computed } from 'vue'
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   name: string,
   fill?: string,
   stroke?: string,
-  width: number | string,
-  height: number | string,
+  width?: number | string,
+  height?: number | string,
   strokeWidth?: number | string
-}>()
+}>(), {
+  fill: '#000',
+  stroke: '#000',
+  width: 24,
+  height: 24,
+  strokeWidth: 0
+})
 const {
   name,
   fill,
@@ -30,9 +36,6 @@ const {
   height,
   strokeWidth
 } = toRefs(props)
-const _fill = fill?.value || '#000'
-const _stroke = stroke?.value || '#000'
-const _strokeWidth = strokeWidth?.value || 0
 
 const symbolId = computed(() => `#icon-${ name.value }`)
 </script>

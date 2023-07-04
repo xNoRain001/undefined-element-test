@@ -18,7 +18,7 @@
 const links = [
   { to: '/u-input', label: 'UInput' },
   { to: '/u-tabs', label: 'UTabs' },
-  // { to: '/u-dialog', label: 'UDialog' },
+  { to: '/u-dialog', label: 'UDialog' },
   // { to: '/u-slider', label: 'USlider'},
   { to: '/u-expansion', label: 'UExpansion' },
   // { to: '/u-splitter', label: 'USplitter' },
