@@ -1,8 +1,6 @@
 <template>
   <Example id="basic">
     <div class="w-full">
-      <!-- class="border-[1px] border-solid border-[#dcdfe6] border-x-0 border-b-0" -->
-
       <u-expansion 
         v-model="expanded"
         itemClass="
