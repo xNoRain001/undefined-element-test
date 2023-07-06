@@ -19,12 +19,12 @@ const links = [
   { to: '/u-input', label: 'UInput' },
   { to: '/u-tabs', label: 'UTabs' },
   { to: '/u-dialog', label: 'UDialog' },
-  // { to: '/u-slider', label: 'USlider'},
   { to: '/u-expansion', label: 'UExpansion' },
-  // { to: '/u-splitter', label: 'USplitter' },
   { to: '/u-rating', label: 'URating' },
   { to: '/u-tooltip', label: 'UTooltip' },
-  { to: '/u-scroll-area', label: 'UScrollArea' }
+  { to: '/u-scroll-area', label: 'UScrollArea' },
+  { to: '/u-slider', label: 'USlider'},
+  // { to: '/u-splitter', label: 'USplitter' }
 ]
 
 const fullPath = computed(() => useRoute().fullPath)
