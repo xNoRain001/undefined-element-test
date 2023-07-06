@@ -9,7 +9,7 @@
 <script lang="ts" setup>
 useHead({
   titleTemplate: titleChunk => {
-    return titleChunk ? `${ titleChunk } - Undefined Element` : 'Undefined Element';
+    return titleChunk ? `${ titleChunk } | Undefined Element` : 'Undefined Element';
   }
 })
 </script>
