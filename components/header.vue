@@ -22,7 +22,7 @@ const links = [
   // { to: '/u-slider', label: 'USlider'},
   { to: '/u-expansion', label: 'UExpansion' },
   // { to: '/u-splitter', label: 'USplitter' },
-  // { to: '/u-rating', label: 'UTooltip' },
+  { to: '/u-rating', label: 'URating' },
   { to: '/u-tooltip', label: 'UTooltip' },
   { to: '/u-scroll-area', label: 'UScrollArea' }
 ]

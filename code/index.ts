@@ -19,11 +19,11 @@ const codeMap: {
 } = {
   '/u-tabs': UTabs,
   '/u-input': UInput,
-  '/u-slider': USlider,
+  // '/u-slider': USlider,
   '/u-dialog': UDialog,
   '/u-rating': URating,
   '/u-tooltip': UTooltip,
-  '/u-splitter': USplitter,
+  // '/u-splitter': USplitter,
   '/u-expansion': UExpansion,
   '/u-scroll-area': UScrollArea
 }

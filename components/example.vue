@@ -4,10 +4,20 @@
       <u-expansion-item name="1">
         <template #header>
           <div 
-            class="p-[8px] border-[1px] border-solid border-[#dcdfe6] flex justify-end"
-            :class="expanded ? 'border-b-0' : ''"
+            class="
+              p-[8px] border-[1px] border-solid border-[#dcdfe6] flex 
+              justify-end cursor-default
+            "
+            @click.stop="() => {}"
+            :class="expanded.length ? '!border-b-transparent' : ''"
           >
-            <SvgIcon class="cursor-pointer" name="code" width="24" height="24"></SvgIcon>
+            <SvgIcon 
+              @click="onExpand" 
+              class="cursor-pointer" 
+              name="code" 
+              width="24" 
+              height="24"
+            ></SvgIcon>
           </div>
         </template>
 
@@ -85,15 +95,23 @@
 import codeMap from '@/code'
 
 const props = defineProps<{ id: string }>()
-const expanded = reactive([])
+const expanded = reactive<string[]>([])
 const fullPath = useRoute().fullPath
 const code = codeMap[fullPath][props.id]
 const { template = '', script = '', style = '' } = code
-const all = template + script + style
+const all = ref(template + script + style)
 const tab = ref('template')
 const codeMirrorStyle = { 
   maxHeight: '600px', 
   fontSize: '12px',
   backgroundColor: '#eee'
+}
+
+const onExpand = () => {
+  if (expanded.length) {
+    expanded.shift()
+  } else {
+    expanded.push('1')
+  }
 }
 </script>
