@@ -14,38 +14,38 @@
         "
         activeTabClass="!border-b-[#409eff] text-[#409eff]"
         >
-        <UTab name="1">
+        <u-tab name="1">
           <div>User</div>
-        </UTab> 
-        <UTab name="2">
+        </u-tab> 
+        <u-tab name="2">
           <div>Config</div>
-        </UTab> 
-        <UTab name="3">
+        </u-tab> 
+        <u-tab name="3">
           <div>Role</div>
-        </UTab> 
-        <UTab name="4">
+        </u-tab> 
+        <u-tab name="4">
           <div>Task</div>
-        </UTab> 
+        </u-tab> 
       </u-tabs>
 
-      <UTabPanels 
+      <u-tab-panels 
         v-model="tab" 
         :pannelStyle="{ padding: '32px' }"
         pannelClass="text-[#6b778c] text-[32px] font-semibold"
       >
-        <UTabPanel name="1">
+        <u-tab-panel name="1">
           <div>User</div>
-        </UTabPanel>
-        <UTabPanel name="2">
+        </u-tab-panel>
+        <u-tab-panel name="2">
           <div>Config</div>
-        </UTabPanel>
-        <UTabPanel name="3">
+        </u-tab-panel>
+        <u-tab-panel name="3">
           <div>Role</div>
-        </UTabPanel>
-        <UTabPanel name="4">
+        </u-tab-panel>
+        <u-tab-panel name="4">
           <div>Task</div>
-        </UTabPanel>
-      </UTabPanels>
+        </u-tab-panel>
+      </u-tab-panels>
     </div>
   </Example>
 </template>
