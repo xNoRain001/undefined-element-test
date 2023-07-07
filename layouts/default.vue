@@ -1,18 +1,22 @@
 <template>
   <div class="flex w-full h-full relative">
     <Header></Header>
-    <div class="w-full pl-[321px] pt-[55px] absolute right-0 top-0">
-      <div class="pt-[64px] pl-[64px] pb-[42px]">
+
+    <div class="w-full pl-[321px] pt-[55px] absolute top-0">
+      <div class="pt-[64px] pl-[64px] pb-[42px] flex">
+        <!-- content -->
         <div class="w-[800px] grid gap-y-[24px]">
           <slot></slot>
         </div>
+
+        <Directory></Directory>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-watch(() => useRoute().fullPath, v => {
+const genTitle = (v: string) => {
   let title = ''
   const segments = v.slice(1).split('-')
 
@@ -22,6 +26,11 @@ watch(() => useRoute().fullPath, v => {
     title += `${ segment[0].toUpperCase() }${ segment.slice(1) }`
   }
 
+  return title
+}
+
+watch(() => useRoute().fullPath, v => {
+  const title = genTitle(v)
   useHead({ title })
 }, { immediate: true })
 </script>
