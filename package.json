@@ -20,7 +20,6 @@
     "@codemirror/lang-javascript": "^6.1.9",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "codemirror": "^6.0.1",
-    "vite-plugin-svg-icons": "^2.0.1",
     "vue-codemirror": "^6.1.1"
   }
 }

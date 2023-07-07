@@ -2,23 +2,23 @@
   <Example id="basic" title="Basic">
     <div class="btns w-full flex items-center">
       <button @click="updateVisible1">
-        <SvgIcon name="arrow-up" fill="#fff"></SvgIcon>
+        <u-icon name="keyboard_arrow_up" color="#fff"></u-icon>
         <span>Top</span>
       </button>
       <button @click="updateVisible2">
-        <SvgIcon name="arrow-right" fill="#fff"></SvgIcon>
+        <u-icon name="keyboard_arrow_right" color="#fff"></u-icon>
         <span>Right</span>
       </button>
       <button @click="updateVisible3">
-        <SvgIcon name="arrow-down" fill="#fff"></SvgIcon>
+        <u-icon name="keyboard_arrow_down" color="#fff"></u-icon>
         <span>Bottom</span>
       </button>
       <button @click="updateVisible4">
-        <SvgIcon name="arrow-left" fill="#fff"></SvgIcon>
+        <u-icon name="keyboard_arrow_left" color="#fff"></u-icon>
         <span>Left</span>
       </button>
       <button @click="updateVisible5">
-        <SvgIcon name="control-camera" fill="#fff"></SvgIcon>
+        <u-icon name="control_camera" color="#fff"></u-icon>
         <span>Center</span>
       </button>
     </div>
@@ -27,10 +27,7 @@
       <div class="dialog">
         <div class="header">
           <div>Top</div>
-          <SvgIcon 
-            name="close" 
-            @click="updateVisible1"
-          ></SvgIcon>
+          <u-icon name="close" @click="updateVisible1"></u-icon>
         </div>
         <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 
@@ -44,10 +41,11 @@
       <div class="dialog">
         <div class="header">
           <div>Right</div>
-          <SvgIcon 
-            name="close" 
-            @click="updateVisible2"
-          ></SvgIcon>
+          <u-icon 
+            name="control_camera" 
+            @click="updateVisible2" 
+            color="#fff"
+          ></u-icon>
         </div>
         <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 
@@ -61,10 +59,7 @@
       <div class="dialog">
         <div class="header">
           <div>Bottom</div>
-          <SvgIcon 
-            name="close" 
-            @click="updateVisible3"
-          ></SvgIcon>
+          <u-icon name="close" @click="updateVisible3"></u-icon>
         </div>
         <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 
@@ -78,10 +73,7 @@
       <div class="dialog">
         <div class="header">
           <div>Left</div>
-          <SvgIcon 
-            name="close" 
-            @click="updateVisible4"
-          ></SvgIcon>
+          <u-icon name="close" @click="updateVisible4"></u-icon>
         </div>
         <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 
@@ -95,10 +87,7 @@
       <div class="dialog">
         <div class="header">
           <div>Center</div>
-          <SvgIcon 
-            name="close" 
-            @click="updateVisible5"
-          ></SvgIcon>
+          <u-icon name="close" @click="updateVisible5"></u-icon>
         </div>
         <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 

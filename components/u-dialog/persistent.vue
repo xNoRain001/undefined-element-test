@@ -2,7 +2,7 @@
   <Example id="persistent" title="Persistent">
     <div class="btns w-full flex items-center">
       <button @click="updateVisible1">
-        <SvgIcon name="control-camera" fill="#fff"></SvgIcon>
+        <u-icon name="control_camera" color="#fff"></u-icon>
         <span>Persistent</span>
       </button>
     </div>
@@ -11,10 +11,7 @@
       <div class="dialog">
         <div class="header">
           <div>Persistent</div>
-          <SvgIcon 
-            name="close" 
-            @click="updateVisible1"
-          ></SvgIcon>
+          <u-icon name="close" @click="updateVisible1"></u-icon>
         </div>
         <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 

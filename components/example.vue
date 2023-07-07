@@ -13,13 +13,7 @@
             @click.stop="() => {}"
             :class="expanded.length ? '!border-b-transparent' : ''"
           >
-            <SvgIcon 
-              @click="onExpand" 
-              class="cursor-pointer" 
-              name="code" 
-              width="24" 
-              height="24"
-            ></SvgIcon>
+            <u-icon name="code" @click="onExpand"></u-icon>
           </div>
         </template>
 

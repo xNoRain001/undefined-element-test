@@ -2,7 +2,7 @@
   <Example id="basic" title="Basic">
     <div class="btns w-full flex items-center">
       <button>
-        <SvgIcon name="arrow-up" fill="#fff"></SvgIcon>
+        <u-icon name="keyboard_arrow_up" color="#fff"></u-icon>
         <span>Top</span>
         <u-tooltip position="top">
           <div class="tooltip">
@@ -11,7 +11,7 @@
         </u-tooltip>
       </button>
       <button>
-        <SvgIcon name="arrow-right" fill="#fff"></SvgIcon>
+        <u-icon name="keyboard_arrow_right" color="#fff"></u-icon>
         <span>Right</span>
         <u-tooltip position="right">
           <div class="tooltip">
@@ -20,7 +20,7 @@
         </u-tooltip>
       </button>
       <button>
-        <SvgIcon name="arrow-down" fill="#fff"></SvgIcon>
+        <u-icon name="keyboard_arrow_down" color="#fff"></u-icon>
         <span>Bottom</span>
         <u-tooltip position="bottom">
           <div class="tooltip">
@@ -29,7 +29,7 @@
         </u-tooltip>
       </button>
       <button>
-        <SvgIcon name="arrow-left" fill="#fff"></SvgIcon>
+        <u-icon name="keyboard_arrow_left" fill="#fff"></u-icon>
         <span>Left</span>
         <u-tooltip position="left">
           <div class="tooltip">
