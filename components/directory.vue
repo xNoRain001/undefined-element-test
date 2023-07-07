@@ -22,8 +22,13 @@ const dirs: string[] = reactive([])
 
 watch(() => useRoute().fullPath, v => {
   const examples = codeMap[v]
-  
+  const _dirs = Object.keys(examples)
+
   dirs.length = 0
-  dirs.push(...Object.keys(examples))
+
+  for (let i = 0, l = _dirs.length; i < l; i++) {
+    const dir = _dirs[i]
+    dirs.push(`${ dir[0].toUpperCase() }${ dir.slice(1) }`)
+  }
 }, { immediate: true })
 </script>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <div 
+      :id="title"
       class="
         text-[#00b4ff] text-[27px] mb-[24px] after:content-['#'] after:opacity-0
         hover:after:opacity-100
