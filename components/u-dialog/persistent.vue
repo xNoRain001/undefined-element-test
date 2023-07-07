@@ -1,5 +1,5 @@
 <template>
-  <Example id="persistent" class="mt-[24px]">
+  <Example id="persistent" title="Persistent">
     <div class="btns w-full flex items-center">
       <button @click="updateVisible1">
         <SvgIcon name="control-camera" fill="#fff"></SvgIcon>

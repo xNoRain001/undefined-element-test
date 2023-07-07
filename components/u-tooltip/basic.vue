@@ -1,5 +1,5 @@
 <template>
-  <Example id="basic">
+  <Example id="basic" title="Basic">
     <div class="btns w-full flex items-center">
       <button>
         <SvgIcon name="arrow-up" fill="#fff"></SvgIcon>

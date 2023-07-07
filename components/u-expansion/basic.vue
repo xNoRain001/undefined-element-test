@@ -1,5 +1,5 @@
 <template>
-  <Example id="basic">
+  <Example id="basic" title="Basic">
     <div class="w-full">
       <u-expansion 
         v-model="expanded"

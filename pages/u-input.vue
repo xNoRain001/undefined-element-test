@@ -1,13 +1,11 @@
 <template>
-  <div class="grid gap-y-[24px]">
-    <Basic></Basic>
-    <Placeholder></Placeholder>
-    <Debounce></Debounce>
-    <Readonly></Readonly>
-    <Disabled></Disabled>
-    <!-- <Clearable></Clearable> -->
-    <Autofocus></Autofocus>
-  </div>
+  <Basic></Basic>
+  <Placeholder></Placeholder>
+  <Debounce></Debounce>
+  <Readonly></Readonly>
+  <Disabled></Disabled>
+  <!-- <Clearable></Clearable> -->
+  <Autofocus></Autofocus>
 </template>
 
 <script lang="ts" setup>

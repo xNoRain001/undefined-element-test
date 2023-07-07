@@ -1,5 +1,5 @@
 <template>
-  <Example id="basic">
+  <Example id="basic" title="Basic">
     <div class="w-full">
       <u-rating v-model="value1" max="5" color="black" activeColor="#eab308">
         <SvgIcon name="star" width="24" height="24" fill="currentColor"></SvgIcon>

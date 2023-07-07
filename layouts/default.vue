@@ -3,7 +3,7 @@
     <Header></Header>
     <div class="w-full pl-[321px] pt-[55px] absolute right-0 top-0">
       <div class="pt-[64px] pl-[64px] pb-[42px]">
-        <div class="w-[800px]">
+        <div class="w-[800px] grid gap-y-[24px]">
           <slot></slot>
         </div>
       </div>
