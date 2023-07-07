@@ -1,6 +1,13 @@
 <template>
   <div>
-    <div class="text-[#00b4ff] text-[27px] mb-[24px]">{{ title }}</div>
+    <div 
+      class="
+        text-[#00b4ff] text-[27px] mb-[24px] after:content-['#'] after:opacity-0
+        hover:after:opacity-100
+      "
+    >
+      {{ title }}
+    </div>
 
     <u-expansion v-model="expanded">
       <u-expansion-item name="1">
