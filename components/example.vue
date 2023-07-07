@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div class="text-[#00b4ff] text-[27px] mb-[24px]">{{ title }}</div>
+
     <u-expansion v-model="expanded">
       <u-expansion-item name="1">
         <template #header>
@@ -94,10 +96,11 @@
 <script lang="ts" setup>
 import codeMap from '@/code'
 
-const props = defineProps<{ id: string }>()
+const props = defineProps<{ id: string, title?: string }>()
+const { id, title } = toRefs(props)
 const expanded = reactive<string[]>([])
 const fullPath = useRoute().fullPath
-const code = codeMap[fullPath][props.id]
+const code = codeMap[fullPath][id.value]
 const { template = '', script = '', style = '' } = code
 const all = ref(template + script + style)
 const tab = ref('template')
