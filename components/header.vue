@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed left-0 top-0 bottom-0 z-10 w-[321px] pl-[87px] pr-[32px] pt-[48px] py-[96px]">
+  <div class="fixed left-0 top-0 bottom-0 z-10 w-[288px] pl-[54px] pr-[32px] pt-[48px] py-[96px]">
     <u-scroll-area height="760px">
       <nav class="routing-container">
         <NuxtLink 
