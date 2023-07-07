@@ -24,6 +24,7 @@ const links = [
   { to: '/u-tooltip', label: 'UTooltip' },
   { to: '/u-scroll-area', label: 'UScrollArea' },
   { to: '/u-slider', label: 'USlider'},
+  { to: '/u-icon', label: 'UIcon'},
   // { to: '/u-splitter', label: 'USplitter' }
 ]
 

@@ -1,4 +1,5 @@
 import UTabs from './u-tabs'
+import UIcon from './u-icon'
 import UInput from "./u-input"
 import USlider from "./u-slider"
 import UDialog from "./u-dialog"
@@ -18,6 +19,7 @@ const codeMap: {
   } 
 } = {
   '/u-tabs': UTabs,
+  '/u-icon': UIcon,
   '/u-input': UInput,
   '/u-slider': USlider,
   '/u-dialog': UDialog,
