@@ -1,5 +1,5 @@
 <template>
-  <div class="pl-[64px]">
+  <div class="pl-[64px] fixed right-0">
     <div class="w-[200px] py-[4px] pr-[8px] pl-[12px] mb-[32px]">
       <div class="text-[#606266] text-[12px] font-semibold">CONTENTS</div>
 
@@ -20,15 +20,18 @@ import codeMap from '@/code'
 
 const dirs: string[] = reactive([])
 
-watch(() => useRoute().fullPath, v => {
-  const examples = codeMap[v]
+const updateDirs = (path: string) => {
+  const examples = codeMap[path]
   const _dirs = Object.keys(examples)
 
   dirs.length = 0
 
   for (let i = 0, l = _dirs.length; i < l; i++) {
-    const dir = _dirs[i]
-    dirs.push(`${ dir[0].toUpperCase() }${ dir.slice(1) }`)
+    dirs.push(_dirs[i])
   }
+}
+
+watch(() => useRoute().path, v => {
+  updateDirs(v)
 }, { immediate: true })
 </script>

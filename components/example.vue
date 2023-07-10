@@ -1,7 +1,7 @@
 <template>
   <div>
     <div 
-      :id="title"
+      :id="`${ title[0].toLocaleLowerCase() }${ title.slice(1) }`"
       class="
         text-[#00b4ff] text-[27px] mb-[24px] after:content-['#'] after:opacity-0
         hover:after:opacity-100
@@ -98,11 +98,11 @@
 <script lang="ts" setup>
 import codeMap from '@/code'
 
-const props = defineProps<{ id: string, title?: string }>()
+const props = defineProps<{ id: string, title: string }>()
 const { id, title } = toRefs(props)
 const expanded = reactive<string[]>([])
-const fullPath = useRoute().fullPath
-const code = codeMap[fullPath][id.value]
+const path = useRoute().path
+const code = codeMap[path][id.value]
 const { template = '', script = '', style = '' } = code
 const all = ref(template + script + style)
 const tab = ref('template')

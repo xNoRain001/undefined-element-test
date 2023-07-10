@@ -4,7 +4,7 @@
   <Debounce></Debounce>
   <Readonly></Readonly>
   <Disabled></Disabled>
-  <!-- <Clearable></Clearable> -->
+  <Clearable></Clearable>
   <Autofocus></Autofocus>
 </template>
 
