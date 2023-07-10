@@ -1,10 +1,11 @@
 <template>
   <div>
     <div 
-      :id="`${ title[0].toLocaleLowerCase() }${ title.slice(1) }`"
+      @click="updateAnchor"
+      :id="__title"
       class="
-        text-[#00b4ff] text-[27px] mb-[24px] after:content-['#'] after:opacity-0
-        hover:after:opacity-100
+        text-[#00b4ff] text-[27px] mb-[24px] cursor-pointer after:content-['#'] 
+        after:opacity-0 after:ml-[12px] hover:after:opacity-100
       "
     >
       {{ title }}
@@ -124,6 +125,8 @@ import codeMap from '@/code'
 
 const props = defineProps<{ id: string, title: string }>()
 const { id, title } = toRefs(props)
+const _title = title.value
+const __title = `${ _title[0].toLocaleLowerCase() }${ _title.slice(1) }`
 const expanded = reactive<string[]>([])
 const path = useRoute().path
 const code = codeMap[path][id.value]
@@ -146,4 +149,6 @@ const onExpand = () => {
 const writeText = async (type: 'template' | 'script' | 'style' | 'all') => {
   await navigator.clipboard.writeText(code[type] || '')
 }
+
+const updateAnchor = () => location.hash = __title
 </script>
