@@ -22,7 +22,12 @@
             @click.stop="() => {}"
             :class="expanded.length ? '!border-b-transparent' : ''"
           >
-            <u-icon name="code" @click="onExpand"></u-icon>
+            <div>
+              <u-icon name="code" @click="onExpand"></u-icon>
+              <u-tooltip>
+                <div class="tooltip mt-[16px]">View Source</div>
+              </u-tooltip>
+            </div>
           </div>
         </template>
 
@@ -57,12 +62,16 @@
                 placeholder="Code goes here..."
                 :style="codeMirrorStyle"
               />
-              <u-icon 
-                @click="writeText('template')"
-                name="content_copy" 
-                class="absolute top-[24px] right-[24px]"
-                fill="rgb(0, 180, 255)"
-              ></u-icon>
+              <div class="absolute top-[24px] right-[24px]">
+                <u-icon 
+                  @click="writeText('template')"
+                  name="content_copy" 
+                  fill="rgb(0, 180, 255)"
+                ></u-icon>
+                <u-tooltip>
+                  <div class="tooltip mt-[16px]">Copy to clipboard</div>
+                </u-tooltip>
+              </div>
             </u-tab-panel>
             <u-tab-panel v-if="script.length" name="script">
               <codemirror
@@ -70,12 +79,16 @@
                 placeholder="Code goes here..."
                 :style="codeMirrorStyle"
               />
-              <u-icon 
-                @click="writeText('script')"
-                name="content_copy" 
-                class="absolute top-[24px] right-[24px]"
-                fill="rgb(0, 180, 255)"
-              ></u-icon>
+              <div class="absolute top-[24px] right-[24px]">
+                <u-icon 
+                  @click="writeText('script')"
+                  name="content_copy" 
+                  fill="rgb(0, 180, 255)"
+                ></u-icon>
+                <u-tooltip>
+                  <div class="tooltip mt-[16px]">Copy to clipboard</div>
+                </u-tooltip>
+              </div>
             </u-tab-panel>
             <u-tab-panel v-if="style.length" name="style">
               <codemirror
@@ -83,12 +96,16 @@
                 placeholder="Code goes here..."
                 :style="codeMirrorStyle"
               />
-              <u-icon 
-                @click="writeText('style')"
-                name="content_copy" 
-                class="absolute top-[24px] right-[24px]"
-                fill="rgb(0, 180, 255)"
-              ></u-icon>
+              <div>
+                <u-icon 
+                  @click="writeText('style')"
+                  name="content_copy" 
+                  fill="rgb(0, 180, 255)"
+                ></u-icon>
+                <u-tooltip>
+                  <div class="tooltip mt-[16px]">Copy to clipboard</div>
+                </u-tooltip>
+              </div>
             </u-tab-panel>
             <u-tab-panel name="all">
               <codemirror
@@ -96,12 +113,16 @@
                 placeholder="Code goes here..."
                 :style="codeMirrorStyle"
               />
-              <u-icon 
-                @click="writeText('all')"
-                name="content_copy" 
-                class="absolute top-[24px] right-[24px]"
-                fill="rgb(0, 180, 255)"
-              ></u-icon>
+              <div>
+                <u-icon 
+                  @click="writeText('all')"
+                  name="content_copy" 
+                  fill="rgb(0, 180, 255)"
+                ></u-icon>
+                <u-tooltip>
+                  <div class="tooltip mt-[16px]">Copy to clipboard</div>
+                </u-tooltip>
+              </div>
             </u-tab-panel>
           </u-tab-panels>
         </template>

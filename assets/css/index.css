@@ -21,3 +21,7 @@ body {
   @apply cursor-pointer bg-blue-500 text-white px-4 py-2
 }
 
+.tooltip {
+  @apply py-[6px] px-[10px] bg-[#757575] text-[#fafafa] font-normal 
+  text-[10px] rounded-[4px]
+}

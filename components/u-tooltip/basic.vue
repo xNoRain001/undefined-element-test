@@ -54,9 +54,4 @@
 .btns button:not(:first-of-type) {
   @apply ml-[8px]
 }
-
-.tooltip {
-  @apply py-[6px] px-[10px] bg-[#757575] text-[#fafafa] font-normal 
-  text-[10px] rounded-[4px]
-}
 </style>
