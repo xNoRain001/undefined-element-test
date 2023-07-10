@@ -96,7 +96,7 @@
                 placeholder="Code goes here..."
                 :style="codeMirrorStyle"
               />
-              <div>
+              <div class="absolute top-[24px] right-[24px]">
                 <u-icon 
                   @click="writeText('style')"
                   name="content_copy" 
@@ -113,7 +113,7 @@
                 placeholder="Code goes here..."
                 :style="codeMirrorStyle"
               />
-              <div>
+              <div class="absolute top-[24px] right-[24px]">
                 <u-icon 
                   @click="writeText('all')"
                   name="content_copy" 
