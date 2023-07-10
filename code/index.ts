@@ -12,9 +12,10 @@ import UScrollArea from "./u-scroll-area"
 const codeMap: { 
   [propName: string]: { 
     [propName: string]: { 
-      template?: string, 
+      all?: string,
+      style?: string,
       script?: string, 
-      style?: string 
+      template?: string
     } 
   } 
 } = {

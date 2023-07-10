@@ -10,7 +10,7 @@
           noPrefetch 
           :key="to"
           :to="to"
-          :data-active="fullPath === to"
+          :data-active="path === to"
         >{{ label }}</NuxtLink>
       </nav>
     </u-scroll-area>
@@ -31,7 +31,7 @@ const links = [
   // { to: '/u-splitter', label: 'USplitter' }
 ]
 
-const fullPath = computed(() => useRoute().fullPath)
+const path = computed(() => useRoute().path)
 </script>
 
 <style type="text/tailwindcss" scoped>

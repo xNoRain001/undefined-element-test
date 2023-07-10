@@ -30,8 +30,8 @@
 
       <u-tab-panels 
         v-model="tab" 
-        :pannelStyle="{ padding: '32px' }"
-        pannelClass="text-[#6b778c] text-[32px] font-semibold"
+        :panelStyle="{ padding: '32px' }"
+        panelClass="text-[#6b778c] text-[32px] font-semibold"
       >
         <u-tab-panel name="1">
           <div>User</div>
