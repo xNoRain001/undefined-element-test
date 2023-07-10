@@ -8,10 +8,10 @@ import placeholder from "./placeholder"
 
 export default {
   basic,
+  placeholder,
   debounce,
-  disabled,
   readonly,
-  autofocus,
+  disabled,
   clearable,
-  placeholder
+  autofocus
 }
