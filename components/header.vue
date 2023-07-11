@@ -28,7 +28,7 @@ const links = [
   { to: '/u-scroll-area', label: 'UScrollArea' },
   { to: '/u-slider', label: 'USlider'},
   { to: '/u-icon', label: 'UIcon'},
-  // { to: '/u-splitter', label: 'USplitter' }
+  { to: '/u-splitter', label: 'USplitter' }
 ]
 
 const path = computed(() => useRoute().path)
