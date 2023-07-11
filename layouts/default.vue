@@ -1,6 +1,8 @@
 <template>
-  <div class="flex w-full h-full relative">
-    <Header></Header>
+  <Header></Header>
+
+  <div class="flex w-full h-[calc(100vh-55px)] relative mt-[55px]">
+    <Navigation></Navigation>
 
     <div class="w-full pl-[288px] pt-[55px] absolute top-0">
       <div class="pt-[64px] pl-[64px] pb-[42px] flex">
