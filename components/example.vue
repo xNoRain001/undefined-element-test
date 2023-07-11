@@ -11,6 +11,8 @@
       {{ title }}
     </div>
 
+    <p v-if="desc" class="text-[14px] pb-[16px]">{{ desc }}</p>
+
     <u-expansion v-model="expanded">
       <u-expansion-item name="1">
         <template #header>
@@ -144,8 +146,12 @@
 <script lang="ts" setup>
 import codeMap from '@/code'
 
-const props = defineProps<{ id: string, title: string }>()
-const { id, title } = toRefs(props)
+const props = defineProps<{ 
+  id: string, 
+  desc?: string,
+  title: string 
+}>()
+const { id, desc, title } = toRefs(props)
 const _title = title.value
 const __title = `${ _title[0].toLocaleLowerCase() }${ _title.slice(1) }`
 const expanded = reactive<string[]>([])
