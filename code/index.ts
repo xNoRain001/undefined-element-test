@@ -6,6 +6,7 @@ import UDialog from "./u-dialog"
 import URating from "./u-rating"
 import UTooltip from "./u-tooltip"
 import USplitter from "./u-splitter"
+import uSkeleton from './u-skeleton'
 import UExpansion from "./u-expansion"
 import UScrollArea from "./u-scroll-area"
 
@@ -27,6 +28,7 @@ const codeMap: {
   '/u-rating': URating,
   '/u-tooltip': UTooltip,
   '/u-splitter': USplitter,
+  '/u-skeleton': uSkeleton,
   '/u-expansion': UExpansion,
   '/u-scroll-area': UScrollArea
 }
