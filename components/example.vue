@@ -144,7 +144,7 @@
 </template>
 
 <script lang="ts" setup>
-import codeMap from '@/code'
+import codesMap from '@/codes'
 
 const props = defineProps<{ 
   id: string, 
@@ -156,7 +156,7 @@ const _title = title.value
 const __title = `${ _title[0].toLowerCase() }${ _title.slice(1) }`
 const expanded = reactive<string[]>([])
 const path = useRoute().path
-const code = codeMap[path][id.value]
+const code = codesMap[path][id.value]
 const { template = '', script = '', style = '', all = '' } = code
 const tab = ref('template')
 const codeMirrorStyle = { 
@@ -179,3 +179,4 @@ const writeText = async (type: 'template' | 'script' | 'style' | 'all') => {
 
 const updateAnchor = () => location.hash = __title
 </script>
+codes

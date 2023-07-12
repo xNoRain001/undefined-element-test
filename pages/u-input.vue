@@ -15,5 +15,5 @@ import Readonly from '@/components/u-input/readonly.vue'
 import Debounce from '@/components/u-input/debounce.vue'
 import Autofocus from '@/components/u-input/autofocus.vue'
 import Clearable from '@/components/u-input/clearable.vue'
-import Placeholder from '@/components/u-input/placehold.vue'
+import Placeholder from '@/components/u-input/placeholder.vue'
 </script>

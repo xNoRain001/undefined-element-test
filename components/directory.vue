@@ -17,12 +17,12 @@
 </template>
 
 <script lang="ts" setup>
-import codeMap from '@/code'
+import codesMap from '@/codes'
 
 const dirs: string[] = reactive([])
 
 const updateDirs = (path: string) => {
-  const examples = codeMap[path]
+  const examples = codesMap[path]
   const _dirs = Object.keys(examples)
 
   dirs.length = 0
@@ -36,3 +36,4 @@ watch(() => useRoute().path, v => {
   updateDirs(v)
 }, { immediate: true })
 </script>
+codes
