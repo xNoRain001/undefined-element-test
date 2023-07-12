@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="horizontal" title="Horizontal">
+  <Example id="02.horizontal" title="Horizontal">
     <div class="w-full">
       <u-splitter 
         v-model="value" 
@@ -28,7 +28,7 @@ const code = `<template>
         </template>
       </u-splitter>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>

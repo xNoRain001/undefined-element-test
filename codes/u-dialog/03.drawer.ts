@@ -2,7 +2,7 @@ import splitCode from '../../utils/split-code'
 
 const code = `<template>
   <Example 
-    id="drawer" 
+    id="03.drawer" 
     title="Drawer"
     desc="You can easily turn dialog into drawer by changing the style"
   >
@@ -41,7 +41,7 @@ const code = `<template>
         </div>
       </div>
     </u-dialog>
-  </Example> 
+   
 </template>
 
 <script lang="ts" setup>

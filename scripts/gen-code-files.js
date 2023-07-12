@@ -1,7 +1,7 @@
 const { resolve } = require('path')
 const { stat, mkdir, readdir, readFile, writeFile } = require('fs').promises
 
-const dirname = resolve(__dirname)
+const dirname = resolve(__dirname, '../')
 
 const genCodesMap = async () => {
   const codesMap = {}
@@ -29,6 +29,36 @@ const genCodesMap = async () => {
   return codesMap
 }
 
+const genCodeFile = async (dirs, codes, prefix) => {
+  for (let i = 0, l = dirs.length; i < l; i++) {
+    const dir = dirs[i]
+    const code = codes[dir]
+      .replace(/<Example id=".*" title="Basic">/, '')
+      .replace(/<\/Example>/, '')
+
+    await writeFile(`${ prefix }/${ dir.slice(0, -3) }ts`, `import splitCode from '../../utils/split-code'\r\n\r\nconst code = \`${ code }\`\r\nconst target = {}\r\n\r\nsplitCode(code, target)\r\n\r\nexport default target\r\n`)
+  }
+}
+
+const genIndexFile = async (dirs, prefix) => {
+  let indexStr = ''
+  let importStr = ''
+  let exportStr = '\r\nexport default {\r\n'
+
+  for (let i = 0, l = dirs.length; i < l; i++) {
+    const name = dirs[i].slice(0, -4) // 01.basic, 02.max...
+    const _name = name.slice(3) // basic, max...
+
+    importStr += `import ${ _name } from './${ name }'\r\n`
+    exportStr += `\t'${ name }': ${ _name },\r\n`
+  }
+
+  exportStr += '}\r\n'
+  indexStr += importStr + exportStr
+
+  await writeFile(`${ prefix }/index.ts`, indexStr)
+}
+
 const genCodeFiles = async (codesMap) => {
   const prefix = `${ dirname }/codes`
   const dirs = Object.keys(codesMap)
@@ -47,34 +77,8 @@ const genCodeFiles = async (codesMap) => {
     const _prefix = `${ prefix }/${ dir }`
     const codes = codesMap[dir]
 
-    for (let i = 0, l = _dirs.length; i < l; i++) {
-      const dir = _dirs[i]
-      const code = codes[dir]
-
-      await writeFile(`${ _prefix }/${ dir.slice(0, -3) }ts`, `import splitCode from '../../utils/split-code'\r\n\r\nconst code = \`${ code }\`\r\nconst target = {}\r\n\r\nsplitCode(code, target)\r\n\r\nexport default target\r\n`)
-    }
-    
-    let indexStr = ''
-
-    for (let i = 0, l = _dirs.length; i < l; i++) {
-      const name = _dirs[i].slice(0, -4) // 01.basic, 02.max...
-      const _name = name.slice(3) // basic, max...
-
-      indexStr += `import ${ _name } from './${ name }'\r\n`
-    }
-
-    indexStr += '\r\nexport default {\r\n'
-
-    for (let i = 0, l = _dirs.length; i < l; i++) {
-      const name = _dirs[i].slice(0, -4)
-      const _name = name.slice(3)
-
-      indexStr += `\t'${ name }': ${ _name },\r\n`
-    }
-
-    indexStr += '}\r\n'
-
-    await writeFile(`${ _prefix }/index.ts`, indexStr)
+    await genCodeFile(_dirs, codes, _prefix)
+    await genIndexFile(_dirs, _prefix)
   }
 }
 

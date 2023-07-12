@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="basic" title="Basic">
+  
     <div class="w-full">
       <u-select 
         :selectStyle="{ 
@@ -47,7 +47,7 @@ const code = `<template>
         </template>
       </u-select>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>

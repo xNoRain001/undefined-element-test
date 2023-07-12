@@ -2,7 +2,7 @@ import splitCode from '../../utils/split-code'
 
 const code = `<template>
   <Example 
-    id="max" 
+    id="02.max" 
     title="Max" 
     desc="
       The max option control the number of expanded items, the default value
@@ -66,7 +66,7 @@ const code = `<template>
         </u-expansion-item>
       </u-expansion>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>

@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="step" title="Step">
+  <Example id="02.step" title="Step">
     <div class="w-full">
       <div>value: {{ value }}</div>
       <u-slider 
@@ -15,7 +15,7 @@ const code = `<template>
         thumbClass="w-[20px] h-[20px] bg-[#1976d2] rounded-full"
       ></u-slider>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>

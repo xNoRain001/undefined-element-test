@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="basic" title="Basic">
+  
     <div class="btns w-full flex items-center">
       <button @click="updateVisible1">
         <u-icon name="keyboard_arrow_up" color="#fff"></u-icon>
@@ -99,7 +99,7 @@ const code = `<template>
         </div>
       </div>
     </u-dialog>
-  </Example> 
+   
 </template>
 
 <script lang="ts" setup>

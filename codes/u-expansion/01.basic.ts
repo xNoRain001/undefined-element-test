@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="basic" title="Basic">
+  
     <div class="w-full">
       <u-expansion 
         v-model="expanded"
@@ -43,7 +43,7 @@ const code = `<template>
         </u-expansion-item>
       </u-expansion>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>

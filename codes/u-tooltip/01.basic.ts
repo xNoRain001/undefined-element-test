@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="basic" title="Basic">
+  
     <div class="btns w-full flex items-center">
       <button>
         <u-icon name="keyboard_arrow_up" color="#fff"></u-icon>
@@ -40,7 +40,7 @@ const code = `<template>
         </u-tooltip>
       </button>
     </div>
-  </Example> 
+   
 </template>
 
 <style type="text/tailwindcss" scoped>

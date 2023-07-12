@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="basic" title="Basic">
+  
     <div class="w-full grid gap-y-[24px]">
       <div>
         <span>icon from </span>
@@ -43,7 +43,7 @@ const code = `<template>
         <u-icon type="outlined" name="thumb_up" width="46" height="46" color="#1976d2"></u-icon>
       </div>
     </div>
-  </Example>
+  
 </template>
 `
 const target = {}

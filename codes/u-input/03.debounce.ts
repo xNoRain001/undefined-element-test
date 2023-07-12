@@ -1,18 +1,29 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="debounce" title="Debounce">
+  <Example id="03.debounce" title="Debounce">
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         debounce="300"
         v-model="value"
         placeholder="Please input..."
+        :inputStyle="{ 
+          height: '56px',
+          borderRadius: '4px',
+          padding: '0 12px',
+          color: 'rgba(0, 0, 0, .87)',
+          fontSize: '14px',
+          fontWeight: '400px',
+          border: '1px solid rgba(0, 0, 0, .23)'
+        }"
+        :focusedInputStyle="{ border: '2px solid rgb(25, 118, 210)' }"
+        :hoveredInputStyle="{ border: '1px solid rgba(0, 0, 0, .87)' }"
       >
       </u-input>
 
       <div>value: {{ value }}</div>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>

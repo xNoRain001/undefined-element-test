@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="range" title="Range">
+  <Example id="03.range" title="Range">
     <div class="w-full">
       <u-splitter 
         min="10"
@@ -29,7 +29,7 @@ const code = `<template>
         </template>
       </u-splitter>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>

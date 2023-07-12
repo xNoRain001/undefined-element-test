@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="basic" title="Basic">
+  
     <div class="w-full grid gap-y-[24px]">
       <h2>The style is up to you</h2>
 
@@ -17,11 +17,6 @@ const code = `<template>
         }"
         :focusedInputStyle="{ border: '2px solid rgb(25, 118, 210)' }"
         :hoveredInputStyle="{ border: '1px solid rgba(0, 0, 0, .87)' }"
-        :placeholderStyle="{ 
-          color: '#a8abb2',
-          fontSize: '14px',
-          fontWeight: '400px'
-        }"
         v-model="value1"
         @focus="focusHandler"
         @blur="blurHandler"
@@ -108,7 +103,7 @@ const code = `<template>
         </template>
       </u-input> 
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>

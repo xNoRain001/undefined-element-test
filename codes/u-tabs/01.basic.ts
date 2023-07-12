@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="basic" title="Basic">
+  
     <div class="w-full">
       <u-tabs 
         v-model="tab"
@@ -49,7 +49,7 @@ const code = `<template>
         </u-tab-panel>
       </u-tab-panels>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>
