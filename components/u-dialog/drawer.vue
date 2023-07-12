@@ -25,11 +25,11 @@
         </div>
       </div>
     </u-dialog>
-    <u-dialog v-model="visible5" position="center">
+    <u-dialog v-model="visible" position="center">
       <div class="dialog">
         <div class="header">
           <div>Center</div>
-          <u-icon name="close" @click="updateVisible5"></u-icon>
+          <u-icon name="close" @click="updateVisible"></u-icon>
         </div>
         <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 

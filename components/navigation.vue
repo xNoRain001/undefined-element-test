@@ -29,7 +29,8 @@ const links = [
   { to: '/u-slider', label: 'USlider'},
   { to: '/u-icon', label: 'UIcon'},
   { to: '/u-splitter', label: 'USplitter' },
-  { to: '/u-skeleton', label: 'USkeleton' }
+  { to: '/u-skeleton', label: 'USkeleton' },
+  { to: '/u-select', label: 'USelect' }
 ]
 
 const path = computed(() => useRoute().path)

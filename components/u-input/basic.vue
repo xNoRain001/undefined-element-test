@@ -4,6 +4,22 @@
       <h2>The style is up to you</h2>
 
       <u-input 
+        :inputStyle="{ 
+          height: '56px',
+          borderRadius: '4px',
+          padding: '0 12px',
+          color: 'rgba(0, 0, 0, .87)',
+          fontSize: '14px',
+          fontWeight: '400px',
+          border: '1px solid rgba(0, 0, 0, .23)'
+        }"
+        :focusedInputStyle="{ border: '2px solid rgb(25, 118, 210)' }"
+        :hoveredInputStyle="{ border: '1px solid rgba(0, 0, 0, .87)' }"
+        :placeholderStyle="{ 
+          color: '#a8abb2',
+          fontSize: '14px',
+          fontWeight: '400px'
+        }"
         v-model="value1"
         @focus="focusHandler"
         @blur="blurHandler"
