@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  
+  <Example id="02.multiple" title="Multiple">
     <div class="w-full">
       <u-select 
         :selectStyle="{ 
@@ -24,6 +24,7 @@ const code = `<template>
         :options="options"
         @focus="focusHandler"
         @blur="blurHandler"
+        multiple
       >
         <template #select-items>
           <div class="
@@ -38,7 +39,7 @@ const code = `<template>
               v-for="(option, index) in options"
               :key="index"
               :data-index="index"
-              :class="value === option 
+              :class="value.includes(option)
                 ? '!bg-[rgb(25,118,210,.08)]' 
                 : 'bg-white'
               "
@@ -58,7 +59,7 @@ const code = `<template>
 </template>
 
 <script lang="ts" setup>
-const value = ref('')
+const value = reactive<string[]>([])
 const options = ['1', '2', '3', '4']
 const expanded = ref(false) 
 

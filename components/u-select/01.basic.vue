@@ -20,6 +20,8 @@
         }"
         v-model="value" 
         :options="options"
+        @focus="focusHandler"
+        @blur="blurHandler"
       >
         <template #select-items>
           <div class="
@@ -43,12 +45,22 @@
             </div>
           </div>
         </template>
+        <template #append>
+          <u-icon 
+            :name="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
+          "></u-icon>
+        </template>
       </u-select>
     </div>
   </Example>
 </template>
 
 <script lang="ts" setup>
-const value = ref('1')
+const value = ref('')
 const options = ['1', '2', '3', '4']
+const expanded = ref(false) 
+
+const focusHandler = () => expanded.value = !expanded.value
+
+const blurHandler = () => expanded.value = !expanded.value
 </script>
