@@ -25,20 +25,6 @@
         </div>
       </div>
     </u-dialog>
-    <u-dialog v-model="visible" position="center">
-      <div class="dialog">
-        <div class="header">
-          <div>Center</div>
-          <u-icon name="close" @click="updateVisible"></u-icon>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 
-          quisquam repellendus vitae quam. Officiis, soluta. Perferendis 
-          minima accusamus aliquid nam nostrum dolorem, ad numquam assumenda 
-          magni modi harum incidunt repellat.
-        </div>
-      </div>
-    </u-dialog>
   </Example> 
 </template>
 
