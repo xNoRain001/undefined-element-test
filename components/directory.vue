@@ -28,7 +28,7 @@ const updateDirs = (path: string) => {
   dirs.length = 0
 
   for (let i = 0, l = _dirs.length; i < l; i++) {
-    dirs.push(_dirs[i])
+    dirs.push(_dirs[i].slice(3))
   }
 }
 

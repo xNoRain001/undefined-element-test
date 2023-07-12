@@ -1,18 +1,18 @@
 <template>
-  <Example id="debounce" title="Debounce">
+  <Example id="06.clearable" title="Clearable">
     <div class="w-full grid gap-y-[24px]">
       <u-input 
-        debounce="300"
         v-model="value"
         placeholder="Please input..."
       >
+        <template #append>
+          <u-icon name="close" clearable></u-icon>
+        </template>
       </u-input>
-
-      <div>value: {{ value }}</div>
     </div>
   </Example>
 </template>
 
 <script lang="ts" setup>
-const value = ref('')
+const value = ref('This is clearable input')
 </script>

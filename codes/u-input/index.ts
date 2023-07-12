@@ -1,17 +1,17 @@
-import autofocus from './autofocus'
-import basic from './basic'
-import clearable from './clearable'
-import debounce from './debounce'
-import disabled from './disabled'
-import placeholder from './placeholder'
-import readonly from './readonly'
+import basic from './01.basic'
+import placeholder from './02.placeholder'
+import debounce from './03.debounce'
+import readonly from './04.readonly'
+import disabled from './05.disabled'
+import clearable from './06.clearable'
+import autofocus from './07.autofocus'
 
 export default {
-	autofocus,
-	basic,
-	clearable,
-	debounce,
-	disabled,
-	placeholder,
-	readonly,
+	'01.basic': basic,
+	'02.placeholder': placeholder,
+	'03.debounce': debounce,
+	'04.readonly': readonly,
+	'05.disabled': disabled,
+	'06.clearable': clearable,
+	'07.autofocus': autofocus,
 }

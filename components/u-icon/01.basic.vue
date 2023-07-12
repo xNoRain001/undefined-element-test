@@ -1,5 +1,5 @@
 <template>
-  <Example id="basic" title="Basic">
+  <Example id="01.basic" title="Basic">
     <div class="w-full grid gap-y-[24px]">
       <div>
         <span>icon from </span>

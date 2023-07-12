@@ -1,5 +1,5 @@
 <template>
-  <Example id="placeholder" title="Placeholder">
+  <Example id="02.placeholder" title="Placeholder">
     <div class="w-full grid gap-y-[24px]">
       <h2>overwrite placeholder style</h2>
 

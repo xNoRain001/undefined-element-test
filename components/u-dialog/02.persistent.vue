@@ -1,35 +1,17 @@
 <template>
-  <Example 
-    id="drawer" 
-    title="Drawer"
-    desc="You can easily turn dialog into drawer by changing the style"
-  >
+  <Example id="02.persistent" title="Persistent">
     <div class="btns w-full flex items-center">
-      <button @click="updateVisible">
-        <u-icon name="keyboard_arrow_left" color="#fff"></u-icon>
-        <span>Left</span>
+      <button @click="updateVisible1">
+        <u-icon name="control_camera" color="#fff"></u-icon>
+        <span>Persistent</span>
       </button>
     </div>
 
-    <u-dialog v-model="visible" position="left">
+    <u-dialog v-model="visible" position="center" persistent>
       <div class="dialog">
         <div class="header">
-          <div>Drawer</div>
-          <u-icon name="close" @click="updateVisible"></u-icon>
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 
-          quisquam repellendus vitae quam. Officiis, soluta. Perferendis 
-          minima accusamus aliquid nam nostrum dolorem, ad numquam assumenda 
-          magni modi harum incidunt repellat.
-        </div>
-      </div>
-    </u-dialog>
-    <u-dialog v-model="visible" position="center">
-      <div class="dialog">
-        <div class="header">
-          <div>Center</div>
-          <u-icon name="close" @click="updateVisible"></u-icon>
+          <div>Persistent</div>
+          <u-icon name="close" @click="updateVisible1"></u-icon>
         </div>
         <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam 
@@ -45,7 +27,7 @@
 <script lang="ts" setup>
 const visible = ref(false)
 
-const updateVisible = () => visible.value = !visible.value
+const updateVisible1 = () => visible.value = !visible.value
 </script>
 
 <style type="text/tailwindcss" scoped>
@@ -63,7 +45,7 @@ const updateVisible = () => visible.value = !visible.value
 }
 
 .dialog {
-  @apply w-[300px] h-screen bg-white p-[24px]
+  @apply w-[560px] bg-white p-[24px]
 }
 
 .dialog > .header {

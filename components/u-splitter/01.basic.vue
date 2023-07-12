@@ -1,5 +1,5 @@
 <template>
-  <Example id="separator" title="Separator">
+  <Example id="01.basic" title="Basic">
     <div class="w-full">
       <u-splitter 
         v-model="value" 
@@ -11,18 +11,11 @@
           </div>
         </template>
         <template #splitter>
-          <div class="w-[13px] h-full flex justify-center relative">
+          <div class="w-[13px] h-full flex justify-center">
             <div class="
               h-full border-[1px] border-solid border-[#dcdfe6] border-y-0 
               border-r-0
             "></div>
-            <div class="
-              w-[40px] h-[40px] bg-[rgb(25,118,210)] rounded-full absolute
-              flex justify-center items-center top-1/2 -translate-y-1/2
-              cursor-move
-            ">
-              <u-icon class="!cursor-move" name="drag_indicator" color="white"></u-icon>
-            </div>
           </div>
         </template>
         <template #after>

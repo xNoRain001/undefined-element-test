@@ -3,5 +3,5 @@
 </template>
 
 <script lang="ts" setup>
-import Basic from '@/components/u-rating/basic.vue'
+import Basic from '@/components/u-rating/01.basic.vue'
 </script>

@@ -1,11 +1,10 @@
 <template>
-  <Example id="disabled" title="Disabled">
+  <Example id="04.readonly" title="Readonly">
     <div class="w-full grid gap-y-[24px]">
       <u-input 
-        disabled
+        readonly
         v-model="value"
         placeholder="Please input..."
-        :hoveredInputStyle="{}"
       >
       </u-input>
     </div>
@@ -13,5 +12,5 @@
 </template>
 
 <script lang="ts" setup>
-const value = ref('This is disabled input')
+const value = ref('This is readonly input')
 </script>

@@ -1,7 +1,7 @@
-import basic from './basic'
-import max from './max'
+import basic from './01.basic'
+import max from './02.max'
 
 export default {
-	basic,
-	max,
+	'01.basic': basic,
+	'02.max': max,
 }

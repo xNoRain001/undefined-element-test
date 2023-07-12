@@ -3,5 +3,5 @@
 </template>
 
 <script lang="ts" setup>
-import Basic from '@/components/u-tooltip/basic.vue'
+import Basic from '@/components/u-tooltip/01.basic.vue'
 </script>

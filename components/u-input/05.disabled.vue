@@ -1,10 +1,11 @@
 <template>
-  <Example id="autofocus" title="Autofocus">
+  <Example id="05.disabled" title="Disabled">
     <div class="w-full grid gap-y-[24px]">
       <u-input 
-        autofocus
+        disabled
         v-model="value"
         placeholder="Please input..."
+        :hoveredInputStyle="{}"
       >
       </u-input>
     </div>
@@ -12,5 +13,5 @@
 </template>
 
 <script lang="ts" setup>
-const value = ref('This is autofocusing input')
+const value = ref('This is disabled input')
 </script>

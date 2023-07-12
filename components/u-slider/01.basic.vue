@@ -1,12 +1,11 @@
 <template>
-  <Example id="step" title="Step">
+  <Example id="01.basic" title="Basic">
     <div class="w-full">
       <div>value: {{ value }}</div>
       <u-slider 
         v-model="value" 
         :min="0"
         :max="100" 
-        :step="50"
         class="w-full h-[20px] flex items-center"
         trackClass="w-full h-[4px] bg-[rgba(0,0,0,.1)] flex items-center"
         selectionClass="h-full bg-[#1976d2]"

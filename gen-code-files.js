@@ -19,7 +19,7 @@ const genCodesMap = async () => {
       const dirs = await readdir(_prefix)
 
       for (let i = 0, l = dirs.length; i < l; i++) {
-        const dir = dirs[i] // basic.vue, max.vue...
+        const dir = dirs[i] // 01.basic.vue, 02.max.vue...
         
         target[dir] = await readFile(`${ _prefix }/${ dir }`, 'utf-8')
       }
@@ -57,17 +57,19 @@ const genCodeFiles = async (codesMap) => {
     let indexStr = ''
 
     for (let i = 0, l = _dirs.length; i < l; i++) {
-      const name = _dirs[i].slice(0, -4) // basic, max...
+      const name = _dirs[i].slice(0, -4) // 01.basic, 02.max...
+      const _name = name.slice(3) // basic, max...
 
-      indexStr += `import ${ name } from './${ name }'\r\n`
+      indexStr += `import ${ _name } from './${ name }'\r\n`
     }
 
     indexStr += '\r\nexport default {\r\n'
 
     for (let i = 0, l = _dirs.length; i < l; i++) {
       const name = _dirs[i].slice(0, -4)
+      const _name = name.slice(3)
 
-      indexStr += `\t${ name },\r\n`
+      indexStr += `\t'${ name }': ${ _name },\r\n`
     }
 
     indexStr += '}\r\n'

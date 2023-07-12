@@ -1,18 +1,16 @@
 <template>
-  <Example id="clearable" title="Clearable">
+  <Example id="07.autofocus" title="Autofocus">
     <div class="w-full grid gap-y-[24px]">
       <u-input 
+        autofocus
         v-model="value"
         placeholder="Please input..."
       >
-        <template #append>
-          <u-icon name="close" clearable></u-icon>
-        </template>
       </u-input>
     </div>
   </Example>
 </template>
 
 <script lang="ts" setup>
-const value = ref('This is clearable input')
+const value = ref('This is autofocusing input')
 </script>

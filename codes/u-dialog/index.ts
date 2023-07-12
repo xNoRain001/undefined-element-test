@@ -1,9 +1,9 @@
-import basic from './basic'
-import drawer from './drawer'
-import persistent from './persistent'
+import basic from './01.basic'
+import persistent from './02.persistent'
+import drawer from './03.drawer'
 
 export default {
-	basic,
-	drawer,
-	persistent,
+	'01.basic': basic,
+	'02.persistent': persistent,
+	'03.drawer': drawer,
 }

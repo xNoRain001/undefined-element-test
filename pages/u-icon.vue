@@ -3,5 +3,5 @@
 </template>
 
 <script lang="ts" setup>
-import Basic from '@/components/u-icon/basic.vue'
+import Basic from '@/components/u-icon/01.basic.vue'
 </script>

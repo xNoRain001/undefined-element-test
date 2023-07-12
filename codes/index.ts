@@ -11,7 +11,7 @@ import uSkeleton from './u-skeleton'
 import UExpansion from "./u-expansion"
 import UScrollArea from "./u-scroll-area"
 
-const codesMap: { 
+const codeMap: { 
   [propName: string]: { 
     [propName: string]: { 
       all?: string,
@@ -35,4 +35,4 @@ const codesMap: {
   '/u-scroll-area': UScrollArea
 }
 
-export default codesMap
+export default codeMap

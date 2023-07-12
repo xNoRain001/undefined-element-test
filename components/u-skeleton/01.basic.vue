@@ -1,5 +1,5 @@
 <template>
-  <Example id="basic" title="Basic">
+  <Example id="01.basic" title="Basic">
     <div class="w-full">
       <u-skeleton v-model="loading">
         <template #skeleton-items>

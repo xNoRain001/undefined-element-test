@@ -1,16 +1,18 @@
 <template>
-  <Example id="readonly" title="Readonly">
+  <Example id="03.debounce" title="Debounce">
     <div class="w-full grid gap-y-[24px]">
       <u-input 
-        readonly
+        debounce="300"
         v-model="value"
         placeholder="Please input..."
       >
       </u-input>
+
+      <div>value: {{ value }}</div>
     </div>
   </Example>
 </template>
 
 <script lang="ts" setup>
-const value = ref('This is readonly input')
+const value = ref('')
 </script>

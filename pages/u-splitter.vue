@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts" setup>
-import Range from '@/components/u-splitter/range.vue'
-import Basic from '@/components/u-splitter/basic.vue'
-import Horizontal from '@/components/u-splitter/horizontal.vue'
-import Separator from '@/components/u-splitter/separator.vue'
+import Basic from '@/components/u-splitter/01.basic.vue'
+import Horizontal from '@/components/u-splitter/02.horizontal.vue'
+import Range from '@/components/u-splitter/03.range.vue'
+import Separator from '@/components/u-splitter/04.separator.vue'
 </script>

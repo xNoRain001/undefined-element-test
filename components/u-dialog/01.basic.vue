@@ -1,5 +1,5 @@
 <template>
-  <Example id="basic" title="Basic">
+  <Example id="01.basic" title="Basic">
     <div class="btns w-full flex items-center">
       <button @click="updateVisible1">
         <u-icon name="keyboard_arrow_up" color="#fff"></u-icon>

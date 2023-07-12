@@ -9,11 +9,11 @@
 </template>
 
 <script lang="ts" setup>
-import Basic from '@/components/u-input/basic.vue'
-import Disabled from '@/components/u-input/disabled.vue'
-import Readonly from '@/components/u-input/readonly.vue'
-import Debounce from '@/components/u-input/debounce.vue'
-import Autofocus from '@/components/u-input/autofocus.vue'
-import Clearable from '@/components/u-input/clearable.vue'
-import Placeholder from '@/components/u-input/placeholder.vue'
+import Basic from '@/components/u-input/01.basic.vue'
+import Placeholder from '@/components/u-input/02.placeholder.vue'
+import Debounce from '@/components/u-input/03.debounce.vue'
+import Readonly from '@/components/u-input/04.readonly.vue'
+import Disabled from '@/components/u-input/05.disabled.vue'
+import Clearable from '@/components/u-input/06.clearable.vue'
+import Autofocus from '@/components/u-input/07.autofocus.vue'
 </script>

@@ -1,5 +1,5 @@
-import basic from './basic'
+import basic from './01.basic'
 
 export default {
-	basic,
+	'01.basic': basic,
 }

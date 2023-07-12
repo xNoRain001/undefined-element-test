@@ -1,10 +1,11 @@
 <template>
-  <Example id="horizontal" title="Horizontal">
+  <Example id="03.range" title="Range">
     <div class="w-full">
       <u-splitter 
+        min="10"
+        max="60"
         v-model="value" 
-        horizontal 
-        class="w-full h-[400px]"
+        class="w-full h-[200px]"
       >
         <template #before>
           <div v-for="i in 5" :key="i">
@@ -12,10 +13,10 @@
           </div>
         </template>
         <template #splitter>
-          <div class="w-full h-[13px] flex justify-center items-center">
+          <div class="w-[13px] h-full flex justify-center">
             <div class="
-              w-full border-[1px] border-solid border-[#dcdfe6] border-b-0 
-              border-x-0
+              h-full border-[1px] border-solid border-[#dcdfe6] border-y-0 
+              border-r-0
             "></div>
           </div>
         </template>

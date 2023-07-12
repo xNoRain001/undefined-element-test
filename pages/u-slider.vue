@@ -4,6 +4,6 @@
 </template>
 
 <script lang="ts" setup>
-import Step from '@/components/u-slider/step.vue'
-import Basic from '@/components/u-slider/basic.vue'
+import Basic from '@/components/u-slider/01.basic.vue'
+import Step from '@/components/u-slider/02.step.vue'
 </script>
