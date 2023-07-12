@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="04.separator" title="Separator">
+  
     <div class="w-full">
       <u-splitter 
         v-model="value" 

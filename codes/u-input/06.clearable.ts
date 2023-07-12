@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="06.clearable" title="Clearable">
+  
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         v-model="value"

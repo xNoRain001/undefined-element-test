@@ -33,7 +33,7 @@ const genCodeFile = async (dirs, codes, prefix) => {
   for (let i = 0, l = dirs.length; i < l; i++) {
     const dir = dirs[i]
     const code = codes[dir]
-      .replace(/<Example id=".*" title="Basic">/, '')
+      .replace(/<Example[\s\S]*?>/, '')
       .replace(/<\/Example>/, '')
 
     await writeFile(`${ prefix }/${ dir.slice(0, -3) }ts`, `import splitCode from '../../utils/split-code'\r\n\r\nconst code = \`${ code }\`\r\nconst target = {}\r\n\r\nsplitCode(code, target)\r\n\r\nexport default target\r\n`)
@@ -47,7 +47,13 @@ const genIndexFile = async (dirs, prefix) => {
 
   for (let i = 0, l = dirs.length; i < l; i++) {
     const name = dirs[i].slice(0, -4) // 01.basic, 02.max...
-    const _name = name.slice(3) // basic, max...
+    const segments = name.slice(3).split('-')
+    let _name = segments[0]
+
+    for (let i = 1, l = segments.length; i < l; i++) {
+      const segment = segments[i]
+      _name += `${ segment[0].toUpperCase() }${ segment.slice(1) }`
+    }
 
     importStr += `import ${ _name } from './${ name }'\r\n`
     exportStr += `\t'${ name }': ${ _name },\r\n`

@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="05.disabled" title="Disabled">
+  
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         disabled

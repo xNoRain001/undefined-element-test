@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="02.multiple" title="Multiple">
+  
     <div class="w-full">
       <u-select 
         :selectStyle="{ 

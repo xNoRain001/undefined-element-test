@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="03.range" title="Range">
+  
     <div class="w-full">
       <u-splitter 
         min="10"

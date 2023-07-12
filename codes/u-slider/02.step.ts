@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="02.step" title="Step">
+  
     <div class="w-full">
       <div>value: {{ value }}</div>
       <u-slider 

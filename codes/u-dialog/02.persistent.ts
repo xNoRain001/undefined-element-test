@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="02.persistent" title="Persistent">
+  
     <div class="btns w-full flex items-center">
       <button @click="updateVisible1">
         <u-icon name="control_camera" color="#fff"></u-icon>

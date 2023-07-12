@@ -1,7 +1,7 @@
 import splitCode from '../../utils/split-code'
 
 const code = `<template>
-  <Example id="02.horizontal" title="Horizontal">
+  
     <div class="w-full">
       <u-splitter 
         v-model="value" 
