@@ -20,6 +20,7 @@
 <script lang="ts" setup>
 const links = [
   { to: '/u-input', label: 'UInput' },
+  { to: '/u-select', label: 'USelect' },
   { to: '/u-tabs', label: 'UTabs' },
   { to: '/u-dialog', label: 'UDialog' },
   { to: '/u-expansion', label: 'UExpansion' },
@@ -30,7 +31,6 @@ const links = [
   { to: '/u-icon', label: 'UIcon'},
   { to: '/u-splitter', label: 'USplitter' },
   { to: '/u-skeleton', label: 'USkeleton' },
-  { to: '/u-select', label: 'USelect' }
 ]
 
 const path = computed(() => useRoute().path)
