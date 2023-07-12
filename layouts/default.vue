@@ -1,18 +1,16 @@
 <template>
   <Header></Header>
 
-  <div class="flex w-full h-[calc(100vh-55px)] relative mt-[55px]">
-    <Navigation></Navigation>
+  <Navigation></Navigation>
 
-    <div class="w-full pl-[288px] pt-[55px] absolute top-0">
-      <div class="pt-[64px] pl-[64px] pb-[42px] flex">
-        <!-- content -->
-        <div class="w-[800px] grid gap-y-[24px]">
-          <slot></slot>
-        </div>
-
-        <Directory></Directory>
+  <div class="w-full pl-[285px] pt-[55px]">
+    <div class="pt-[64px] pl-[64px] pb-[42px] flex">
+      <!-- content -->
+      <div class="w-[800px] h-full grid gap-y-[24px]">
+        <slot></slot>
       </div>
+
+      <Directory></Directory>
     </div>
   </div>
 </template>

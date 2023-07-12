@@ -1,7 +1,7 @@
 <template>
   <div class="
     fixed left-0 top-[55px] bottom-0 z-10 w-[288px] pl-[54px] pr-[32px] pt-[48px] 
-    py-[96px]
+    pb-[96px]
   ">
     <u-scroll-area height="760px">
       <nav class="routing-container">

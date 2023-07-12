@@ -1,14 +1,15 @@
 <template>
-  <div class="pl-[64px] fixed right-0">
+  <!-- 64 55 55 110 -->
+  <div class="pl-[64px] h-full sticky top-[85px]">
     <div class="w-[200px] py-[4px] pr-[8px] pl-[12px] mb-[32px]">
       <div class="text-[#606266] text-[12px] font-semibold">CONTENTS</div>
 
-      <ul class="mt-[12px] grid gap-y-[10px] text-[12px] text-[#909399]">
+      <ul class="mt-[12px] grid gap-y-[10px] text-[12px] font-semibold text-[#909399]">
         <li v-for="dir in dirs" :key="dir">
           <a 
             class="cursor-pointer hover:text-[#409eff]" 
             :href="`#${ dir }`"
-          >{{ dir }}</a>
+          >{{ `${ dir[0].toUpperCase() }${ dir.slice(1) }` }}</a>
         </li>
       </ul>
     </div>

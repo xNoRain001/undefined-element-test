@@ -153,7 +153,7 @@ const props = defineProps<{
 }>()
 const { id, desc, title } = toRefs(props)
 const _title = title.value
-const __title = `${ _title[0].toLocaleLowerCase() }${ _title.slice(1) }`
+const __title = `${ _title[0].toLowerCase() }${ _title.slice(1) }`
 const expanded = reactive<string[]>([])
 const path = useRoute().path
 const code = codeMap[path][id.value]
