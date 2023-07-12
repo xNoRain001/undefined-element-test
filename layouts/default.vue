@@ -29,7 +29,7 @@ const genTitle = (v: string) => {
   return title
 }
 
-watch(() => useRoute().fullPath, v => {
+watch(() => useRoute().path, v => {
   const title = genTitle(v)
   useHead({ title })
 }, { immediate: true })
