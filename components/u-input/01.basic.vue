@@ -48,7 +48,7 @@
         v-model="value4"
         :inputStyle="{ border: '1px solid #dcdfe6' }"
         :focusedInputStyle="{ border: '1px solid #409eff' }"
-        :hoveredInputStyle="{ border: '1px solid #c0c4cc' }"
+        :hoveredInputStyle="{ border: '1px solid #c0c4cc'   }"
         inputClass="
           w-full h-[30px] py-[1px] px-[11px] 
           text-[14px] font-normal text-[rbg(48,49,51)]

@@ -17,6 +17,7 @@ const code = `<template>
         v-model="value" 
         :options="options"
         multiple
+        :maxValues="2"
       >
         <template #select-items>
           <div class="
@@ -41,9 +42,10 @@ const code = `<template>
           </div>
         </template>
         <template #append>
-          <u-icon 
+          <!-- <u-icon 
             :name="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
-          "></u-icon>
+          "></u-icon> -->
+          <u-icon name="close" clearable></u-icon>
         </template>
       </u-select>
     </div>

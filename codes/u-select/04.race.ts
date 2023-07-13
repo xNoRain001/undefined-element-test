@@ -56,10 +56,6 @@ const code = `<template>
 const value = reactive<string[]>([])
 const options = ['1', '2', '3', '4']
 const expanded = ref(false) 
-
-const focusHandler = () => expanded.value = !expanded.value
-
-const blurHandler = () => expanded.value = !expanded.value
 </script>
 `
 const target = {}
