@@ -3,7 +3,7 @@
 
   <Navigation></Navigation>
 
-  <div class="w-full pl-[285px] pt-[55px]">
+  <div class="w-full pl-[285px] pt-[110px]">
     <div class="pt-[64px] pl-[64px] pb-[42px] flex">
       <!-- content -->
       <div class="w-[800px] h-full grid gap-y-[24px]">

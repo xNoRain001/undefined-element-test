@@ -30,7 +30,7 @@
         @focus="focusHandler"
         @blur="blurHandler"
         multiple
-        maxValues="2"
+        :maxValues="2"
         race
       >
         <template #select-items>

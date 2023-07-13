@@ -27,7 +27,7 @@
         @focus="focusHandler"
         @blur="blurHandler"
         multiple
-        maxValues="2"
+        :maxValues="2"
       >
         <template #select-items>
           <div class="

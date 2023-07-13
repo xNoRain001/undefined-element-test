@@ -25,7 +25,7 @@ const code = `<template>
         @focus="focusHandler"
         @blur="blurHandler"
         multiple
-        maxValues="2"
+        :maxValues="2"
         :persistent="false"
       >
         <template #select-items>
