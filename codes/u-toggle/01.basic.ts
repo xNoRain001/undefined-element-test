@@ -6,7 +6,7 @@ const code = `<template>
       <div class="grid grid-cols-10">
         <u-toggle 
           v-model="value"
-          toggleClass="w-[40px] h-[20px]"
+          class="w-[40px] h-[20px]"
           thumbClass="
             w-[16px] h-[16px] top-[2px] left-[2px] rounded-full bg-white
           "
@@ -17,7 +17,7 @@ const code = `<template>
 
         <u-toggle 
           v-model="value"
-          toggleClass="w-[40px] h-[20px]"
+          class="w-[40px] h-[20px]"
           thumbClass="
             w-[16px] h-[16px] top-[2px] left-[2px] rounded-full bg-white
           "
@@ -28,7 +28,7 @@ const code = `<template>
 
         <u-toggle 
           v-model="value"
-          toggleClass="w-[40px] h-[20px]"
+          class="w-[40px] h-[20px]"
           thumbClass="
             w-[16px] h-[16px] top-[2px] left-[2px] rounded-full bg-white
           "
@@ -41,7 +41,7 @@ const code = `<template>
       <div class="grid grid-cols-10">
         <u-toggle 
           v-model="value"
-          toggleClass="w-[52px] h-[20px] px-[10px]"
+          class="w-[52px] h-[20px] px-[10px]"
           thumbClass="
             w-[20px] h-[20px] rounded-full bg-white left-0
           "
@@ -55,7 +55,7 @@ const code = `<template>
 
         <u-toggle 
           v-model="value"
-          toggleClass="w-[52px] h-[20px] px-[10px]"
+          class="w-[52px] h-[20px] px-[10px]"
           thumbClass="
             w-[20px] h-[20px] rounded-full bg-white left-0
           "
@@ -69,7 +69,7 @@ const code = `<template>
 
         <u-toggle 
           v-model="value"
-          toggleClass="w-[52px] h-[20px] px-[10px]"
+          class="w-[52px] h-[20px] px-[10px]"
           thumbClass="
             w-[20px] h-[20px] rounded-full bg-white left-0
           "
