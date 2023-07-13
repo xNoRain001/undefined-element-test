@@ -1,8 +1,8 @@
 <template>
-  <Example id="07.autofocus" title="Autofocus">
+  <Example id="08.type" title="Type">
     <div class="w-full grid gap-y-[24px]">
       <u-input 
-        autofocus
+        type="password"
         v-model="value"
         :inputStyle="{ 
           border: '1px solid rgba(0, 0, 0, .23)',
@@ -15,6 +15,13 @@
           text-[rgba(0, 0, 0, .87)]
         "
       >
+        <template #append>
+          <u-icon 
+            visible
+            @click="updateVisible" 
+            :name="visible ? 'visibility' : 'visibility_off'"
+          ></u-icon>
+        </template>
       </u-input>
     </div>
   </Example>
@@ -22,4 +29,7 @@
 
 <script lang="ts" setup>
 const value = ref('')
+const visible = ref(false)
+
+const updateVisible = () => visible.value = !visible.value
 </script>

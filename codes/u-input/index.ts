@@ -5,6 +5,7 @@ import readonly from './04.readonly'
 import disabled from './05.disabled'
 import clearable from './06.clearable'
 import autofocus from './07.autofocus'
+import type from './08.type'
 
 export default {
 	'01.basic': basic,
@@ -14,4 +15,5 @@ export default {
 	'05.disabled': disabled,
 	'06.clearable': clearable,
 	'07.autofocus': autofocus,
+	'08.type': type,
 }
