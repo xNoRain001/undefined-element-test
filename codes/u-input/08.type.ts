@@ -4,6 +4,7 @@ const code = `<template>
   
     <div class="w-full grid gap-y-[24px]">
       <u-input 
+        type="password"
         v-model="value"
         :inputStyle="{ 
           border: '1px solid rgba(0, 0, 0, .23)',
@@ -17,7 +18,11 @@ const code = `<template>
         "
       >
         <template #append>
-          <u-icon name="close" width="16" height="16" clearable></u-icon>
+          <u-icon 
+            visible
+            @click="updateVisible" 
+            :name="visible ? 'visibility' : 'visibility_off'"
+          ></u-icon>
         </template>
       </u-input>
     </div>
@@ -25,7 +30,10 @@ const code = `<template>
 </template>
 
 <script lang="ts" setup>
-const value = ref('This is clearable input')
+const value = ref('')
+const visible = ref(false)
+
+const updateVisible = () => visible.value = !visible.value
 </script>
 `
 const target = {}

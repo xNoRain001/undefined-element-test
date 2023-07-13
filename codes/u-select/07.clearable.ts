@@ -11,12 +11,13 @@ const code = `<template>
         :focusedSelectStyle="{ border: '2px solid rgb(25, 118, 210)' }"
         :hoveredSelectStyle="{ border: '1px solid rgba(0, 0, 0, .87)' }"
         selectClass="
-          w-full h-[56px] px-[12px] text-[14px] font-normal 
+          group w-full h-[56px] px-[12px] text-[14px] font-normal 
           text-[rgba(0, 0, 0, .87)]
         "
         v-model="value" 
         :options="options"
         multiple
+        :maxValues="2"
       >
         <template #select-items>
           <div class="
@@ -41,9 +42,16 @@ const code = `<template>
           </div>
         </template>
         <template #append>
+          <!-- <u-icon 
+            v-if="value.length"
+            name="close" 
+            width="16" 
+            height="16" 
+            clearable
+          ></u-icon> -->
           <u-icon 
-            :name="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
-          "></u-icon>
+            :name="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'">
+          </u-icon>
         </template>
       </u-select>
     </div>

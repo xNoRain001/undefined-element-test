@@ -5,27 +5,19 @@ const code = `<template>
     <div class="w-full">
       <u-select 
         :selectStyle="{ 
-          height: '56px',
-          borderRadius: '4px',
-          padding: '0 12px',
-          color: 'rgba(0, 0, 0, .87)',
-          fontSize: '14px',
-          fontWeight: '400px',
-          border: '1px solid rgba(0, 0, 0, .23)'
+          border: '1px solid rgba(0, 0, 0, .23)',
+          borderRadius: '4px'
         }"
         :focusedSelectStyle="{ border: '2px solid rgb(25, 118, 210)' }"
         :hoveredSelectStyle="{ border: '1px solid rgba(0, 0, 0, .87)' }"
-        :placeholderStyle="{ 
-          color: '#a8abb2',
-          fontSize: '14px',
-          fontWeight: '400px'
-        }"
+        selectClass="
+          w-full h-[56px] px-[12px] text-[14px] font-normal 
+          text-[rgba(0, 0, 0, .87)]
+        "
         v-model="value" 
         :options="options"
-        @focus="focusHandler"
-        @blur="blurHandler"
         multiple
-        maxValues="2"
+        :maxValues="2"
         :persistent="false"
       >
         <template #select-items>
@@ -64,10 +56,6 @@ const code = `<template>
 const value = reactive<string[]>([])
 const options = ['1', '2', '3', '4']
 const expanded = ref(false) 
-
-const focusHandler = () => expanded.value = !expanded.value
-
-const blurHandler = () => expanded.value = !expanded.value
 </script>
 `
 const target = {}

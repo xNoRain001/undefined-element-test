@@ -4,14 +4,15 @@
       @click="updateAnchor"
       :id="__title"
       class="
-        text-[#00b4ff] text-[27px] mb-[24px] cursor-pointer after:content-['#'] 
-        after:opacity-0 after:ml-[12px] hover:after:opacity-100
+        text-[#606266] font-semibold text-[26px] mb-[24px] cursor-pointer 
+        after:content-['#'] after:opacity-0 after:ml-[12px] 
+        hover:after:opacity-100
       "
     >
       {{ title }}
     </div>
 
-    <p v-if="desc" class="text-[14px] pb-[16px]">{{ desc }}</p>
+    <p v-if="desc" class="text-[#303133] text-[16px] pb-[16px]">{{ desc }}</p>
 
     <u-expansion v-model="expanded">
       <u-expansion-item name="1">

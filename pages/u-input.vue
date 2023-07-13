@@ -6,6 +6,7 @@
   <Disabled></Disabled>
   <Clearable></Clearable>
   <Autofocus></Autofocus>
+  <Type></Type>
 </template>
 
 <script lang="ts" setup>
@@ -16,4 +17,5 @@ import Readonly from '@/components/u-input/04.readonly.vue'
 import Disabled from '@/components/u-input/05.disabled.vue'
 import Clearable from '@/components/u-input/06.clearable.vue'
 import Autofocus from '@/components/u-input/07.autofocus.vue'
+import Type from '@/components/u-input/08.type.vue'
 </script>

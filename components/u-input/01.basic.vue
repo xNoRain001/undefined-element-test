@@ -1,10 +1,9 @@
 <template>
   <Example id="01.basic" title="Basic">
     <div class="w-full grid gap-y-[24px]">
-      <h2>The style is up to you</h2>
-
       <u-input 
         :inputStyle="{ 
+          width: '100%',
           height: '56px',
           borderRadius: '4px',
           padding: '0 12px',
@@ -16,78 +15,44 @@
         :focusedInputStyle="{ border: '2px solid rgb(25, 118, 210)' }"
         :hoveredInputStyle="{ border: '1px solid rgba(0, 0, 0, .87)' }"
         v-model="value1"
-        @focus="focusHandler"
-        @blur="blurHandler"
       >
       </u-input>
 
       <u-input 
         v-model="value2"
-        :inputStyle="{
-          height: '56px',
-          borderRadius: '4px',
-          padding: '0 12px',
-          fontSize: '14px',
-          fontWeight: '400px',
-          backgroundColor: 'rgba(0, 0, 0, .05)',
-          color: 'black',
-        }"
-        :focusedInputStyle="{
-          backgroundColor: 'black',
-          color: 'white'
-        }"
-        :hoveredInputStyle="{
-          backgroundColor: 'rgba(0, 0, 0, .07)'
-        }"
-        @focus="focusHandler"
-        @blur="blurHandler"
+        inputClass="
+          w-full h-[56px] rounded-[4px] px-[12px] text-[14px] font-normal
+          bg-[rgba(0,0,0,.05)] text-black
+        "
+        focusedInputClass="bg-black !text-white"
+        hoveredInputClass="bg-[rgba(0,0,0,.07)]"
       >
       </u-input>
 
       <u-input 
-        :inputStyle="{
-          height: '30px',
-          borderRadius: '4px',
-          padding: '1px 11px',
-          color: 'rbg(48, 49, 51)',
-          fontSize: '14px',
-          fontWeight: '400px',
-          border: '1px solid #dcdfe6'
-        }"
-        :focusedInputStyle="{
-          border: '1px solid #409eff'
-        }"
-        :hoveredInputStyle="{
-          border: '1px solid #c0c4cc'
-        }"
         v-model="value3"
-        placeholder="Please input"
-        @focus="focusHandler"
-        @blur="blurHandler"
+        :inputStyle="{ 
+          border: '1px solid #dcdfe6',
+          borderRadius: '4px'
+        }"
+        :focusedInputStyle="{ border: '1px solid #409eff' }"
+        :hoveredInputStyle="{ border: '1px solid #c0c4cc' }"
+        inputClass="
+          w-full h-[30px] py-[1px] px-[11px] text-[14px] 
+          font-normal text-[rbg(48,49,51)]
+        "
       >
       </u-input>
 
       <u-input 
         v-model="value4"
-        placeholder="Please input"
-        @focus="focusHandler"
-        @blur="blurHandler"
-        :inputStyle="{
-          height: '30px',
-          borderTopRightRadius: '4px',
-          borderBottomRightRadius: '4px',
-          padding: '1px 11px',
-          color: 'rbg(48, 49, 51)',
-          fontSize: '14px',
-          fontWeight: '400px',
-          border: '1px solid #dcdfe6'
-        }"
-        :focusedInputStyle="{
-          border: '1px solid #409eff'
-        }"
-        :hoveredInputStyle="{
-          border: '1px solid #c0c4cc'
-        }"
+        :inputStyle="{ border: '1px solid #dcdfe6' }"
+        :focusedInputStyle="{ border: '1px solid #409eff' }"
+        :hoveredInputStyle="{ border: '1px solid #c0c4cc'   }"
+        inputClass="
+          w-full h-[30px] py-[1px] px-[11px] 
+          text-[14px] font-normal text-[rbg(48,49,51)]
+        "
       >
         <template #before>
           <div class="
@@ -109,10 +74,4 @@ const value1 = ref('')
 const value2 = ref('')
 const value3 = ref('')
 const value4 = ref('')
-
-const focusHandler = (e: Event) => {}
-
-const blurHandler = (e: Event) => {}
-
-const clearHandler = (oldValue: string) => {}
 </script>

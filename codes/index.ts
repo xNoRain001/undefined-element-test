@@ -5,6 +5,7 @@ import USlider from "./u-slider"
 import UDialog from "./u-dialog"
 import URating from "./u-rating"
 import USelect from './u-select'
+import UToggle from "./u-toggle"
 import UTooltip from "./u-tooltip"
 import USplitter from "./u-splitter"
 import uSkeleton from './u-skeleton'
@@ -28,6 +29,7 @@ const codeMap: {
   '/u-dialog': UDialog,
   '/u-rating': URating,
   '/u-select': USelect,
+  '/u-toggle': UToggle,
   '/u-tooltip': UTooltip,
   '/u-splitter': USplitter,
   '/u-skeleton': uSkeleton,

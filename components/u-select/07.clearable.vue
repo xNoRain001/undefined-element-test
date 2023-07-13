@@ -1,7 +1,12 @@
-import splitCode from '../../utils/split-code'
-
-const code = `<template>
-  
+<template>
+  <Example 
+    id="07.clearable"
+    title="Clearable"
+    desc="
+      The default value is true, When set to false, if the selected quantity 
+      equals the limit, the drop-down box will be automatically hidden.
+    "
+  >
     <div class="w-full">
       <u-select 
         :selectStyle="{ 
@@ -11,12 +16,13 @@ const code = `<template>
         :focusedSelectStyle="{ border: '2px solid rgb(25, 118, 210)' }"
         :hoveredSelectStyle="{ border: '1px solid rgba(0, 0, 0, .87)' }"
         selectClass="
-          w-full h-[56px] px-[12px] text-[14px] font-normal 
+          group w-full h-[56px] px-[12px] text-[14px] font-normal 
           text-[rgba(0, 0, 0, .87)]
         "
         v-model="value" 
         :options="options"
         multiple
+        :maxValues="2"
       >
         <template #select-items>
           <div class="
@@ -41,13 +47,20 @@ const code = `<template>
           </div>
         </template>
         <template #append>
+          <!-- <u-icon 
+            v-if="value.length"
+            name="close" 
+            width="16" 
+            height="16" 
+            clearable
+          ></u-icon> -->
           <u-icon 
-            :name="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
-          "></u-icon>
+            :name="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'">
+          </u-icon>
         </template>
       </u-select>
     </div>
-  
+  </Example>
 </template>
 
 <script lang="ts" setup>
@@ -55,9 +68,3 @@ const value = reactive<string[]>([])
 const options = ['1', '2', '3', '4']
 const expanded = ref(false) 
 </script>
-`
-const target = {}
-
-splitCode(code, target)
-
-export default target
