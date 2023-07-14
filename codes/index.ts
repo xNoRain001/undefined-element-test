@@ -8,7 +8,8 @@ import USelect from './u-select'
 import UToggle from "./u-toggle"
 import UTooltip from "./u-tooltip"
 import USplitter from "./u-splitter"
-import uSkeleton from './u-skeleton'
+import USkeleton from './u-skeleton'
+import UDropdown from './u-dropdown'
 import UExpansion from "./u-expansion"
 import UScrollArea from "./u-scroll-area"
 
@@ -32,7 +33,8 @@ const codeMap: {
   '/u-toggle': UToggle,
   '/u-tooltip': UTooltip,
   '/u-splitter': USplitter,
-  '/u-skeleton': uSkeleton,
+  '/u-skeleton': USkeleton,
+  '/u-dropdown': UDropdown,
   '/u-expansion': UExpansion,
   '/u-scroll-area': UScrollArea
 }

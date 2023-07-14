@@ -32,6 +32,7 @@ const links = [
   { to: '/u-splitter', label: 'USplitter' },
   { to: '/u-skeleton', label: 'USkeleton' },
   { to: '/u-toggle', label: 'UToggle' },
+  { to: '/u-dropdown', label: 'UDropdown' },
 ]
 
 const path = computed(() => useRoute().path)
