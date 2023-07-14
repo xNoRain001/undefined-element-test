@@ -1,0 +1,10 @@
+{
+  "components": {
+    "u-input": {
+      "basic": {
+        "title": "Basic",
+        "desc": ""
+      }
+    }
+  }
+}

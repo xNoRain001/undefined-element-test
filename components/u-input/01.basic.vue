@@ -1,5 +1,9 @@
 <template>
-  <Example id="01.basic" title="Basic">
+  <Example 
+    id="01.basic" 
+    :title="$t('components.u-input.basic.title')" 
+    :desc="$t('components.u-input.basic.desc')"
+  >
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         :inputStyle="{ 

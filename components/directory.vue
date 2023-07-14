@@ -1,5 +1,4 @@
 <template>
-  <!-- 64 55 55 110 -->
   <div class="pl-[64px] h-full sticky top-[85px]">
     <div class="w-[200px] py-[4px] pr-[8px] pl-[12px] mb-[32px]">
       <div class="text-[#606266] text-[12px] font-semibold">CONTENTS</div>
@@ -20,6 +19,7 @@
 import codesMap from '@/codes'
 
 const dirs: string[] = reactive([])
+const { t } = useI18n()
 
 const updateDirs = (path: string) => {
   const examples = codesMap[path]
@@ -28,6 +28,7 @@ const updateDirs = (path: string) => {
   dirs.length = 0
 
   for (let i = 0, l = _dirs.length; i < l; i++) {
+    // dirs.push(t(`components.${ path.slice(1) }.${ _dirs[i].slice(3) }.title`))
     dirs.push(_dirs[i].slice(3))
   }
 }

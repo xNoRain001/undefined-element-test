@@ -1,5 +1,7 @@
-<template>
-  <Example id="08.type" title="Type">
+import splitCode from '../../utils/split-code'
+
+const code = `<template>
+  
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         type="password"
@@ -24,7 +26,7 @@
         </template>
       </u-input>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>
@@ -33,3 +35,9 @@ const visible = ref(false)
 
 const updateVisible = () => visible.value = !visible.value
 </script>
+`
+const target = {}
+
+splitCode(code, target)
+
+export default target

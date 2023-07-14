@@ -11,7 +11,7 @@ const code = `<template>
             w-[16px] h-[16px] top-[2px] left-[2px] rounded-full bg-white
           "
           trackClass="rounded-full bg-[#dcdfe6]"
-          activeThumbClass="left-[22px]"
+          activeThumbClass="!left-[22px]"
           activeTrackClass="!bg-red-500"
         ></u-toggle>
 
@@ -22,7 +22,7 @@ const code = `<template>
             w-[16px] h-[16px] top-[2px] left-[2px] rounded-full bg-white
           "
           trackClass="rounded-full bg-[#dcdfe6]"
-          activeThumbClass="left-[22px]"
+          activeThumbClass="!left-[22px]"
           activeTrackClass="!bg-green-500"
         ></u-toggle>
 
@@ -33,7 +33,7 @@ const code = `<template>
             w-[16px] h-[16px] top-[2px] left-[2px] rounded-full bg-white
           "
           trackClass="rounded-full bg-[#dcdfe6]"
-          activeThumbClass="left-[22px]"
+          activeThumbClass="!left-[22px]"
           activeTrackClass="!bg-blue-500"
         ></u-toggle>
       </div>
