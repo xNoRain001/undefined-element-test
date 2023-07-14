@@ -1,3 +1,6 @@
+import path from 'path'
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -16,7 +19,11 @@ export default defineNuxtConfig({
       fs: {
         strict: false
       }
-    }
+    },
+
+    plugins: [
+      VueI18nPlugin({ include: [path.resolve(__dirname, "./locales/**")] })
+    ]
   },
 
   css: [
