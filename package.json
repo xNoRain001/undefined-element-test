@@ -19,6 +19,7 @@
     "@codemirror/lang-css": "^6.2.0",
     "@codemirror/lang-html": "^6.4.5",
     "@codemirror/lang-javascript": "^6.1.9",
+    "@intlify/unplugin-vue-i18n": "^0.12.2",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "codemirror": "^6.0.1",
     "vue-codemirror": "^6.1.1"
