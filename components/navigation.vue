@@ -34,6 +34,7 @@ const links = [
   { to: '/u-toggle', label: 'UToggle' },
   { to: '/u-dropdown', label: 'UDropdown' },
   { to: '/u-scroller', label: 'UScroller' },
+  { to: '/u-checkbox', label: 'UCheckbox' },
 ]
 
 const path = computed(() => useRoute().path)
