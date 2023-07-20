@@ -10,6 +10,7 @@ import UTooltip from "./u-tooltip"
 import USplitter from "./u-splitter"
 import USkeleton from './u-skeleton'
 import UDropdown from './u-dropdown'
+import UScroller from './u-scroller'
 import UExpansion from "./u-expansion"
 import UScrollArea from "./u-scroll-area"
 
@@ -35,6 +36,7 @@ const codeMap: {
   '/u-splitter': USplitter,
   '/u-skeleton': USkeleton,
   '/u-dropdown': UDropdown,
+  '/u-scroller': UScroller,
   '/u-expansion': UExpansion,
   '/u-scroll-area': UScrollArea
 }

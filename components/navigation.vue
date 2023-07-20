@@ -33,6 +33,7 @@ const links = [
   { to: '/u-skeleton', label: 'USkeleton' },
   { to: '/u-toggle', label: 'UToggle' },
   { to: '/u-dropdown', label: 'UDropdown' },
+  { to: '/u-scroller', label: 'UScroller' },
 ]
 
 const path = computed(() => useRoute().path)
