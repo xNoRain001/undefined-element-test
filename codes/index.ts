@@ -14,6 +14,7 @@ import UScroller from './u-scroller'
 import UCheckbox from './u-checkbox'
 import UExpansion from "./u-expansion"
 import UScrollArea from "./u-scroll-area"
+import UInfiniteScroll from './u-infinite-scroll'
 
 const codeMap: { 
   [propName: string]: { 
@@ -40,7 +41,8 @@ const codeMap: {
   '/u-scroller': UScroller,
   '/u-checkbox': UCheckbox,
   '/u-expansion': UExpansion,
-  '/u-scroll-area': UScrollArea
+  '/u-scroll-area': UScrollArea,
+  '/u-infinite-scroll': UInfiniteScroll,
 }
 
 export default codeMap
