@@ -1,16 +1,11 @@
-<template>
-  <Example 
-    id="02.max" 
-    title="Max" 
-    desc="
-      The max option control the number of expanded items, the default value
-      is Number.MAX_SAFE_INTEGER.
-    "
-  >
+import splitCode from '../../utils/split-code'
+
+const code = `<template>
+  
     <div class="w-full">
       <u-expansion 
         v-model="expanded"
-        max="1"
+        :max="1"
         itemClass="
           border-[1px] border-x-0 border-solid border-[#dcdfe6] border-t-0
           first-of-type:border-t-[1px]
@@ -64,9 +59,15 @@
         </u-expansion-item>
       </u-expansion>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>
 const expanded = reactive<string[]>([])
 </script>
+`
+const target = {}
+
+splitCode(code, target)
+
+export default target
