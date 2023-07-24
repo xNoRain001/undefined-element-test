@@ -1,5 +1,9 @@
 <template>
-  <Example id="01.basic" title="Basic">
+  <Example 
+    id="01.basic" 
+    title="Basic"
+    :desc="$t('components.u-expansion.basic.desc')"
+  >
     <div class="w-full">
       <u-expansion 
         v-model="expanded"

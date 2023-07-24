@@ -7,5 +7,10 @@ export default defineI18nConfig(() => ({
   messages: {
     en,
     zh
-  }
+  },
+  // detectBrowserLanguage: {
+  //   useCookie: true,
+  //   cookieKey: 'i18n_redirected',
+  //   redirectOn: 'root',  // recommended
+  // }
 }))

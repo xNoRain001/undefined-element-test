@@ -2,5 +2,15 @@ components:
   u-input:
     basic:
       title: 基础
-      desc: ''
+      desc: 
+  u-expansion:
+    basic: 
+      title: 基础
+      desc: v-model 值必须是一个响应式数组。
+    min:
+      title: 最小值
+      desc: 假如你设置为 1，那么至少会保持一个扩展项是始终展开的。
+    max:
+      title: 最大值
+      desc: 能同时打开的扩展项的最大数量
       

@@ -2,7 +2,7 @@
   <Example 
     id="02.min" 
     title="Min" 
-    desc=""
+    :desc="$t('components.u-expansion.min.desc')"
   >
     <div class="w-full">
       <u-expansion 
@@ -65,5 +65,5 @@
 </template>
 
 <script lang="ts" setup>
-const expanded = reactive<string[]>([])
+const expanded = reactive<string[]>(['1'])
 </script>

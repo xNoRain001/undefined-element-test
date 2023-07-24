@@ -2,10 +2,7 @@
   <Example 
     id="03.max" 
     title="Max" 
-    desc="
-      The max option control the number of expanded items, the default value
-      is Number.MAX_SAFE_INTEGER.
-    "
+    :desc="$t('components.u-expansion.max.desc')"
   >
     <div class="w-full">
       <u-expansion 
