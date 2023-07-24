@@ -63,7 +63,7 @@ const code = `<template>
 </template>
 
 <script lang="ts" setup>
-const expanded = reactive<string[]>([])
+const expanded = reactive<string[]>(['1'])
 </script>
 `
 const target = {}

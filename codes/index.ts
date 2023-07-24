@@ -1,6 +1,7 @@
 import UTabs from './u-tabs'
 import UIcon from './u-icon'
 import UInput from "./u-input"
+import UTable from './u-table'
 import USlider from "./u-slider"
 import UDialog from "./u-dialog"
 import URating from "./u-rating"
@@ -29,6 +30,7 @@ const codeMap: {
   '/u-tabs': UTabs,
   '/u-icon': UIcon,
   '/u-input': UInput,
+  '/u-table': UTable,
   '/u-slider': USlider,
   '/u-dialog': UDialog,
   '/u-rating': URating,

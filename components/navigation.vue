@@ -35,7 +35,8 @@ const links = [
   { to: '/u-dropdown', label: 'UDropdown' },
   { to: '/u-scroller', label: 'UScroller' },
   { to: '/u-checkbox', label: 'UCheckbox' },
-  { to: '/u-infinite-scroll', label: 'UInfiniteScroll' }
+  { to: '/u-infinite-scroll', label: 'UInfiniteScroll' },
+  { to: '/u-table', label: 'UTable' }
 ]
 
 const path = computed(() => useRoute().path)
