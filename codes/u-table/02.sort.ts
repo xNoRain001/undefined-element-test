@@ -23,7 +23,9 @@ const code = `<template>
 const head = [
   {
     field: 'a',
-    label: 'A'
+    label: 'A',
+    sortable: true,
+    sortOrder: 'asc' // default value is desc
   },
   {
     field: 'b',
@@ -36,17 +38,17 @@ const head = [
 ]
 const body = reactive([
   {
-    a: Math.random().toFixed(4),
+    a: 3,
     b: Math.random().toFixed(4),
     c: Math.random().toFixed(4),
   },
   {
-    a: Math.random().toFixed(4),
+    a: 1,
     b: Math.random().toFixed(4),
     c: Math.random().toFixed(4),
   },
   {
-    a: Math.random().toFixed(4),
+    a: 2,
     b: Math.random().toFixed(4),
     c: Math.random().toFixed(4),
   }
