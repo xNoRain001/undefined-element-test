@@ -15,9 +15,9 @@
         contentClass="text-[14px] text-[#303133] font-medium"
       >
         <u-expansion-item name="1">
-          <template #header>
+          <template #header="{ expanded }">
             <div class="text-[14px] text-[#303133] font-medium">Home</div>
-            <u-icon :name="expanded.includes('1') ? 'keyboard_arrow_up' : 'keyboard_arrow_down'"></u-icon>
+            <u-icon :name="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'"></u-icon>
           </template>
           <template #content>
             <div class="pb-[24px]">
@@ -30,9 +30,9 @@
         </u-expansion-item>
 
         <u-expansion-item name="2">
-          <template #header>
+          <template #header="{ expanded }">
             <div class="text-[14px] text-[#303133] font-medium">About us</div>
-            <u-icon :name="expanded.includes('2') ? 'keyboard_arrow_up' : 'keyboard_arrow_down'"></u-icon>
+            <u-icon :name="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'"></u-icon>
           </template>
           <template #content>
             <div class="pb-[24px]">

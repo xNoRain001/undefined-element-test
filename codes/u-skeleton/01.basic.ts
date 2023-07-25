@@ -4,6 +4,9 @@ const code = `<template>
   
     <div class="w-full">
       <u-skeleton v-model="loading">
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div class="w-[48px] h-[48px] rounded-full bg-pink-500 mt-[16px]"></div>
+
         <template #skeleton-items>
           <u-skeleton-item class="
             w-full h-[24px] bg-[rgba(0,0,0,.12)] rounded-[4px]
@@ -11,10 +14,6 @@ const code = `<template>
           <u-skeleton-item class="
             w-[48px] h-[48px] bg-[rgba(0,0,0,.12)] rounded-full mt-[16px]
           "></u-skeleton-item>
-        </template>
-        <template #content>
-          <div>Lorem ipsum dolor sit amet.</div>
-          <div class="w-[48px] h-[48px] rounded-full bg-pink-500 mt-[16px]"></div>
         </template>
       </u-skeleton>
     </div>

@@ -2,21 +2,19 @@
   <Example id="01.basic" title="Basic">
     <div class="w-full">
       <u-dropdown>
-        <template #dropdown-trigger>
-          <button 
-            class="
-              w-[209px] h-[36px] bg-[rgb(25,118,210)] flex jusfity-center
-              items-center text-white text-[14px] font-medium py-[4px] px-[16px]
-              whitespace-nowrap
-            ">
-            DROPDOWN BUTTON
-            <u-icon 
-              name="keyboard_arrow_down" 
-              color="white" 
-              class="ml-[8px]"
-            ></u-icon>
-          </button>
-        </template>
+        <button 
+          class="
+            w-[209px] h-[36px] bg-[rgb(25,118,210)] flex jusfity-center
+            items-center text-white text-[14px] font-medium py-[4px] px-[16px]
+            whitespace-nowrap
+          ">
+          DROPDOWN BUTTON
+          <u-icon 
+            name="keyboard_arrow_down" 
+            color="white" 
+            class="ml-[8px]"
+          ></u-icon>
+        </button>
 
         <template #dropdown-list>
           <div 

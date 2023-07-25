@@ -6,15 +6,22 @@ const code = `<template>
       <u-table 
         :head="head" 
         :body="body"
-        thClass=""
         tdClass="
           border-b-[1px] border-solid border-[#0000001f] px-[7px] py-[16px]
           h-[48px] text-[13px] text-center
         "
+        thClass=""
         headTrClass=""
         bodyTrClass="hover:bg-[rgba(0,0,0,.08)]"
         tableClass="w-full border-separate border-spacing-0"
-      ></u-table>
+      >
+        <template #th="{ label, sortable }">
+          <div class="flex justify-center items-center">
+            <span>{{ label }}</span>
+            <u-icon v-if="sortable" name="expand_less" width="24" height="24"></u-icon>
+          </div>
+        </template>
+      </u-table>
     </div>
   
 </template>
