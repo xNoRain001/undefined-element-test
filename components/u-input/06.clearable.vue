@@ -1,10 +1,8 @@
 <template>
   <Example 
     id="06.clearable" 
-    title="Clearable"
-    desc="
-      Add clearable attribute to an element, will reset value when you click.
-    "
+    :title="$t('components.u-input.06-clearable.title')" 
+    :desc="$t('components.u-input.06-clearable.desc')"
   >
     <div class="w-full grid gap-y-[24px]">
       <u-input 

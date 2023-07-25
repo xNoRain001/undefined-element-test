@@ -6,7 +6,7 @@ const code = `<template>
       <u-infinite-scroll 
         @load="onLoad" 
         :offset="200"
-        scrollTarget="body"
+        scrollTarget=".infinite-scroll"
         class="h-[400px] overflow-y-scroll relative"
       >
         <div 

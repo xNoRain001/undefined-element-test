@@ -1,8 +1,8 @@
 <template>
   <Example 
     id="03.drawer" 
-    title="Drawer"
-    desc="You can easily turn dialog into drawer by changing the style"
+    :title="$t('components.u-dialog.03-drawer.title')" 
+    :desc="$t('components.u-dialog.03-drawer.desc')"
   >
     <div class="btns w-full flex items-center">
       <button @click="updateVisible">

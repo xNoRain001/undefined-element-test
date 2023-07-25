@@ -1,5 +1,9 @@
 <template>
-  <Example id="05.disabled" title="Disabled">
+  <Example 
+    id="05.disabled" 
+    :title="$t('components.u-input.05-disabled.title')" 
+    :desc="$t('components.u-input.05-disabled.desc')"
+  >
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         disabled

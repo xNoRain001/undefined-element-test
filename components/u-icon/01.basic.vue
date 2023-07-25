@@ -1,17 +1,10 @@
 <template>
-  <Example id="01.basic" title="Basic">
+  <Example 
+    id="01.basic" 
+    :title="$t('components.u-icon.01-basic.title')" 
+    :desc="$t('components.u-icon.01-basic.desc')"
+  >
     <div class="w-full grid gap-y-[24px]">
-      <div>
-        <span>icon from </span>
-        <a 
-          target="_blank" 
-          class="text-blue-500 hover:underline" 
-          href="https://fonts.google.com/icons"
-        >
-          https://fonts.google.com/icons
-        </a>
-      </div>
-
       <h2>Filled</h2>
       
       <div>

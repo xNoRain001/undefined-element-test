@@ -1,8 +1,8 @@
 <template>
   <Example 
     id="01.basic" 
-    :title="$t('components.u-infinite-scroll.basic.title')" 
-    :desc="$t('components.u-infinite-scroll.basic.desc')" 
+    :title="$t('components.u-infinite-scroll.01-basic.title')" 
+    :desc="$t('components.u-infinite-scroll.01-basic.desc')" 
   >
     <div class="w-full">
       <u-infinite-scroll 

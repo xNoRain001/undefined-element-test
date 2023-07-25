@@ -1,5 +1,9 @@
 <template>
-  <Example id="03.debounce" title="Debounce">
+  <Example 
+    id="03.debounce" 
+    :title="$t('components.u-input.03-debounce.title')" 
+    :desc="$t('components.u-input.03-debounce.desc')"
+  >
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         :debounce="300"

@@ -1,5 +1,9 @@
 <template>
-  <Example id="07.autofocus" title="Autofocus">
+  <Example 
+    id="07.autofocus" 
+    :title="$t('components.u-input.07-autofocus.title')" 
+    :desc="$t('components.u-input.07-autofocus.desc')"
+  >
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         autofocus

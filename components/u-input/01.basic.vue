@@ -1,8 +1,8 @@
 <template>
   <Example 
     id="01.basic" 
-    :title="$t('components.u-input.basic.title')" 
-    :desc="$t('components.u-input.basic.desc')"
+    :title="$t('components.u-input.01-basic.title')" 
+    :desc="$t('components.u-input.01-basic.desc')"
   >
     <div class="w-full grid gap-y-[24px]">
       <u-input 

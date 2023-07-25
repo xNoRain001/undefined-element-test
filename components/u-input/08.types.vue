@@ -1,5 +1,9 @@
 <template>
-  <Example id="08.types" title="Types">
+  <Example 
+    id="08.types" 
+    :title="$t('components.u-input.08-types.title')" 
+    :desc="$t('components.u-input.08-types.desc')"
+  >
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         type="password"

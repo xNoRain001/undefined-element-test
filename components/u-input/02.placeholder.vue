@@ -1,8 +1,8 @@
 <template>
   <Example 
     id="02.placeholder" 
-    title="Placeholder"
-    desc="color, font size, font weight can be set."
+    :title="$t('components.u-input.02-placeholder.title')" 
+    :desc="$t('components.u-input.02-placeholder.desc')"
   >
     <div class="w-full grid gap-y-[24px]">
       <u-input 

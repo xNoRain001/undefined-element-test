@@ -1,5 +1,9 @@
 <template>
-  <Example id="04.readonly" title="Readonly">
+  <Example 
+    id="04.readonly" 
+    :title="$t('components.u-input.04-readonly.title')" 
+    :desc="$t('components.u-input.04-readonly.desc')"
+  >
     <div class="w-full grid gap-y-[24px]">
       <u-input 
         readonly

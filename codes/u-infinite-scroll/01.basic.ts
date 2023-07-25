@@ -6,7 +6,7 @@ const code = `<template>
       <u-infinite-scroll 
         @load="onLoad" 
         :offset="200"
-        class="h-[400px] overflow-y-scroll relative"
+        class="infinite-scroll h-[400px] overflow-y-scroll relative"
       >
         <div 
           v-for="(item, index) in items" 

@@ -1,5 +1,9 @@
 <template>
-  <Example id="02.persistent" title="Persistent">
+  <Example 
+    id="02.persistent" 
+    :title="$t('components.u-dialog.02-persistent.title')" 
+    :desc="$t('components.u-dialog.02-persistent.desc')"
+  >
     <div class="btns w-full flex items-center">
       <button @click="updateVisible1">
         <u-icon name="control_camera" color="#fff"></u-icon>
