@@ -1,5 +1,9 @@
 <template>
-  <Example id="02.icon" title="Icon">
+  <Example 
+    id="02.icon" 
+    :title="$t('components.u-toggle.02-icon.title')" 
+    :desc="$t('components.u-toggle.02-icon.desc')"
+  >
     <div class="w-full">
       <u-toggle 
         v-model="value"

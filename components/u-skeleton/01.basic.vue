@@ -1,5 +1,9 @@
 <template>
-  <Example id="01.basic" title="Basic">
+  <Example 
+    id="01.basic" 
+    :title="$t('components.u-skeleton.01-basic.title')" 
+    :desc="$t('components.u-skeleton.01-basic.desc')"
+  >
     <div class="w-full">
       <u-skeleton v-model="loading">
         <div>Lorem ipsum dolor sit amet.</div>

@@ -1,8 +1,8 @@
 <template>
   <Example 
     id="01.basic" 
-    title="Basic"
-    :desc="$t('components.u-expansion.basic.desc')"
+    :title="$t('components.u-expansion.01-basic.title')"
+    :desc="$t('components.u-expansion.01-basic.desc')"
   >
     <div class="w-full">
       <u-expansion 

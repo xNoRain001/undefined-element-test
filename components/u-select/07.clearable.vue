@@ -1,11 +1,8 @@
 <template>
   <Example 
     id="07.clearable"
-    title="Clearable"
-    desc="
-      The default value is true, When set to false, if the selected quantity 
-      equals the limit, the drop-down box will be automatically hidden.
-    "
+    :title="$t('components.u-select.07-clearable.title')" 
+    :desc="$t('components.u-select.07-clearable.desc')"
   >
     <div class="w-full">
       <u-select 

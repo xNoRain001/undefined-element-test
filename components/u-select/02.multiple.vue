@@ -1,5 +1,9 @@
 <template>
-  <Example id="02.multiple" title="Multiple">
+  <Example 
+    id="02.multiple" 
+    :title="$t('components.u-select.02-multiple.title')" 
+    :desc="$t('components.u-select.02-multiple.desc')"
+  >
     <div class="w-full">
       <u-select 
         :selectStyle="{ 

@@ -1,5 +1,9 @@
 <template>
-  <Example id="02.step" title="Step">
+  <Example 
+    id="02.step" 
+    :title="$t('components.u-slider.02-step.title')" 
+    :desc="$t('components.u-slider.02-step.desc')"
+  >
     <div class="w-full">
       <div>value: {{ value }}</div>
       <u-slider 

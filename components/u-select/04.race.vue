@@ -1,11 +1,8 @@
 <template>
   <Example 
     id="04.race"
-    title="Race"
-    desc="
-      Automatically replace the earliest selected value when exceeding 
-      the limit
-    "
+    :title="$t('components.u-select.04-race.title')" 
+    :desc="$t('components.u-select.04-race.desc')"
   >
     <div class="w-full">
       <u-select 

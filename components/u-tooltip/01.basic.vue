@@ -1,5 +1,9 @@
 <template>
-  <Example id="01.basic" title="Basic">
+  <Example 
+    id="01.basic" 
+    :title="$t('components.u-tooltip.01-basic.title')" 
+    :desc="$t('components.u-tooltip.01-basic.desc')"
+  >
     <div class="btns w-full flex items-center">
       <button>
         <u-icon name="keyboard_arrow_up" color="#fff"></u-icon>

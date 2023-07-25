@@ -1,8 +1,8 @@
 <template>
   <Example 
     id="03.max" 
-    title="Max" 
-    :desc="$t('components.u-expansion.max.desc')"
+    :title="$t('components.u-expansion.03-max.title')"
+    :desc="$t('components.u-expansion.03-max.desc')"
   >
     <div class="w-full">
       <u-expansion 

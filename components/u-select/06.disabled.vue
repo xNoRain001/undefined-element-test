@@ -1,7 +1,8 @@
 <template>
   <Example 
     id="06.disabled"
-    title="Disabled"
+    :title="$t('components.u-select.06-disabled.title')" 
+    :desc="$t('components.u-select.06-disabled.desc')"
   >
     <div class="w-full">
       <u-select 

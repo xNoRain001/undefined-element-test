@@ -1,5 +1,9 @@
 <template>
-  <Example id="02.horizontal" title="Horizontal">
+  <Example 
+    id="02.horizontal" 
+    :title="$t('components.u-splitter.02-horizontal.title')" 
+    :desc="$t('components.u-splitter.02-horizontal.desc')"
+  >
     <div class="w-full">
       <u-splitter 
         v-model="value" 

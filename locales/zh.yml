@@ -19,10 +19,16 @@ components:
       desc: 通过点击触发
   u-icon:
     01-basic:
-      title: 图标
+      title: 基础
       desc: 图标集来自 https://fonts.google.com/icons，通过 name 属性渲染对应的图标。
-  # u-ratting:
-  # u-scroll-area:
+  u-ratting:
+    01-basic:
+      title: 基础
+      desc: 评分
+  u-scroll-area:
+    01-basic:
+      title: 基础
+      desc: 滚动区域
   u-scroller:
     01-basic:
       title: 基础
@@ -38,15 +44,69 @@ components:
       desc: 当目标的滚动距离达到这个值时才显示 scroller
     05-scroll-target:
       title: 目标
-      desc: 作用的元素
-  # u-select:
-  # u-skeleton:
-  # u-slider:
-  # u-splitter:
+      desc: 作用的元素，如果 scroller 组件在 u-scroll-area 组件内，不需要指定目标，否则你需要提供一个能找到目标的选择器。
+  u-select:
+    01-basic:
+      title: 基础
+      desc: 下拉框
+    02-multiple:
+      title: 多选
+      desc: 选择多项
+    03-max-values:
+      title: 最大项
+      desc: 多选时的最大数量
+    04-race:
+      title: 竞赛
+      desc: 多选超过最大数量时，取消最早选择的那一项。
+    05-persistent:
+      title: 持久化
+      desc: 默认开启，当多选的数量超过最大值时，不自动关闭下拉框，与 race 配合使用。
+    06-disabled:
+      title: 禁用
+      desc: 禁用下拉框
+    07-clearable:
+      title: 清空
+      desc: 清空选择的所有项
+  u-skeleton:
+    01-basic:
+      title: 基础
+      desc: 骨架
+  u-slider:
+    01-basic:
+      title: 基础
+      desc: 滑块
+    02-step:
+      title: 间隔
+      desc: 最小间隔
+  u-splitter:
+    01-basic:
+      title: 基础
+      desc: 拆分器用于将两块区域分隔开
+    02-horizontal:
+      title: 水平
+      desc: 水平的拆分器
+    03-range:
+      title: 范围
+      desc: 设置两块区域的最小值和最大值
+    04-separator:
+      title: 分隔器
+      desc: 自定义分隔器
   # u-table:
-  # u-tabs:
-  # u-toggle:
-  # u-toolip:
+  u-tabs:
+    01-basic:
+      title: 基础
+      desc: 选项卡
+  u-toggle:
+    01-basic:
+      title: 基础
+      desc: 切换
+    02-icon:
+      title: 图标
+      desc: 自定义图标
+  u-toolip:
+    01-basic:
+      title: 基础
+      desc: 工具提示
   u-input:
     01-basic:
       title: 基础
@@ -73,13 +133,13 @@ components:
       title: 类型
       desc: 通过 type 属性设置表单的类型
   u-expansion:
-    basic: 
+    01-basic: 
       title: 基础
       desc: v-model 值必须是一个响应式数组。
-    min:
+    02-min:
       title: 最小值
       desc: 假如你设置为 1，那么至少会保持一个扩展项是始终展开的。
-    max:
+    03-Wmax:
       title: 最大值
       desc: 能同时打开的扩展项的最大数量
   u-infinite-scroll:

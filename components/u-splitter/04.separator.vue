@@ -1,5 +1,9 @@
 <template>
-  <Example id="04.separator" title="Separator">
+  <Example 
+    id="04.separator" 
+    :title="$t('components.u-splitter.04-separator.title')" 
+    :desc="$t('components.u-splitter.04-separator.desc')"
+  >
     <div class="w-full">
       <u-splitter 
         v-model="value" 

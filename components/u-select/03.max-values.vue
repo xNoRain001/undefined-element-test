@@ -1,8 +1,8 @@
 <template>
   <Example 
     id="03.max-values"
-    title="Max-values"
-    desc="The default value is Number.MAX_SAFE_INTEGER"
+    :title="$t('components.u-select.03-max-values.title')" 
+    :desc="$t('components.u-select.03-max-values.desc')"
   >
     <div class="w-full">
       <u-select 

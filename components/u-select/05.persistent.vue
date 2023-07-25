@@ -1,11 +1,8 @@
 <template>
   <Example 
     id="05.persistent"
-    title="Persistent"
-    desc="
-      The default value is true, When set to false, if the selected quantity 
-      equals the limit, the drop-down box will be automatically hidden.
-    "
+    :title="$t('components.u-select.05-persistent.title')" 
+    :desc="$t('components.u-select.05-persistent.desc')"
   >
     <div class="w-full">
       <u-select 

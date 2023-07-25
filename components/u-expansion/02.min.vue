@@ -1,8 +1,8 @@
 <template>
   <Example 
     id="02.min" 
-    title="Min" 
-    :desc="$t('components.u-expansion.min.desc')"
+    :title="$t('components.u-expansion.02-min.title')"
+    :desc="$t('components.u-expansion.02-min.desc')"
   >
     <div class="w-full">
       <u-expansion 

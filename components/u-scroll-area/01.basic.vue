@@ -1,5 +1,9 @@
 <template>
-  <Example id="01.basic" title="Basic">
+  <Example 
+    id="01.basic" 
+    :title="$t('components.u-scroll-area.01-basic.title')" 
+    :desc="$t('components.u-scroll-area.01-basic.desc')"
+  >
     <div class="w-full grid gap-y-[24px]">
       <u-scroll-area height="200px" width="400px">
         <div v-for="i in 15" :key="i">

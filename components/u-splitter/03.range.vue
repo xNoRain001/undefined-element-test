@@ -1,5 +1,9 @@
 <template>
-  <Example id="03.range" title="Range">
+  <Example 
+    id="03.range" 
+    :title="$t('components.u-splitter.03-range.title')" 
+    :desc="$t('components.u-splitter.03-range.desc')"
+  >
     <div class="w-full">
       <u-splitter 
         min="10"
