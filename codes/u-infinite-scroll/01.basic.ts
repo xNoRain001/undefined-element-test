@@ -3,18 +3,19 @@ import splitCode from '../../utils/split-code'
 const code = `<template>
   
     <div class="w-full">
-      <u-infinite-scroll @load="onLoad" class="h-[400px] overflow-y-scroll relative">
+      <u-infinite-scroll 
+        @load="onLoad" 
+        :offset="200"
+        class="h-[400px] overflow-y-scroll relative"
+      >
         <div 
           v-for="(item, index) in items" 
           :key="index"
         >{{ index }}: {{ item }}</div>
 
         <template #loading="{ loading }">
-          <div class="w-fit sticky bottom-[16px] left-1/2">
-            <u-icon v-if="loading" name="refresh"></u-icon>
-            <div v-else>
-              load more
-            </div>
+          <div class="w-fit sticky bottom-[16px] left-1/2 h-[30px]">
+            <u-icon v-if="loading" class="animate-spin" name="refresh"></u-icon>
           </div>
         </template>
       </u-infinite-scroll>
@@ -25,11 +26,12 @@ const code = `<template>
 <script lang="ts" setup>
 const items = reactive<string[]>((new Array(40)).fill('Lorem ipsum dolor sit amet.'))
 
-const onLoad = () => {
+const onLoad = (done: Function) => {
   setTimeout(() => {
     const newItems = (new Array(10)).fill('Lorem ipsum dolor sit amet.')
     items.push(...newItems)
-  }, 1000) 
+    done()
+  }, 3000) 
 }
 </script>
 `

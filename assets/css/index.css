@@ -14,7 +14,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  @apply overflow-y-scroll w-screen h-screen
 }
 
 .btn {

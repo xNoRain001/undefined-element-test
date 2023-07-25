@@ -1,14 +1,13 @@
-<template>
-  <Example 
-    id="01.basic" 
-    :title="$t('components.u-infinite-scroll.basic.title')" 
-    :desc="$t('components.u-infinite-scroll.basic.desc')" 
-  >
+import splitCode from '../../utils/split-code'
+
+const code = `<template>
+  
     <div class="w-full">
       <u-infinite-scroll 
         @load="onLoad" 
         :offset="200"
-        class="infinite-scroll h-[400px] overflow-y-scroll relative"
+        scrollTarget="body"
+        class="h-[400px] overflow-y-scroll relative"
       >
         <div 
           v-for="(item, index) in items" 
@@ -22,7 +21,7 @@
         </template>
       </u-infinite-scroll>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>
@@ -36,3 +35,9 @@ const onLoad = (done: Function) => {
   }, 3000) 
 }
 </script>
+`
+const target = {}
+
+splitCode(code, target)
+
+export default target

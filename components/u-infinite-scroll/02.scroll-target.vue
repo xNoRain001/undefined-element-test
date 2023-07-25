@@ -1,14 +1,15 @@
 <template>
   <Example 
-    id="01.basic" 
-    :title="$t('components.u-infinite-scroll.basic.title')" 
-    :desc="$t('components.u-infinite-scroll.basic.desc')" 
+    id="02.scroll-target" 
+    :title="$t('components.u-infinite-scroll.scroll-target.title')" 
+    :desc="$t('components.u-infinite-scroll.scroll-target.desc')" 
   >
     <div class="w-full">
       <u-infinite-scroll 
         @load="onLoad" 
         :offset="200"
-        class="infinite-scroll h-[400px] overflow-y-scroll relative"
+        scrollTarget=".infinite-scroll"
+        class="h-[400px] overflow-y-scroll relative"
       >
         <div 
           v-for="(item, index) in items" 
