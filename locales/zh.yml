@@ -13,4 +13,11 @@ components:
     max:
       title: 最大值
       desc: 能同时打开的扩展项的最大数量
+  u-infinite-scroll:
+    basic:
+      title: 基础
+      desc: 默认当距离底部偏移为 200 时执行 load 事件回调
+    scroll-target:
+      title: 滚动目标
+      desc: 这里将滚动目标设置为 basic 案例中的容器，当它滚动到距离底部 200px 时，也会触发 scroll target 案例加载更多数据。
       
