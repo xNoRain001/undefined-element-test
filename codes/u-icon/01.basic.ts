@@ -3,17 +3,6 @@ import splitCode from '../../utils/split-code'
 const code = `<template>
   
     <div class="w-full grid gap-y-[24px]">
-      <div>
-        <span>icon from </span>
-        <a 
-          target="_blank" 
-          class="text-blue-500 hover:underline" 
-          href="https://fonts.google.com/icons"
-        >
-          https://fonts.google.com/icons
-        </a>
-      </div>
-
       <h2>Filled</h2>
       
       <div>

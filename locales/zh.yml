@@ -23,7 +23,22 @@ components:
       desc: 图标集来自 https://fonts.google.com/icons，通过 name 属性渲染对应的图标。
   # u-ratting:
   # u-scroll-area:
-  # u-scroller:
+  u-scroller:
+    01-basic:
+      title: 基础
+      desc: 让滚动条滚动到指定位置
+    02-to:
+      title: 目标位置
+      desc: 默认值为 0。
+    03-duration:
+      title: 过渡时间
+      desc: 默认值为 300
+    04-scroll-offset:
+      title: 偏移
+      desc: 当目标的滚动距离达到这个值时才显示 scroller
+    05-scroll-target:
+      title: 目标
+      desc: 作用的元素
   # u-select:
   # u-skeleton:
   # u-slider:

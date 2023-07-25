@@ -13,7 +13,7 @@
       </ul>
     </div>
 
-    <u-scroller :duration="300" scrollTarget="html" class="fixed right-[20px] bottom-[20px]">
+    <u-scroller scrollTarget="html" class="fixed right-[20px] bottom-[20px]">
       <div class="cursor-pointer w-[40px] h-[40px] bg-blue-500 rounded-full flex justify-center items-center">
         <u-icon name="keyboard_arrow_up" color="white"></u-icon>
       </div>

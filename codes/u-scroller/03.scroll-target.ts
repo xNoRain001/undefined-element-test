@@ -1,5 +1,7 @@
-<template>
-  <Example id="02.scroll-target" title="Scroll target">
+import splitCode from '../../utils/split-code'
+
+const code = `<template>
+  
     <div class="w-full relative">
       <div class="scroll-target w-full h-[400px] overflow-y-scroll">
         <div v-for="i in 100" :key="i">
@@ -13,5 +15,11 @@
         </div>
       </u-scroller>
     </div>
-  </Example>
+  
 </template>
+`
+const target = {}
+
+splitCode(code, target)
+
+export default target
