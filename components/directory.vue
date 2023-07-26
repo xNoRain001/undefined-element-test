@@ -34,8 +34,8 @@ const updateDirs = (path: string) => {
   dirs.length = 0
 
   for (let i = 0, l = _dirs.length; i < l; i++) {
-    // dirs.push(t(`components.${ path.slice(1) }.${ _dirs[i].slice(3) }.title`))
-    dirs.push(_dirs[i].slice(3))
+    dirs.push(t(`components.${ path.slice(1) }.${ _dirs[i].replace('.', '-') }.title`))
+    // dirs.push(_dirs[i].slice(3))
   }
 }
 

@@ -6,8 +6,7 @@ const code = `<template>
       <u-checkbox-group 
         v-model="selection"
         class="flex items-center [&>*:not(:first-of-type)]:ml-[32px]"
-        :min="1"
-        :max="2"
+        :max="1"
         race
       >
         <u-checkbox class="flex items-center" value="red">

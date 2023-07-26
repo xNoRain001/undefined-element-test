@@ -14,11 +14,7 @@
 }
 
 body {
-  @apply overflow-y-scroll w-screen h-screen
-}
-
-.btn {
-  @apply cursor-pointer bg-blue-500 text-white px-4 py-2
+  @apply overflow-y-scroll w-screen h-screen font-['Helvetica_Neue']
 }
 
 .tooltip {
