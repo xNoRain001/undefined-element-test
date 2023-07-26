@@ -1,8 +1,14 @@
 components:
-  # u-checkbox:
-  #   01-basic:
-  #     title:
-  #     desc:
+  u-checkbox:
+    01-basic:
+      title: 基础
+      desc: v-model 的值为布尔值时，是单选框；为数组时，是多选框。
+    02-group:
+      title: 多选框
+      desc: 通过 value 属性指定选中时的值。
+    03-disabled:
+      title: 禁用
+      desc: 通过 disabled 属性禁用，这里将第一个多选框设置为了禁用。
   u-dialog:
     01-basic:
       title: 对话框

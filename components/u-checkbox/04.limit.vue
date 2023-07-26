@@ -1,8 +1,8 @@
 <template>
   <Example 
-    id="02.group" 
-    :title="$t('components.u-checkbox.02-group.title')" 
-    :desc="$t('components.u-checkbox.02-group.desc')"
+    id="04.limit" 
+    :title="$t('components.u-checkbox.04-limit.title')" 
+    :desc="$t('components.u-checkbox.04-limit.desc')"
   >
     <div class="w-full">
       <div class="flex items-center [&>*:not(:first-of-type)]:ml-[32px]">

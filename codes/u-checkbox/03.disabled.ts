@@ -1,14 +1,14 @@
-<template>
-  <Example 
-    id="02.group" 
-    :title="$t('components.u-checkbox.02-group.title')" 
-    :desc="$t('components.u-checkbox.02-group.desc')"
-  >
+import splitCode from '../../utils/split-code'
+
+const code = `<template>
+  
     <div class="w-full">
       <div class="flex items-center [&>*:not(:first-of-type)]:ml-[32px]">
         <u-checkbox 
           v-model="selection" 
           value="red"
+          disabled
+          disabledClass="!cursor-not-allowed"
           class="
             w-[20px] h-[20px] border-[2px] border-solid 
             border-[rgba(0,0,0,.54)] rounded-[2px] flex justify-center
@@ -69,9 +69,14 @@
 
       <div class="mt-[16px]">checked: {{ selection }}</div>
     </div>
-  </Example>
+  
 </template>
 
 <script lang="ts" setup>
 const selection = reactive<any[]>([])
-</script>
+</script>`
+const target = {}
+
+splitCode(code, target)
+
+export default target
