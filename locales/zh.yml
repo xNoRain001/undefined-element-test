@@ -2,7 +2,7 @@ components:
   u-checkbox:
     01-basic:
       title: 基础
-      desc: v-model 的值为布尔值时，是单选框；为数组时，是多选框。
+      desc: 提供 before、checkbox、after 三个插槽，用于自定义样式，每个插槽都可以获取到 checked 变量。
     02-group:
       title: 多选框
       desc: 通过 u-checkbox-group 组件实现多选，v-model 的值为一个数组，checkbox 设置 value 属性指定选中时的值。
@@ -14,7 +14,7 @@ components:
       desc: 这里将 min 设置为 1，max 设置为 2。
     05-race:
       title: 竞赛
-      desc: 当数量超过最大限制时，取消选中最早选择的那一项。
+      desc: 当数量超过最大限制时，取消选中最早选择的那一项，通过将 max 设为 1 并且开启 race 可以将多选框转化为单选框。
   u-dialog:
     01-basic:
       title: 对话框
