@@ -3,9 +3,11 @@ import splitCode from '../../utils/split-code'
 const code = `<template>
   
     <div class="w-full">
-      <div class="flex items-center [&>*:not(:first-of-type)]:ml-[32px]">
+      <u-checkbox-group 
+        v-model="selection"
+        class="flex items-center [&>*:not(:first-of-type)]:ml-[32px]"
+      >
         <u-checkbox 
-          v-model="selection" 
           value="red"
           class="
             w-[20px] h-[20px] border-[2px] border-solid 
@@ -20,7 +22,6 @@ const code = `<template>
         </u-checkbox>
 
         <u-checkbox 
-          v-model="selection" 
           value="blue"
           class="
             w-[20px] h-[20px] border-[2px] border-solid 
@@ -35,7 +36,6 @@ const code = `<template>
         </u-checkbox>
 
         <u-checkbox 
-          v-model="selection" 
           value="green"
           class="
             w-[20px] h-[20px] border-[2px] border-solid 
@@ -50,7 +50,6 @@ const code = `<template>
         </u-checkbox>
 
         <u-checkbox 
-          v-model="selection" 
           value="pink"
           class="
             w-[20px] h-[20px] border-[2px] border-solid 
@@ -63,7 +62,7 @@ const code = `<template>
         >
           <u-icon name="done" color="white" width="16" height="16"></u-icon>
         </u-checkbox>
-      </div>
+      </u-checkbox-group>
 
       <div class="mt-[16px]">checked: {{ selection }}</div>
     </div>

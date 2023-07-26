@@ -5,10 +5,13 @@ components:
       desc: v-model 的值为布尔值时，是单选框；为数组时，是多选框。
     02-group:
       title: 多选框
-      desc: 通过 value 属性指定选中时的值。
+      desc: 通过 u-checkbox-group 组件实现多选，v-model 的值为一个数组，checkbox 设置 value 属性指定选中时的值。
     03-disabled:
       title: 禁用
       desc: 通过 disabled 属性禁用，这里将第一个多选框设置为了禁用。
+    04-limit:
+      title: 数量限制
+      desc: 这里将 min 设置为 1，max 设置为 2。
   u-dialog:
     01-basic:
       title: 对话框
