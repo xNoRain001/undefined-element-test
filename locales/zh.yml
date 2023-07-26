@@ -12,6 +12,9 @@ components:
     04-limit:
       title: 数量限制
       desc: 这里将 min 设置为 1，max 设置为 2。
+    05-race:
+      title: 竞赛
+      desc: 当数量超过最大限制时，取消选中最早选择的那一项。
   u-dialog:
     01-basic:
       title: 对话框
