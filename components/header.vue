@@ -1,9 +1,28 @@
 <template>
-  <div class="
-    header w-full h-[55px] fixed top-0 z-10 border-[1px] border-solid 
-    border-[#dcdfe6] border-x-0 border-t-0 bg-[length:4px_4px] px-[51px]
-  ">
-    <div class="w-full h-full flex justify-between items-center">
+  <header class="header w-full h-[64px] fixed top-0 z-20 flex">
+    <div 
+      class="
+        w-[287px] h-[64px] flex items-center bg-[#f6f6f7] pl-[47px] pr-[32px]
+        bg-[#f6f6f7]
+      "
+    >
+      <a 
+        href="/" 
+        class="
+          font-semibold flex items-center border-[1px] border-solid border-x-0 
+          border-t-0 border-b-[var(--border-color)] h-full w-full
+        "
+        >
+        <div class="w-[24px] h-[24px] mr-[8px] bg-pink-500 rounded-full"></div>
+        Undefined Element
+      </a>
+    </div>
+    <div 
+      class="
+        w-[calc(100vw-287px)] pl-[287px] pr-[47px] bg-white h-full flex 
+        justify-between items-center
+      "
+    >
       <div></div>
       <div>
         <u-dropdown :offset="{ right: '0' }">
@@ -22,12 +41,5 @@
         </u-dropdown>
       </div>
     </div>
-  </div>
+  </header>
 </template>
-
-<style scoped>
-.header {
-  background-image: radial-gradient(transparent 1px,#fff 1px);
-  backdrop-filter: saturate(50%) blur(4px);
-}
-</style>

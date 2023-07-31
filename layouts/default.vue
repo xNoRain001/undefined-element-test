@@ -1,15 +1,13 @@
 <template>
   <Header></Header>
-
-  <Navigation></Navigation>
-
-  <div class="h-full pl-[285px] pt-[110px]">
-    <div class="pt-[64px] pl-[64px] pb-[42px] flex">
-      <!-- content -->
-      <div class="w-[800px] grid gap-y-[24px]">
-        <slot></slot>
+  <Sidebar></Sidebar>
+  <div class="h-full pl-[287px] pr-[15px] pt-[64px]">
+    <div class="px-[32px] pt-[32px] flex max-w-[1280px]">
+      <div class="px-[32px] pb-[128px] grid gap-y-[24px] w-full">
+        <div class="mx-auto max-w-[688px]">
+          <slot></slot>
+        </div>
       </div>
-
       <Directory></Directory>
     </div>
   </div>

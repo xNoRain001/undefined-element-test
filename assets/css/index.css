@@ -1,3 +1,9 @@
+:root {
+  --text-light-1: rgb(60, 60, 67);
+  --text-light-2: rgba(60, 60, 67, .75);
+  --border-color: rgba(60, 60, 67, .12);
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -14,10 +20,13 @@
 }
 
 body {
-  @apply overflow-y-scroll w-screen h-screen font-['Helvetica_Neue']
+  @apply overflow-y-scroll w-screen h-screen
+  leading-[24px] font-normal text-[var(--text-light-1)]
+  font-["Chinese_Quotes"] text-[16px]
 }
 
 .tooltip {
   @apply py-[6px] px-[10px] bg-[#757575] text-[#fafafa] font-normal 
   text-[10px] rounded-[4px]
 }
+

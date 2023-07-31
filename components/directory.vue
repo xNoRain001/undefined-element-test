@@ -1,24 +1,35 @@
 <template>
-  <div class="pl-[64px] h-full sticky top-[85px]">
-    <div class="w-[200px] py-[4px] pr-[8px] pl-[12px] mb-[32px]">
-      <div class="text-[#606266] text-[12px] font-semibold">CONTENTS</div>
+  <aside class="pl-[32px] max-w-[256px] grow w-full">
+    <div class="fixed top-0 pt-[96px]">
+      <div 
+        class="
+          border-[1px] border-solid border-y-0 border-r-0 
+          border-[var(--border-color)] pl-[16px] text-[13px]
+        "
+      >
+        <div 
+          class="
+            text-[var(--text-light-1)] font-semibold leading-[28px]
+          "
+        >CONTENTS</div>
 
-      <ul class="mt-[12px] grid gap-y-[10px] text-[12px] font-semibold text-[#909399]">
-        <li v-for="dir in dirs" :key="dir">
-          <a 
-            class="cursor-pointer hover:text-[#409eff]" 
-            :href="`#${ dir }`"
-          >{{ `${ dir[0].toUpperCase() }${ dir.slice(1) }` }}</a>
-        </li>
-      </ul>
+        <ul class="text-[var(--text-light-2)]">
+          <li v-for="dir in dirs" :key="dir">
+            <a 
+              class="cursor-pointer hover:text-[#409eff]" 
+              :href="`#${ dir }`"
+            >{{ `${ dir[0].toUpperCase() }${ dir.slice(1) }` }}</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <u-scroller scrollTarget="html" class="fixed right-[20px] bottom-[20px]">
+    <!-- <u-scroller scrollTarget="html" class="fixed right-[20px] bottom-[20px]">
       <div class="cursor-pointer w-[40px] h-[40px] bg-blue-500 rounded-full flex justify-center items-center">
         <u-icon name="keyboard_arrow_up" color="white"></u-icon>
       </div>
-    </u-scroller>
-  </div>
+    </u-scroller> -->
+  </aside>
 </template>
 
 <script lang="ts" setup>

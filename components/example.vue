@@ -1,18 +1,19 @@
 <template>
-  <div>
+  <div class="py-[16px]">
     <div 
       @click="updateAnchor"
       :id="__title"
       class="
-        text-[#606266] font-semibold text-[26px] mb-[24px] cursor-pointer 
+        text-[var(--text-light-1)] font-semibold text-[32px] leading-[40px]
+        cursor-pointer 
         after:content-['#'] after:opacity-0 after:ml-[12px] 
-        hover:after:opacity-100
+        hover:after:opacity-100 
       "
     >
       {{ title }}
     </div>
 
-    <p v-if="desc" class="text-[#303133] text-[16px] pb-[16px]">{{ desc }}</p>
+    <p v-if="desc" class="text-[var(--text-light-1)] py-[16px] leading-[28px]">{{ desc }}</p>
 
     <u-expansion v-model="expanded">
       <u-expansion-item name="1">
