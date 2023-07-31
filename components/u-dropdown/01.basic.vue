@@ -36,7 +36,7 @@
         </template>
       </u-dropdown>
 
-      <u-dropdown listClass="-top-full translate-x-full bg-white rounded-[4px] cursor-pointer shadow-[0_1px_5px_#0003,0_2px_2px_#00000024,_0_3px_1px_-2px_#0000001f]">
+      <u-dropdown listClass="!-top-full translate-x-full bg-white rounded-[4px] cursor-pointer shadow-[0_1px_5px_#0003,0_2px_2px_#00000024,_0_3px_1px_-2px_#0000001f]">
         <button 
           class="
             w-[209px] h-[36px] bg-[rgb(25,118,210)] flex jusfity-center
