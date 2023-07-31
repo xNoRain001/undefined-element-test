@@ -1,9 +1,9 @@
 <template>
   <Basic></Basic>
-  <Offset></Offset>
+  <Trigger></Trigger>
 </template>
 
 <script lang="ts" setup>
 import Basic from '@/components/u-dropdown/01.basic.vue'
-import Offset from '@/components/u-dropdown/02.offset.vue'
+import Trigger from '@/components/u-dropdown/02.trigger.vue'
 </script>

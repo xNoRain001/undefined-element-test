@@ -28,10 +28,10 @@ components:
   u-dropdown:
     01-basic:
       title: 下拉菜单
-      desc: 通过点击触发
-    02-offset:
-      title: 偏移
-      desc: 通过 offset 选项配置偏移量，各个方向上的值为一个字符串。    
+      desc: 默认通过点击触发，通过 listClass 和 listStyle 设置下拉列表的样式。
+    02-trigger:
+      title: 触发器
+      desc: 可选值为 'click' | 'hover'
   u-icon:
     01-basic:
       title: 基础
