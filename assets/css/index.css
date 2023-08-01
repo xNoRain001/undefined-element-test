@@ -22,7 +22,7 @@
 body {
   @apply overflow-y-scroll w-screen h-screen
   leading-[24px] font-normal text-[var(--text-light-1)]
-  font-["Chinese_Quotes"] text-[16px]
+  text-[16px]
 }
 
 .tooltip {

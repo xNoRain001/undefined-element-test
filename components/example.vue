@@ -1,5 +1,5 @@
 <template>
-  <div class="py-[16px]">
+  <div>
     <div 
       @click="updateAnchor"
       :id="__title"
@@ -20,7 +20,7 @@
         <template #header>
           <div 
             class="
-              p-[8px] border-[1px] border-solid border-[#dcdfe6] flex 
+              p-[8px] border-[1px] border-solid border-[var(--border-color)] flex 
               justify-end cursor-default
             "
             @click.stop="() => {}"
@@ -156,15 +156,17 @@ const props = defineProps<{
 const { id, desc, title } = toRefs(props)
 const _title = title.value
 const __title = `${ _title[0].toLowerCase() }${ _title.slice(1) }`
+// const descs = JSON.parse(desc?.value)
+
 const expanded = reactive<string[]>([])
 const path = useRoute().path
 const code = codesMap[path][id.value]
 const { template = '', script = '', style = '', all = '' } = code
 const tab = ref('template')
 const codeMirrorStyle = { 
-  maxHeight: '600px', 
-  fontSize: '12px',
-  backgroundColor: '#eee'
+  maxHeight: '600px',
+  fontSize: '14px',
+  backgroundColor: '#f8f8f8'
 }
 
 const onExpand = () => {
@@ -181,4 +183,3 @@ const writeText = async (type: 'template' | 'script' | 'style' | 'all') => {
 
 const updateAnchor = () => location.hash = __title
 </script>
-codes

@@ -4,7 +4,12 @@
   <div class="h-full pl-[287px] pr-[15px] pt-[64px]">
     <div class="px-[32px] pt-[32px] flex max-w-[1280px]">
       <div class="px-[32px] pb-[128px] grid gap-y-[24px] w-full">
-        <div class="mx-auto max-w-[688px]">
+        <div 
+          class="
+            mx-auto max-w-[688px] [&>div:first-of-type]:pb-[16px]
+            [&>div:not(:first-of-type)]:py-[16px]
+          "
+        >
           <slot></slot>
         </div>
       </div>

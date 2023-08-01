@@ -1,6 +1,6 @@
 components:
-  u-input:
-    basic:
+   u-scroll-area:
+    01-basic:
       title: Basic
-      desc: ''
+      desc: scroll area
       

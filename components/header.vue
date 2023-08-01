@@ -20,26 +20,50 @@
     <div 
       class="
         w-[calc(100vw-287px)] pl-[287px] pr-[47px] bg-white h-full flex 
-        justify-between items-center
+        justify-between items-center relative
       "
     >
       <div></div>
-      <div>
-        <u-dropdown :offset="{ right: '0' }">
-          <u-icon name="translate" width="24" height="24"></u-icon>
+      <!-- <u-dropdown 
+        class="h-[64px] cursor-pointer flex items-center px-[12px]" 
+        trigger="hover"
+        listClass="right-0 top-[52px]"
+      >
+        <u-icon name="translate" width="24" height="24"></u-icon>
 
-          <template #dropdown-list>
-            <ul class="bg-white w-[190px] p-[14px] shadow-[0_1px_5px_#0003,0_2px_2px_#00000024,0_3px_1px_-2px_#0000001f]">
-              <li>
-                简体中文
-              </li>
-              <li>
-                English
-              </li>
-            </ul>
-          </template>
-        </u-dropdown>
-      </div>
+        <template #dropdown-list>
+          <ul 
+            @click="onSetLocale"
+            class="
+              bg-white p-[12px] border-[1px] border-solid whitespace-nowrap
+              border-[var(--border-color)] rounded-[12px]
+              shadow-[0_12px_32px_rgba(0,0,0,.1),0_2px_6px_rgba(0,0,0,.08)]
+              [&>li]:px-[12px] [&>li]:leading-[32px] [&>li]:text-[14px]
+              [&>li]:font-medium [&>li]:rounded-[6px] [&>li]:cursor-pointer
+              hover:[&>li]:bg-[#f6f6f7]
+            "
+          >
+            <li data-language="zh">
+              简体中文
+            </li>
+            <li data-language="en">
+              English
+            </li>
+          </ul>
+        </template>
+      </u-dropdown> -->
     </div>
   </header>
 </template>
+
+<script lang="ts" setup>
+const { setLocale } = useI18n()
+
+const onSetLocale = (e: Event) => {
+  const type = (e.target as HTMLElement).getAttribute('data-language')
+
+  if (type) {
+    setLocale(type)
+  }
+}
+</script>

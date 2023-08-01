@@ -4,16 +4,22 @@
       <div 
         class="
           border-[1px] border-solid border-y-0 border-r-0 
-          border-[var(--border-color)] pl-[16px] text-[13px]
+          border-[var(--border-color)] pl-[16px] text-[13px] relative
         "
       >
+        <!-- <div 
+          class="
+            h-[18px] w-[1px] bg-red-500 absolute top-[33px] left-0 -left-px
+          "
+        ></div> -->
+
         <div 
           class="
             text-[var(--text-light-1)] font-semibold leading-[28px]
           "
         >CONTENTS</div>
 
-        <ul class="text-[var(--text-light-2)]">
+        <ul class="text-[var(--text-light-2)] leading-[28px]">
           <li v-for="dir in dirs" :key="dir">
             <a 
               class="cursor-pointer hover:text-[#409eff]" 
