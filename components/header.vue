@@ -24,12 +24,13 @@
       "
     >
       <div></div>
-      <!-- <u-dropdown 
-        class="h-[64px] cursor-pointer flex items-center px-[12px]" 
+      <u-dropdown 
         trigger="hover"
-        listClass="right-0 top-[52px]"
+        listClass="right-0 !left-auto !top-[52px]"
       >
-        <u-icon name="translate" width="24" height="24"></u-icon>
+        <div class="h-[64px] cursor-pointer flex items-center px-[12px]">
+          <u-icon name="translate" width="24" height="24"></u-icon>
+        </div>
 
         <template #dropdown-list>
           <ul 
@@ -51,7 +52,7 @@
             </li>
           </ul>
         </template>
-      </u-dropdown> -->
+      </u-dropdown>
     </div>
   </header>
 </template>
