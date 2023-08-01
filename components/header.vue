@@ -1,5 +1,5 @@
 <template>
-  <header class="header w-full h-[64px] fixed top-0 z-20 flex">
+  <header class="w-full h-[64px] fixed top-0 z-20 flex">
     <div 
       class="
         w-[287px] h-[64px] flex items-center bg-[#f6f6f7] pl-[47px] pr-[32px]

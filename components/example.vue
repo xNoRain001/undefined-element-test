@@ -1,17 +1,21 @@
 <template>
   <div>
-    <div 
-      @click="updateAnchor"
+    <h2
       :id="__title"
       class="
-        text-[var(--text-light-1)] font-semibold text-[32px] leading-[40px]
-        cursor-pointer 
-        after:content-['#'] after:opacity-0 after:ml-[12px] 
-        hover:after:opacity-100 
+        group relative text-[var(--text-light-1)] font-semibold text-[32px] 
+        leading-[40px]
       "
     >
       {{ title }}
-    </div>
+      <a 
+        @click="onScroll"
+        :href="`#${ __title }`"
+        class="
+          absolute left-0 ml-[-0.87em] opacity-0 group-hover:opacity-100
+        "
+      >#</a>
+    </h2>
 
     <p v-if="desc" class="text-[var(--text-light-1)] py-[16px] leading-[28px]">{{ desc }}</p>
 
@@ -181,5 +185,13 @@ const writeText = async (type: 'template' | 'script' | 'style' | 'all') => {
   await navigator.clipboard.writeText(code[type] || '')
 }
 
-const updateAnchor = () => location.hash = __title
+const onScroll = (e: any) => {
+  e.preventDefault()
+  const header = document.querySelector('header') as HTMLElement
+  
+  window.scrollTo({
+    top: e.pageY - header.clientHeight - 20,
+    behavior: 'smooth'
+  })
+}
 </script>

@@ -17,7 +17,7 @@
           class="
             text-[var(--text-light-1)] font-semibold leading-[28px]
           "
-        >CONTENTS</div>
+        >On this page</div>
 
         <ul class="text-[var(--text-light-2)] leading-[28px]">
           <li v-for="dir in dirs" :key="dir">
