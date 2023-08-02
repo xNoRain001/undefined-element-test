@@ -44,6 +44,12 @@ components:
     01-basic:
       title: 基础
       desc: 滚动区域
+    02-persistent:
+      title: 持久化
+      desc: 滚动条一直存在
+    03-hidden:
+      title: 隐蔽的
+      desc: 只有当滚动时才显示滚动条
   u-scroller:
     01-basic:
       title: 基础
