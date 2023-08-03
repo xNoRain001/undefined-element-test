@@ -15,7 +15,8 @@
     "nuxt": "^3.6.0",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vitepress": "^1.0.0-beta.7"
   },
   "dependencies": {
     "@codemirror/lang-css": "^6.2.0",
