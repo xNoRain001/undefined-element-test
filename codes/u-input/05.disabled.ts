@@ -3,17 +3,15 @@ import splitCode from '../../utils/split-code'
 const code = `<template>
   
     <div class="w-full grid gap-y-[24px]">
-      <u-input 
-        disabled
-        v-model="value"
-        :inputStyle="{ 
-          border: '1px solid #dcdfe6',
-          borderRadius: '4px'
-        }"
-        inputClass="
-          w-full h-[56px] px-[12px] text-[14px] font-normal 
-          text-[rgba(0, 0, 0, .87)] bg-[#f5f7fa]
+      <u-input
+        class="
+          w-full h-[56px] px-[12px] rounded-[4px]
+          before:border before:border-solid before:border-[rgba(0,0,0,.23)]
         "
+        focusedClass="before:!border-[rgb(25,118,210)] before:!border-[2px]"
+        inputClass="text-[rgba(0,0,0,.87)] text-[14px] font-normal"
+        v-model="value"
+        disabled
       >
       </u-input>
     </div>

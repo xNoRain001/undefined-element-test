@@ -131,7 +131,7 @@ components:
   u-input:
     01-basic:
       title: 基础
-      desc: Input 组件，通过 inputClass、inputStlye、focusedInputClass、focusedInputStyle、hoveredInputClass、hoveredInputStyle 控制表单的样式。
+      desc: Input 组件，通过 inputClass、inputStlye 控制表单的样式。
     02-placeholder:
       title: 占位符
       desc: 通过 placeholderStyle 属性控制占位符样式，支持 color、font-size、font-weight 属性。
