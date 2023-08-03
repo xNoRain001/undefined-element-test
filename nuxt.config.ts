@@ -28,6 +28,6 @@ export default defineNuxtConfig({
 
   css: [
     'assets/css/index.css', 
-    'undefined-element/src/assets/css/index.css'
+    'undefined-element/dist/index.css'
   ]
 })
