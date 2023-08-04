@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "Undefiend Element",
+  description: "Vue Component Library",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -16,7 +17,6 @@ export default defineConfig({
         text: 'Guides',
         items: [
           { text: '什么是 Undefiend Element？', link: '/guide/' },
-          { text: '为什么选择它？', link: '/guide/why' },
           { text: '开始使用', link: '/guide/get-started' },
         ]
       },
@@ -45,7 +45,12 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/xnorain001/undefined-element' }
-    ]
+    ],
+
+    editLink: {
+      pattern: 'https://github.com/xnorain001/undefined-element-test/edit/main/docs/:path',
+      text: '在 Github 上编辑此页'
+    }
   },
   locales: {
     root: {
